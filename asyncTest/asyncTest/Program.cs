@@ -8,7 +8,6 @@ namespace asyncTest
 {
     class Program
     {
-        //测试修改
         static void Main(string[] args)
         {
             Console.WriteLine("begining...");
