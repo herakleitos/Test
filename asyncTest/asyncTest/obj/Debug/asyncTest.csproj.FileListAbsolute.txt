@@ -1,0 +1,6 @@
+d:\documents\visual studio 2017\Projects\asyncTest\asyncTest\bin\Debug\asyncTest.exe.config
+d:\documents\visual studio 2017\Projects\asyncTest\asyncTest\bin\Debug\asyncTest.exe
+d:\documents\visual studio 2017\Projects\asyncTest\asyncTest\bin\Debug\asyncTest.pdb
+d:\documents\visual studio 2017\Projects\asyncTest\asyncTest\obj\Debug\asyncTest.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2017\Projects\asyncTest\asyncTest\obj\Debug\asyncTest.exe
+d:\documents\visual studio 2017\Projects\asyncTest\asyncTest\obj\Debug\asyncTest.pdb
