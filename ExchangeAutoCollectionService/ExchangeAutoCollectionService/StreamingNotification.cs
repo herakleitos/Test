@@ -134,6 +134,10 @@ namespace ExchangeAutoCollectionService
 
         private void ReceiveEmailFromServer(ExchangeService service)
         {
+            ExchangeService loadMailService = new ExchangeService(service.RequestedServerVersion);
+            loadMailService.Credentials = service.Credentials;
+            loadMailService.Url = service.Url;
+            loadMailService.TraceEnabled = false;
             try
             {
                 StringBuilder sb = new StringBuilder();
@@ -143,7 +147,7 @@ namespace ExchangeAutoCollectionService
                 ItemView view = new ItemView(999);
                 view.PropertySet = new PropertySet(BasePropertySet.FirstClassProperties, EmailMessageSchema.IsRead);
                 SearchFilter filter = new SearchFilter.IsEqualTo(EmailMessageSchema.IsRead, false);
-                FindItemsResults<Item> findResults = service.FindItems(WellKnownFolderName.Inbox,
+                FindItemsResults<Item> findResults = loadMailService.FindItems(WellKnownFolderName.Inbox,
                     filter,
                     view);
 
@@ -151,7 +155,8 @@ namespace ExchangeAutoCollectionService
                 {
                     //每次循环花费时间2到3分钟，时间消耗在EmailMessage.Bind和email.Update上。
                     //需要更快速的方法获取邮件。
-                    EmailMessage email = EmailMessage.Bind(service, item.Id);
+                    EmailMessage email = EmailMessage.Bind(loadMailService, item.Id);
+
                     if (!email.IsRead)
                     {
                         LoggerHelper.Logger.Info(email.Body);
@@ -170,6 +175,10 @@ namespace ExchangeAutoCollectionService
             catch (Exception ex)
             {
                 LoggerHelper.Logger.Error(ex, "ReceiveEmailFromServer Error");
+            }
+            finally
+            {
+
             }
         }
 

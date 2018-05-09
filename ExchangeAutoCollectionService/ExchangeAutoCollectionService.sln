@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2005
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeAutoCollectionService", "ExchangeAutoCollectionService\ExchangeAutoCollectionService.csproj", "{E5CEDC0F-6E2E-4ACE-92F1-9AA7213E782D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApplication1", "Project\WindowsApplication1.csproj", "{A4067EE8-4EC7-432D-8D8A-AF40670F48C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadEmailFromOutLook", "LoadEmailFromOutLook\LoadEmailFromOutLook.csproj", "{531C0EC1-C6A8-4328-878E-C69E3CA737B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A4067EE8-4EC7-432D-8D8A-AF40670F48C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4067EE8-4EC7-432D-8D8A-AF40670F48C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4067EE8-4EC7-432D-8D8A-AF40670F48C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{531C0EC1-C6A8-4328-878E-C69E3CA737B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{531C0EC1-C6A8-4328-878E-C69E3CA737B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{531C0EC1-C6A8-4328-878E-C69E3CA737B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{531C0EC1-C6A8-4328-878E-C69E3CA737B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -39,11 +39,16 @@ namespace ExchangeAutoCollectionService
                 {
                     System.Threading.Tasks.Task.Factory.StartNew(() =>
                     {
-                        ExchangeService service = 
+                        ExchangeService service =
                         Service.ConnectToService(account,
                         null,
-                        () => LoggerHelper.Logger.Info($"start connecting {account.EmailAddress}..."), 
+                        () => LoggerHelper.Logger.Info($"start connecting {account.EmailAddress}..."),
                         null);
+                        //ExchangeService service = new ExchangeService(account.Version);
+                        //service.Credentials =
+                        //    new WebCredentials(account.EmailAddress, account.Password);
+                        //service.Url = new Uri("https://outlook.office365.com/EWS/Exchange.asmx");
+                        //service.TraceEnabled = false;
                         new StreamingNotification(service).SetStreamingNotifications();
                     });
                 }

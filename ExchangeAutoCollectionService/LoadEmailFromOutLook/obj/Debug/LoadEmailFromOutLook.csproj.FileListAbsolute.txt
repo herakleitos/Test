@@ -1,0 +1,9 @@
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\bin\Debug\LoadEmailFromOutLook.exe.config
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\bin\Debug\LoadEmailFromOutLook.exe
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\bin\Debug\LoadEmailFromOutLook.pdb
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.csprojResolveAssemblyReference.cache
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.Form1.resources
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.Properties.Resources.resources
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.csproj.GenerateResource.Cache
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.exe
+E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.pdb
