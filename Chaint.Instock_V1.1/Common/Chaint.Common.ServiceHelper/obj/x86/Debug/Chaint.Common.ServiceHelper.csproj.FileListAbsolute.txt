@@ -1,5 +1,0 @@
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Common\Chaint.Common.ServiceHelper\obj\x86\Debug\Chaint.Common.ServiceHelper.csprojResolveAssemblyReference.cache
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\Chaint.Common.ServiceHelper.dll
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\Chaint.Common.ServiceHelper.pdb
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Common\Chaint.Common.ServiceHelper\obj\x86\Debug\Chaint.Common.ServiceHelper.dll
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Common\Chaint.Common.ServiceHelper\obj\x86\Debug\Chaint.Common.ServiceHelper.pdb

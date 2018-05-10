@@ -1,5 +1,0 @@
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\Chaint.Common.Interface.dll
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\Chaint.Common.Interface.pdb
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Common\Chaint.Common.Interface\obj\x86\Debug\Chaint.Common.Interface.csprojResolveAssemblyReference.cache
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Common\Chaint.Common.Interface\obj\x86\Debug\Chaint.Common.Interface.dll
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Common\Chaint.Common.Interface\obj\x86\Debug\Chaint.Common.Interface.pdb

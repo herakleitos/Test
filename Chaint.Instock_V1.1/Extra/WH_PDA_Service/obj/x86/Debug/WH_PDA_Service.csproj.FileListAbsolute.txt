@@ -1,9 +1,0 @@
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\WH_PDA_Service.exe.config
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\WH_PDA_Service.exe
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\WH_PDA_Service.pdb
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\WH_PDA_Service\obj\x86\Debug\WH_PDA_Service.csprojResolveAssemblyReference.cache
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\WH_PDA_Service\obj\x86\Debug\WH_PDA_Service.PDAForm.resources
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\WH_PDA_Service\obj\x86\Debug\WH_PDA_Service.Properties.Resources.resources
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\WH_PDA_Service\obj\x86\Debug\WH_PDA_Service.csproj.GenerateResource.Cache
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\WH_PDA_Service\obj\x86\Debug\WH_PDA_Service.exe
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\WH_PDA_Service\obj\x86\Debug\WH_PDA_Service.pdb

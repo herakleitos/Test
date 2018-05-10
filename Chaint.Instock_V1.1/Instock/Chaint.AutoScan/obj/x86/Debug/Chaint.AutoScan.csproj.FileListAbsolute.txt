@@ -1,9 +1,0 @@
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\Chaint.AutoScan.exe.config
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\Chaint.AutoScan.exe
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\Chaint.AutoScan.pdb
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Instock\Chaint.AutoScan\obj\x86\Debug\Chaint.AutoScan.csprojResolveAssemblyReference.cache
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Instock\Chaint.AutoScan\obj\x86\Debug\Chaint.AutoScan.Properties.Resources.resources
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Instock\Chaint.AutoScan\obj\x86\Debug\Chaint.AutoScan.csproj.GenerateResource.Cache
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Instock\Chaint.AutoScan\obj\x86\Debug\Chaint.AutoScan.exe.licenses
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Instock\Chaint.AutoScan\obj\x86\Debug\Chaint.AutoScan.exe
-F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Instock\Chaint.AutoScan\obj\x86\Debug\Chaint.AutoScan.pdb
