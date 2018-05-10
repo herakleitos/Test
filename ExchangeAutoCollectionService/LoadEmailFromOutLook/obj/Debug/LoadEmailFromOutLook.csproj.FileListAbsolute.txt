@@ -7,3 +7,12 @@ E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEm
 E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.csproj.GenerateResource.Cache
 E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.exe
 E:\Demo Code\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.pdb
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\bin\Debug\LoadEmailFromOutLook.exe.config
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\bin\Debug\LoadEmailFromOutLook.exe
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\bin\Debug\LoadEmailFromOutLook.pdb
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.csprojResolveAssemblyReference.cache
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.Form1.resources
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.Properties.Resources.resources
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.csproj.GenerateResource.Cache
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.exe
+E:\GitHub\Test\ExchangeAutoCollectionService\LoadEmailFromOutLook\obj\Debug\LoadEmailFromOutLook.pdb

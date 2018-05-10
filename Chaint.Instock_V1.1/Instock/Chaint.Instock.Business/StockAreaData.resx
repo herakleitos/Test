@@ -1,0 +1,2228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitContainerControl1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <data name="splitContainerControl1.Appearance.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <data name="splitContainerControl1.Appearance.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainerControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitContainerControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitContainerControl1.Panel1.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <data name="splitContainerControl1.Panel1.Appearance.BackColor2" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <data name="splitContainerControl1.Panel1.Appearance.BorderColor" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <data name="FHSpecification.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 62</value>
+  </data>
+  <metadata name="barManagerEntry.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>187, 17</value>
+  </metadata>
+  <data name="bt_NewEntry.Caption" xml:space="preserve">
+    <value>新增行</value>
+  </data>
+  <data name="bt_CopyEntry.Caption" xml:space="preserve">
+    <value>复制行</value>
+  </data>
+  <data name="bt_DeleteEntry.Caption" xml:space="preserve">
+    <value>删除行</value>
+  </data>
+  <data name="btComplete.Caption" xml:space="preserve">
+    <value>强制完成</value>
+  </data>
+  <data name="entryBar.Text" xml:space="preserve">
+    <value>表体菜单</value>
+  </data>
+  <data name="barDockControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1666, 35</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Name" xml:space="preserve">
+    <value>barDockControl1</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;barDockControl1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="barDockControl2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 759</value>
+  </data>
+  <data name="barDockControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1666, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Name" xml:space="preserve">
+    <value>barDockControl2</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;barDockControl2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControl3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="barDockControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 724</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.Name" xml:space="preserve">
+    <value>barDockControl3</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;barDockControl3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="barDockControl4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1666, 35</value>
+  </data>
+  <data name="barDockControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 724</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.Name" xml:space="preserve">
+    <value>barDockControl4</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;barDockControl4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barButtonItem2.Caption" xml:space="preserve">
+    <value>barButtonItem2</value>
+  </data>
+  <data name="FHSpecification.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FHSpecification.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 38</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FHSpecification.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;FHSpecification.Name" xml:space="preserve">
+    <value>FHSpecification</value>
+  </data>
+  <data name="&gt;&gt;FHSpecification.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FHSpecification.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FHSpecification.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="FHPaperType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1122, 18</value>
+  </data>
+  <data name="FHPaperType.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v15.2" name="DevExpress.Utils.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="FHPaperType.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FHPaperType.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FHPaperType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 38</value>
+  </data>
+  <data name="FHPaperType.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;FHPaperType.Name" xml:space="preserve">
+    <value>FHPaperType</value>
+  </data>
+  <data name="&gt;&gt;FHPaperType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FHPaperType.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FHPaperType.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FHProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 18</value>
+  </data>
+  <data name="FHProduct.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FHProduct.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FHProduct.Properties.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FHProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 38</value>
+  </data>
+  <data name="FHProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;FHProduct.Name" xml:space="preserve">
+    <value>FHProduct</value>
+  </data>
+  <data name="&gt;&gt;FHProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FHProduct.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FHProduct.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="FHStockArea.Location" type="System.Drawing.Point, System.Drawing">
+    <value>826, 18</value>
+  </data>
+  <data name="FHStockArea.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FHStockArea.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FHStockArea.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 38</value>
+  </data>
+  <data name="FHStockArea.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;FHStockArea.Name" xml:space="preserve">
+    <value>FHStockArea</value>
+  </data>
+  <data name="&gt;&gt;FHStockArea.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FHStockArea.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FHStockArea.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="FHStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 18</value>
+  </data>
+  <data name="FHStock.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FHStock.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FHStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 38</value>
+  </data>
+  <data name="FHStock.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;FHStock.Name" xml:space="preserve">
+    <value>FHStock</value>
+  </data>
+  <data name="&gt;&gt;FHStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FHStock.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FHStock.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btQuery.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="btQuery.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1292, 18</value>
+  </data>
+  <data name="btQuery.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 40</value>
+  </data>
+  <data name="btQuery.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btQuery.Text" xml:space="preserve">
+    <value>查询</value>
+  </data>
+  <data name="&gt;&gt;btQuery.Name" xml:space="preserve">
+    <value>btQuery</value>
+  </data>
+  <data name="&gt;&gt;btQuery.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SimpleButton, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btQuery.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;btQuery.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="FBeginDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FBeginDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 62</value>
+  </data>
+  <data name="FBeginDate.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FBeginDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FBeginDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FBeginDate.Properties.Mask.EditMask" xml:space="preserve">
+    <value>yyyy-MM-dd HH:mm</value>
+  </data>
+  <data name="FBeginDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 38</value>
+  </data>
+  <data name="FBeginDate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FBeginDate.Name" xml:space="preserve">
+    <value>FBeginDate</value>
+  </data>
+  <data name="&gt;&gt;FBeginDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FBeginDate.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FBeginDate.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="FHStatus.EditValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FHStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1122, 62</value>
+  </data>
+  <data name="FHStatus.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FHStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 38</value>
+  </data>
+  <data name="FHStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;FHStatus.Name" xml:space="preserve">
+    <value>FHStatus</value>
+  </data>
+  <data name="&gt;&gt;FHStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckedComboBoxEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FHStatus.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FHStatus.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="FEndDate.EditValue" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="FEndDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 62</value>
+  </data>
+  <data name="FEndDate.Properties.Appearance.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FEndDate.Properties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FEndDate.Properties.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FEndDate.Properties.Mask.EditMask" xml:space="preserve">
+    <value>yyyy-MM-dd HH:mm</value>
+  </data>
+  <data name="FEndDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 38</value>
+  </data>
+  <data name="FEndDate.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;FEndDate.Name" xml:space="preserve">
+    <value>FEndDate</value>
+  </data>
+  <data name="&gt;&gt;FEndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.DateEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FEndDate.Parent" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;FEndDate.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="lc_Head.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="lc_Head.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="lo_EndDate.Text" xml:space="preserve">
+    <value>结束日期</value>
+  </data>
+  <data name="lo_Stock.Text" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="layoutControlItem3.Text" xml:space="preserve">
+    <value>库区</value>
+  </data>
+  <data name="lo_Product.Text" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="lo_BeginDate.Text" xml:space="preserve">
+    <value>开始日期</value>
+  </data>
+  <data name="lo_Status.Text" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="lo_HPaperType.Text" xml:space="preserve">
+    <value>产品类型</value>
+  </data>
+  <data name="lo_HSpecification.Text" xml:space="preserve">
+    <value>规格</value>
+  </data>
+  <data name="lc_Head.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1412, 141</value>
+  </data>
+  <data name="lc_Head.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lc_Head.Text" xml:space="preserve">
+    <value>layoutControl3</value>
+  </data>
+  <data name="&gt;&gt;lc_Head.Name" xml:space="preserve">
+    <value>lc_Head</value>
+  </data>
+  <data name="&gt;&gt;lc_Head.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControl, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lc_Head.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lc_Head.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 50</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 141</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1666, 50</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 141</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 191</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1666, 0</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1666, 50</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="splitContainerControl1.Panel1.Text" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="FCheckAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 41</value>
+  </data>
+  <data name="FCheckAll.Properties.Appearance.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>WhiteSmoke</value>
+  </data>
+  <data name="FCheckAll.Properties.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FCheckAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 19</value>
+  </data>
+  <data name="FCheckAll.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;FCheckAll.Name" xml:space="preserve">
+    <value>FCheckAll</value>
+  </data>
+  <data name="&gt;&gt;FCheckAll.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FCheckAll.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;FCheckAll.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gc_Data.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="gc_Data.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10pt</value>
+  </data>
+  <data name="gc_Data.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 35</value>
+  </data>
+  <data name="gv_Entry.Appearance.Empty.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <data name="gv_Entry.Appearance.FocusedRow.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>Silver</value>
+  </data>
+  <data name="gv_Entry.Appearance.Row.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value>235, 236, 239</value>
+  </data>
+  <data name="FEntryID.AppearanceCell.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13pt</value>
+  </data>
+  <data name="FEntryID.Caption" xml:space="preserve">
+    <value>分录ID(隐藏)</value>
+  </data>
+  <data name="FName.Caption" xml:space="preserve">
+    <value>计划名称</value>
+  </data>
+  <data name="FName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="FName.Width" type="System.Int32, mscorlib">
+    <value>106</value>
+  </data>
+  <data name="FProduct.Caption" xml:space="preserve">
+    <value>产品</value>
+  </data>
+  <data name="slu_Product.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_Product.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_Product.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FProduct.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FProduct.VisibleIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="FProduct.Width" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="FStock.Caption" xml:space="preserve">
+    <value>仓库</value>
+  </data>
+  <data name="slu_Stock.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_Stock.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_Stock.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FStock.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FStock.VisibleIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="FStock.Width" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="FStockArea.Caption" xml:space="preserve">
+    <value>库区</value>
+  </data>
+  <data name="slu_StockArea.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_StockArea.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_StockArea.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FStockArea.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FStockArea.VisibleIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="FStockArea.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="FStockAreaPlan.Caption" xml:space="preserve">
+    <value>库区属性</value>
+  </data>
+  <data name="slu_StockAreaPlan.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_StockAreaPlan.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_StockAreaPlan.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FStockAreaPlan.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FStockAreaPlan.VisibleIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="FStockAreaPlan.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="FAmount.Caption" xml:space="preserve">
+    <value>件数</value>
+  </data>
+  <data name="cab_Amount.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cab_Amount.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FAmount.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FAmount.VisibleIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="FAmount.Width" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="FDate.Caption" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="deDate.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="deDate.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="deDate.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="FDate.Width" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="FPlanAmount.Caption" xml:space="preserve">
+    <value>计划件数</value>
+  </data>
+  <data name="cab_PlanAmount.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cab_PlanAmount.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FPlanAmount.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FPlanAmount.VisibleIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="FPlanAmount.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="FStatus.Caption" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="slu_Status.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_Status.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_Status.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FStatus.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FStatus.VisibleIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="FStatus.Width" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="FPaperType.Caption" xml:space="preserve">
+    <value>产品类型</value>
+  </data>
+  <data name="slu_PaperType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_PaperType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_PaperType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FPaperType.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FPaperType.VisibleIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="FPaperType.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="FSpecification.Caption" xml:space="preserve">
+    <value>规格</value>
+  </data>
+  <data name="cb_Specification.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cb_Specification.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FSpecification.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FSpecification.VisibleIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="FSpecification.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FPaperGrade.Caption" xml:space="preserve">
+    <value>产品等级</value>
+  </data>
+  <data name="slu_PaperGrade.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_PaperGrade.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_PaperGrade.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FPaperGrade.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FPaperGrade.VisibleIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="FPaperGrade.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FCertification.Caption" xml:space="preserve">
+    <value>纸种认证</value>
+  </data>
+  <data name="slu_Certification.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_Certification.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_Certification.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FCertification.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FCertification.VisibleIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="FCertification.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FTransportType.Caption" xml:space="preserve">
+    <value>夹板方式</value>
+  </data>
+  <data name="slu_TransportType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_TransportType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_TransportType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FTransportType.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FTransportType.VisibleIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="FTransportType.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FCoreDiameterOrReam.Caption" xml:space="preserve">
+    <value>纸芯/令数</value>
+  </data>
+  <data name="cb_CoreDiameterOrReam.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cb_CoreDiameterOrReam.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FCoreDiameterOrReam.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FCoreDiameterOrReam.VisibleIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="FCoreDiameterOrReam.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FDiameterOrSlides.Caption" xml:space="preserve">
+    <value>直径MM/令张数</value>
+  </data>
+  <data name="cb_DiameterOrSlides.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cb_DiameterOrSlides.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FDiameterOrSlides.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FDiameterOrSlides.VisibleIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="FDiameterOrSlides.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FLength.Caption" xml:space="preserve">
+    <value>线长/件张数</value>
+  </data>
+  <data name="cb_Length.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cb_Length.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FLength.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FLength.VisibleIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="FLength.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FTrademarkStyle.Caption" xml:space="preserve">
+    <value>合格证类型</value>
+  </data>
+  <data name="slu_TrademarkStyle.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_TrademarkStyle.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_TrademarkStyle.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FTrademarkStyle.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FTrademarkStyle.VisibleIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="FTrademarkStyle.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FSpecCustName.Caption" xml:space="preserve">
+    <value>客户专用</value>
+  </data>
+  <data name="slu_SpecCustName.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_SpecCustName.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_SpecCustName.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FSpecCustName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FSpecCustName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="FSpecCustName.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="FSpecProdName.Caption" xml:space="preserve">
+    <value>产品专用</value>
+  </data>
+  <data name="slu_SpecProdName.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_SpecProdName.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_SpecProdName.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FSpecProdName.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FSpecProdName.VisibleIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="FSpecProdName.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FPackType.Caption" xml:space="preserve">
+    <value>包装方式</value>
+  </data>
+  <data name="slu_PackType.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_PackType.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_PackType.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FPackType.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FPackType.VisibleIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="FPackType.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FDeliverDate.Caption" xml:space="preserve">
+    <value>交货日期</value>
+  </data>
+  <data name="date_DeliverDate.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="date_DeliverDate.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="date_DeliverDate.CalendarTimeProperties.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FDeliverDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FDeliverDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="FDeliverDate.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="FWeightMode.Caption" xml:space="preserve">
+    <value>卷筒计重</value>
+  </data>
+  <data name="slu_WeightMode.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_WeightMode.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_WeightMode.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FWeightMode.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FWeightMode.VisibleIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="FWeightMode.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="FColor.Caption" xml:space="preserve">
+    <value>产品色相</value>
+  </data>
+  <data name="slu_Color.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_Color.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="slu_Color.NullText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FColor.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FColor.VisibleIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="FColor.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="FPoNumber.Caption" xml:space="preserve">
+    <value>客户订单号</value>
+  </data>
+  <data name="FPoNumber.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FPoNumber.VisibleIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="FPoNumber.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="FSpCustomer.Caption" xml:space="preserve">
+    <value>产品备注</value>
+  </data>
+  <data name="slu_SpCustomer.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_SpCustomer.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FSpCustomer.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FSpCustomer.VisibleIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="FSpCustomer.Width" type="System.Int32, mscorlib">
+    <value>125</value>
+  </data>
+  <data name="FMemo.Caption" xml:space="preserve">
+    <value>备注</value>
+  </data>
+  <data name="FMemo.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FMemo.VisibleIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="FMemo.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="FTotalCapacity.Caption" xml:space="preserve">
+    <value>库区总容量</value>
+  </data>
+  <data name="FTotalCapacity.Width" type="System.Int32, mscorlib">
+    <value>147</value>
+  </data>
+  <data name="FUsedCapacity.Caption" xml:space="preserve">
+    <value>库区已使用容量</value>
+  </data>
+  <data name="FCustomer.Caption" xml:space="preserve">
+    <value>考虑客户</value>
+  </data>
+  <data name="chk_Customer.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="FCustomer.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FCustomer.VisibleIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="FCustomer.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="FInStockArea.Caption" xml:space="preserve">
+    <value>移入库区</value>
+  </data>
+  <data name="slu_InStockArea.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="slu_InStockArea.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FInStockArea.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FInStockArea.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="FInStockArea.Width" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="FOutAmount.Caption" xml:space="preserve">
+    <value>移出件数</value>
+  </data>
+  <data name="ce_OutAmount.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ce_OutAmount.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FOutAmount.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FOutAmount.VisibleIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="FOutAmount.Width" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="FWeight.Caption" xml:space="preserve">
+    <value>重量</value>
+  </data>
+  <data name="cab_Weight.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cab_Weight.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FWeight.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FWeight.VisibleIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="FOutWeight.Caption" xml:space="preserve">
+    <value>移出重量</value>
+  </data>
+  <data name="cab_OutWeight.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cab_OutWeight.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v15.2">
+    <value>Combo</value>
+  </data>
+  <data name="FOutWeight.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FOutWeight.VisibleIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="FOutWeight.Width" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="FStockDate.Caption" xml:space="preserve">
+    <value>入库日期</value>
+  </data>
+  <data name="FStockDate.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FStockDate.VisibleIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="FStockDate.Width" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="FCheck.Caption" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="cb_Check.AutoHeight" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="DevExpress.XtraGrid.v15.2" name="DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="FCheck.Fixed" type="DevExpress.XtraGrid.Columns.FixedStyle, DevExpress.XtraGrid.v15.2">
+    <value>Left</value>
+  </data>
+  <data name="FCheck.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FCheck.VisibleIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="FCheck.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="gc_Data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1666, 724</value>
+  </data>
+  <data name="gc_Data.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gc_Data.Name" xml:space="preserve">
+    <value>gc_Data</value>
+  </data>
+  <data name="&gt;&gt;gc_Data.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.GridControl, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gc_Data.Parent" xml:space="preserve">
+    <value>splitContainerControl1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;gc_Data.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainerControl1.Panel2.Text" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="splitContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1666, 958</value>
+  </data>
+  <data name="splitContainerControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="splitContainerControl1.Text" xml:space="preserve">
+    <value>splitContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;splitContainerControl1.Name" xml:space="preserve">
+    <value>splitContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;splitContainerControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.SplitContainerControl, DevExpress.Utils.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;splitContainerControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainerControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="barManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="mainBar.BarAppearance.Disabled.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="mainBar.BarAppearance.Hovered.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="mainBar.BarAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="mainBar.BarAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="bt_Save.Caption" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="btUpdate.Caption" xml:space="preserve">
+    <value>更新库区数据</value>
+  </data>
+  <data name="bsPrint.Caption" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="barButtonItem3.Caption" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="barButtonItem3.ItemAppearance.Disabled.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="barButtonItem3.ItemInMenuAppearance.Disabled.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="barButtonItem3.ItemInMenuAppearance.Hovered.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="barButtonItem3.ItemInMenuAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="barButtonItem3.ItemInMenuAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintPreview.Caption" xml:space="preserve">
+    <value>模板选择/预览</value>
+  </data>
+  <data name="btPrintPreview.ItemInMenuAppearance.Disabled.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintPreview.ItemInMenuAppearance.Hovered.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintPreview.ItemInMenuAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintPreview.ItemInMenuAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintTemplet.Caption" xml:space="preserve">
+    <value>模板设计</value>
+  </data>
+  <data name="btPrintTemplet.ItemAppearance.Disabled.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintTemplet.ItemInMenuAppearance.Disabled.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintTemplet.ItemInMenuAppearance.Hovered.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintTemplet.ItemInMenuAppearance.Normal.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btPrintTemplet.ItemInMenuAppearance.Pressed.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 16pt</value>
+  </data>
+  <data name="btExport.Caption" xml:space="preserve">
+    <value>导出Excel</value>
+  </data>
+  <data name="mainBar.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="bt_New.Caption" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="bt_Delete.Caption" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="btRefresh.Caption" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="btPrint.Caption" xml:space="preserve">
+    <value>打印</value>
+  </data>
+  <data name="barListItem1.Caption" xml:space="preserve">
+    <value>barListItem1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>10, 22</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1666, 958</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>库区数据</value>
+  </data>
+  <data name="&gt;&gt;barManagerEntry.Name" xml:space="preserve">
+    <value>barManagerEntry</value>
+  </data>
+  <data name="&gt;&gt;barManagerEntry.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;entryBar.Name" xml:space="preserve">
+    <value>entryBar</value>
+  </data>
+  <data name="&gt;&gt;entryBar.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bt_NewEntry.Name" xml:space="preserve">
+    <value>bt_NewEntry</value>
+  </data>
+  <data name="&gt;&gt;bt_NewEntry.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bt_CopyEntry.Name" xml:space="preserve">
+    <value>bt_CopyEntry</value>
+  </data>
+  <data name="&gt;&gt;bt_CopyEntry.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bt_DeleteEntry.Name" xml:space="preserve">
+    <value>bt_DeleteEntry</value>
+  </data>
+  <data name="&gt;&gt;bt_DeleteEntry.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btComplete.Name" xml:space="preserve">
+    <value>btComplete</value>
+  </data>
+  <data name="&gt;&gt;btComplete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem2.Name" xml:space="preserve">
+    <value>barButtonItem2</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView18.Name" xml:space="preserve">
+    <value>gridView18</value>
+  </data>
+  <data name="&gt;&gt;gridView18.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Name" xml:space="preserve">
+    <value>searchLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;searchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Name" xml:space="preserve">
+    <value>layoutControlGroup3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlGroup3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlGroup, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lo_EndDate.Name" xml:space="preserve">
+    <value>lo_EndDate</value>
+  </data>
+  <data name="&gt;&gt;lo_EndDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lo_Stock.Name" xml:space="preserve">
+    <value>lo_Stock</value>
+  </data>
+  <data name="&gt;&gt;lo_Stock.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Name" xml:space="preserve">
+    <value>layoutControlItem3</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lo_Product.Name" xml:space="preserve">
+    <value>lo_Product</value>
+  </data>
+  <data name="&gt;&gt;lo_Product.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lo_BeginDate.Name" xml:space="preserve">
+    <value>lo_BeginDate</value>
+  </data>
+  <data name="&gt;&gt;lo_BeginDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lo_Status.Name" xml:space="preserve">
+    <value>lo_Status</value>
+  </data>
+  <data name="&gt;&gt;lo_Status.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Name" xml:space="preserve">
+    <value>layoutControlItem1</value>
+  </data>
+  <data name="&gt;&gt;layoutControlItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Name" xml:space="preserve">
+    <value>emptySpaceItem1</value>
+  </data>
+  <data name="&gt;&gt;emptySpaceItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lo_HPaperType.Name" xml:space="preserve">
+    <value>lo_HPaperType</value>
+  </data>
+  <data name="&gt;&gt;lo_HPaperType.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;lo_HSpecification.Name" xml:space="preserve">
+    <value>lo_HSpecification</value>
+  </data>
+  <data name="&gt;&gt;lo_HSpecification.Type" xml:space="preserve">
+    <value>DevExpress.XtraLayout.LayoutControlItem, DevExpress.XtraLayout.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gv_Entry.Name" xml:space="preserve">
+    <value>gv_Entry</value>
+  </data>
+  <data name="&gt;&gt;gv_Entry.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FEntryID.Name" xml:space="preserve">
+    <value>FEntryID</value>
+  </data>
+  <data name="&gt;&gt;FEntryID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FName.Name" xml:space="preserve">
+    <value>FName</value>
+  </data>
+  <data name="&gt;&gt;FName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FProduct.Name" xml:space="preserve">
+    <value>FProduct</value>
+  </data>
+  <data name="&gt;&gt;FProduct.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_Product.Name" xml:space="preserve">
+    <value>slu_Product</value>
+  </data>
+  <data name="&gt;&gt;slu_Product.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView3.Name" xml:space="preserve">
+    <value>gridView3</value>
+  </data>
+  <data name="&gt;&gt;gridView3.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FStock.Name" xml:space="preserve">
+    <value>FStock</value>
+  </data>
+  <data name="&gt;&gt;FStock.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_Stock.Name" xml:space="preserve">
+    <value>slu_Stock</value>
+  </data>
+  <data name="&gt;&gt;slu_Stock.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Name" xml:space="preserve">
+    <value>gridView1</value>
+  </data>
+  <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FStockArea.Name" xml:space="preserve">
+    <value>FStockArea</value>
+  </data>
+  <data name="&gt;&gt;FStockArea.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_StockArea.Name" xml:space="preserve">
+    <value>slu_StockArea</value>
+  </data>
+  <data name="&gt;&gt;slu_StockArea.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView4.Name" xml:space="preserve">
+    <value>gridView4</value>
+  </data>
+  <data name="&gt;&gt;gridView4.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FStockAreaPlan.Name" xml:space="preserve">
+    <value>FStockAreaPlan</value>
+  </data>
+  <data name="&gt;&gt;FStockAreaPlan.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_StockAreaPlan.Name" xml:space="preserve">
+    <value>slu_StockAreaPlan</value>
+  </data>
+  <data name="&gt;&gt;slu_StockAreaPlan.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Name" xml:space="preserve">
+    <value>repositoryItemSearchLookUpEdit1View</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemSearchLookUpEdit1View.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FAmount.Name" xml:space="preserve">
+    <value>FAmount</value>
+  </data>
+  <data name="&gt;&gt;FAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cab_Amount.Name" xml:space="preserve">
+    <value>cab_Amount</value>
+  </data>
+  <data name="&gt;&gt;cab_Amount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FDate.Name" xml:space="preserve">
+    <value>FDate</value>
+  </data>
+  <data name="&gt;&gt;FDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;deDate.Name" xml:space="preserve">
+    <value>deDate</value>
+  </data>
+  <data name="&gt;&gt;deDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemDateEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FPlanAmount.Name" xml:space="preserve">
+    <value>FPlanAmount</value>
+  </data>
+  <data name="&gt;&gt;FPlanAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cab_PlanAmount.Name" xml:space="preserve">
+    <value>cab_PlanAmount</value>
+  </data>
+  <data name="&gt;&gt;cab_PlanAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FStatus.Name" xml:space="preserve">
+    <value>FStatus</value>
+  </data>
+  <data name="&gt;&gt;FStatus.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_Status.Name" xml:space="preserve">
+    <value>slu_Status</value>
+  </data>
+  <data name="&gt;&gt;slu_Status.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Name" xml:space="preserve">
+    <value>gridView2</value>
+  </data>
+  <data name="&gt;&gt;gridView2.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FPaperType.Name" xml:space="preserve">
+    <value>FPaperType</value>
+  </data>
+  <data name="&gt;&gt;FPaperType.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_PaperType.Name" xml:space="preserve">
+    <value>slu_PaperType</value>
+  </data>
+  <data name="&gt;&gt;slu_PaperType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView5.Name" xml:space="preserve">
+    <value>gridView5</value>
+  </data>
+  <data name="&gt;&gt;gridView5.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FSpecification.Name" xml:space="preserve">
+    <value>FSpecification</value>
+  </data>
+  <data name="&gt;&gt;FSpecification.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cb_Specification.Name" xml:space="preserve">
+    <value>cb_Specification</value>
+  </data>
+  <data name="&gt;&gt;cb_Specification.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FPaperGrade.Name" xml:space="preserve">
+    <value>FPaperGrade</value>
+  </data>
+  <data name="&gt;&gt;FPaperGrade.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_PaperGrade.Name" xml:space="preserve">
+    <value>slu_PaperGrade</value>
+  </data>
+  <data name="&gt;&gt;slu_PaperGrade.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView6.Name" xml:space="preserve">
+    <value>gridView6</value>
+  </data>
+  <data name="&gt;&gt;gridView6.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FCertification.Name" xml:space="preserve">
+    <value>FCertification</value>
+  </data>
+  <data name="&gt;&gt;FCertification.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_Certification.Name" xml:space="preserve">
+    <value>slu_Certification</value>
+  </data>
+  <data name="&gt;&gt;slu_Certification.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView7.Name" xml:space="preserve">
+    <value>gridView7</value>
+  </data>
+  <data name="&gt;&gt;gridView7.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FTransportType.Name" xml:space="preserve">
+    <value>FTransportType</value>
+  </data>
+  <data name="&gt;&gt;FTransportType.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_TransportType.Name" xml:space="preserve">
+    <value>slu_TransportType</value>
+  </data>
+  <data name="&gt;&gt;slu_TransportType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView8.Name" xml:space="preserve">
+    <value>gridView8</value>
+  </data>
+  <data name="&gt;&gt;gridView8.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FCoreDiameterOrReam.Name" xml:space="preserve">
+    <value>FCoreDiameterOrReam</value>
+  </data>
+  <data name="&gt;&gt;FCoreDiameterOrReam.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cb_CoreDiameterOrReam.Name" xml:space="preserve">
+    <value>cb_CoreDiameterOrReam</value>
+  </data>
+  <data name="&gt;&gt;cb_CoreDiameterOrReam.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FDiameterOrSlides.Name" xml:space="preserve">
+    <value>FDiameterOrSlides</value>
+  </data>
+  <data name="&gt;&gt;FDiameterOrSlides.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cb_DiameterOrSlides.Name" xml:space="preserve">
+    <value>cb_DiameterOrSlides</value>
+  </data>
+  <data name="&gt;&gt;cb_DiameterOrSlides.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FLength.Name" xml:space="preserve">
+    <value>FLength</value>
+  </data>
+  <data name="&gt;&gt;FLength.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cb_Length.Name" xml:space="preserve">
+    <value>cb_Length</value>
+  </data>
+  <data name="&gt;&gt;cb_Length.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemComboBox, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FTrademarkStyle.Name" xml:space="preserve">
+    <value>FTrademarkStyle</value>
+  </data>
+  <data name="&gt;&gt;FTrademarkStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_TrademarkStyle.Name" xml:space="preserve">
+    <value>slu_TrademarkStyle</value>
+  </data>
+  <data name="&gt;&gt;slu_TrademarkStyle.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView9.Name" xml:space="preserve">
+    <value>gridView9</value>
+  </data>
+  <data name="&gt;&gt;gridView9.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FSpecCustName.Name" xml:space="preserve">
+    <value>FSpecCustName</value>
+  </data>
+  <data name="&gt;&gt;FSpecCustName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_SpecCustName.Name" xml:space="preserve">
+    <value>slu_SpecCustName</value>
+  </data>
+  <data name="&gt;&gt;slu_SpecCustName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView10.Name" xml:space="preserve">
+    <value>gridView10</value>
+  </data>
+  <data name="&gt;&gt;gridView10.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FSpecProdName.Name" xml:space="preserve">
+    <value>FSpecProdName</value>
+  </data>
+  <data name="&gt;&gt;FSpecProdName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_SpecProdName.Name" xml:space="preserve">
+    <value>slu_SpecProdName</value>
+  </data>
+  <data name="&gt;&gt;slu_SpecProdName.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView11.Name" xml:space="preserve">
+    <value>gridView11</value>
+  </data>
+  <data name="&gt;&gt;gridView11.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FPackType.Name" xml:space="preserve">
+    <value>FPackType</value>
+  </data>
+  <data name="&gt;&gt;FPackType.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_PackType.Name" xml:space="preserve">
+    <value>slu_PackType</value>
+  </data>
+  <data name="&gt;&gt;slu_PackType.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView12.Name" xml:space="preserve">
+    <value>gridView12</value>
+  </data>
+  <data name="&gt;&gt;gridView12.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FDeliverDate.Name" xml:space="preserve">
+    <value>FDeliverDate</value>
+  </data>
+  <data name="&gt;&gt;FDeliverDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;date_DeliverDate.Name" xml:space="preserve">
+    <value>date_DeliverDate</value>
+  </data>
+  <data name="&gt;&gt;date_DeliverDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemDateEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FWeightMode.Name" xml:space="preserve">
+    <value>FWeightMode</value>
+  </data>
+  <data name="&gt;&gt;FWeightMode.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_WeightMode.Name" xml:space="preserve">
+    <value>slu_WeightMode</value>
+  </data>
+  <data name="&gt;&gt;slu_WeightMode.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView13.Name" xml:space="preserve">
+    <value>gridView13</value>
+  </data>
+  <data name="&gt;&gt;gridView13.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FColor.Name" xml:space="preserve">
+    <value>FColor</value>
+  </data>
+  <data name="&gt;&gt;FColor.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_Color.Name" xml:space="preserve">
+    <value>slu_Color</value>
+  </data>
+  <data name="&gt;&gt;slu_Color.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView14.Name" xml:space="preserve">
+    <value>gridView14</value>
+  </data>
+  <data name="&gt;&gt;gridView14.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FPoNumber.Name" xml:space="preserve">
+    <value>FPoNumber</value>
+  </data>
+  <data name="&gt;&gt;FPoNumber.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FSpCustomer.Name" xml:space="preserve">
+    <value>FSpCustomer</value>
+  </data>
+  <data name="&gt;&gt;FSpCustomer.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_SpCustomer.Name" xml:space="preserve">
+    <value>slu_SpCustomer</value>
+  </data>
+  <data name="&gt;&gt;slu_SpCustomer.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView16.Name" xml:space="preserve">
+    <value>gridView16</value>
+  </data>
+  <data name="&gt;&gt;gridView16.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FMemo.Name" xml:space="preserve">
+    <value>FMemo</value>
+  </data>
+  <data name="&gt;&gt;FMemo.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FTotalCapacity.Name" xml:space="preserve">
+    <value>FTotalCapacity</value>
+  </data>
+  <data name="&gt;&gt;FTotalCapacity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FUsedCapacity.Name" xml:space="preserve">
+    <value>FUsedCapacity</value>
+  </data>
+  <data name="&gt;&gt;FUsedCapacity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FCustomer.Name" xml:space="preserve">
+    <value>FCustomer</value>
+  </data>
+  <data name="&gt;&gt;FCustomer.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;chk_Customer.Name" xml:space="preserve">
+    <value>chk_Customer</value>
+  </data>
+  <data name="&gt;&gt;chk_Customer.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FInStockArea.Name" xml:space="preserve">
+    <value>FInStockArea</value>
+  </data>
+  <data name="&gt;&gt;FInStockArea.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;slu_InStockArea.Name" xml:space="preserve">
+    <value>slu_InStockArea</value>
+  </data>
+  <data name="&gt;&gt;slu_InStockArea.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemSearchLookUpEdit, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView17.Name" xml:space="preserve">
+    <value>gridView17</value>
+  </data>
+  <data name="&gt;&gt;gridView17.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FOutAmount.Name" xml:space="preserve">
+    <value>FOutAmount</value>
+  </data>
+  <data name="&gt;&gt;FOutAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;ce_OutAmount.Name" xml:space="preserve">
+    <value>ce_OutAmount</value>
+  </data>
+  <data name="&gt;&gt;ce_OutAmount.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FWeight.Name" xml:space="preserve">
+    <value>FWeight</value>
+  </data>
+  <data name="&gt;&gt;FWeight.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cab_Weight.Name" xml:space="preserve">
+    <value>cab_Weight</value>
+  </data>
+  <data name="&gt;&gt;cab_Weight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FOutWeight.Name" xml:space="preserve">
+    <value>FOutWeight</value>
+  </data>
+  <data name="&gt;&gt;FOutWeight.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cab_OutWeight.Name" xml:space="preserve">
+    <value>cab_OutWeight</value>
+  </data>
+  <data name="&gt;&gt;cab_OutWeight.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCalcEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FStockDate.Name" xml:space="preserve">
+    <value>FStockDate</value>
+  </data>
+  <data name="&gt;&gt;FStockDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;FCheck.Name" xml:space="preserve">
+    <value>FCheck</value>
+  </data>
+  <data name="&gt;&gt;FCheck.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;cb_Check.Name" xml:space="preserve">
+    <value>cb_Check</value>
+  </data>
+  <data name="&gt;&gt;cb_Check.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit, DevExpress.XtraEditors.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barManager.Name" xml:space="preserve">
+    <value>barManager</value>
+  </data>
+  <data name="&gt;&gt;barManager.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarManager, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;mainBar.Name" xml:space="preserve">
+    <value>mainBar</value>
+  </data>
+  <data name="&gt;&gt;mainBar.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Bar, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bt_Save.Name" xml:space="preserve">
+    <value>bt_Save</value>
+  </data>
+  <data name="&gt;&gt;bt_Save.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btUpdate.Name" xml:space="preserve">
+    <value>btUpdate</value>
+  </data>
+  <data name="&gt;&gt;btUpdate.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bsPrint.Name" xml:space="preserve">
+    <value>bsPrint</value>
+  </data>
+  <data name="&gt;&gt;bsPrint.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarSubItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem3.Name" xml:space="preserve">
+    <value>barButtonItem3</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btPrintPreview.Name" xml:space="preserve">
+    <value>btPrintPreview</value>
+  </data>
+  <data name="&gt;&gt;btPrintPreview.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btPrintTemplet.Name" xml:space="preserve">
+    <value>btPrintTemplet</value>
+  </data>
+  <data name="&gt;&gt;btPrintTemplet.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btExport.Name" xml:space="preserve">
+    <value>btExport</value>
+  </data>
+  <data name="&gt;&gt;btExport.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bt_New.Name" xml:space="preserve">
+    <value>bt_New</value>
+  </data>
+  <data name="&gt;&gt;bt_New.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;bt_Delete.Name" xml:space="preserve">
+    <value>bt_Delete</value>
+  </data>
+  <data name="&gt;&gt;bt_Delete.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btRefresh.Name" xml:space="preserve">
+    <value>btRefresh</value>
+  </data>
+  <data name="&gt;&gt;btRefresh.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btPrint.Name" xml:space="preserve">
+    <value>btPrint</value>
+  </data>
+  <data name="&gt;&gt;btPrint.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barListItem1.Name" xml:space="preserve">
+    <value>barListItem1</value>
+  </data>
+  <data name="&gt;&gt;barListItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarListItem, DevExpress.XtraBars.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;gridView15.Name" xml:space="preserve">
+    <value>gridView15</value>
+  </data>
+  <data name="&gt;&gt;gridView15.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StockAreaData</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.XtraForm, DevExpress.Utils.v15.2, Version=15.2.9.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+</root>

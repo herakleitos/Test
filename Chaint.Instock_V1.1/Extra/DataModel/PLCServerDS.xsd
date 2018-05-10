@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PLCServerDS" targetNamespace="http://tempuri.org/PLCServerDS.xsd" xmlns:mstns="http://tempuri.org/PLCServerDS.xsd" xmlns="http://tempuri.org/PLCServerDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PLCServerDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PLCServerDS" msprop:Generator_UserDSName="PLCServerDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PLCReadInfo" msprop:Generator_TableClassName="PLCReadInfoDataTable" msprop:Generator_TableVarName="tablePLCReadInfo" msprop:Generator_RowChangedName="PLCReadInfoRowChanged" msprop:Generator_TablePropName="PLCReadInfo" msprop:Generator_RowDeletingName="PLCReadInfoRowDeleting" msprop:Generator_RowChangingName="PLCReadInfoRowChanging" msprop:Generator_RowEvHandlerName="PLCReadInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="PLCReadInfoRowDeleted" msprop:Generator_RowClassName="PLCReadInfoRow" msprop:Generator_UserTableName="PLCReadInfo" msprop:Generator_RowEvArgName="PLCReadInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="JoinIPAddress" msdata:DataType="System.Array, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnJoinIPAddress" msprop:Generator_ColumnPropNameInRow="JoinIPAddress" msprop:Generator_ColumnPropNameInTable="JoinIPAddressColumn" msprop:Generator_UserColumnName="JoinIPAddress" type="xs:anyType" minOccurs="0" />
+              <xs:element name="JoinTime" msprop:Generator_ColumnVarNameInTable="columnJoinTime" msprop:Generator_ColumnPropNameInRow="JoinTime" msprop:Generator_ColumnPropNameInTable="JoinTimeColumn" msprop:Generator_UserColumnName="JoinTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PLCNO" msprop:Generator_ColumnVarNameInTable="columnPLCNO" msprop:Generator_ColumnPropNameInRow="PLCNO" msprop:Generator_ColumnPropNameInTable="PLCNOColumn" msprop:Generator_UserColumnName="PLCNO" type="xs:unsignedShort" />
+              <xs:element name="PLCDBNO" msprop:Generator_ColumnVarNameInTable="columnPLCDBNO" msprop:Generator_ColumnPropNameInRow="PLCDBNO" msprop:Generator_ColumnPropNameInTable="PLCDBNOColumn" msprop:Generator_UserColumnName="PLCDBNO" type="xs:unsignedShort" />
+              <xs:element name="ReadBegin" msprop:Generator_ColumnVarNameInTable="columnReadBegin" msprop:Generator_ColumnPropNameInRow="ReadBegin" msprop:Generator_ColumnPropNameInTable="ReadBeginColumn" msprop:Generator_UserColumnName="ReadBegin" type="xs:unsignedShort" />
+              <xs:element name="ReadCount" msprop:Generator_ColumnVarNameInTable="columnReadCount" msprop:Generator_ColumnPropNameInRow="ReadCount" msprop:Generator_ColumnPropNameInTable="ReadCountColumn" msprop:Generator_UserColumnName="ReadCount" type="xs:unsignedInt" />
+              <xs:element name="LastActionTime" msprop:Generator_ColumnVarNameInTable="columnLastActionTime" msprop:Generator_ColumnPropNameInRow="LastActionTime" msprop:Generator_ColumnPropNameInTable="LastActionTimeColumn" msprop:Generator_UserColumnName="LastActionTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Port" msprop:Generator_ColumnVarNameInTable="columnPort" msprop:Generator_ColumnPropNameInRow="Port" msprop:Generator_ColumnPropNameInTable="PortColumn" msprop:Generator_UserColumnName="Port" type="xs:unsignedInt" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PLCReWrite" msprop:Generator_TableClassName="PLCReWriteDataTable" msprop:Generator_TableVarName="tablePLCReWrite" msprop:Generator_RowChangedName="PLCReWriteRowChanged" msprop:Generator_TablePropName="PLCReWrite" msprop:Generator_RowDeletingName="PLCReWriteRowDeleting" msprop:Generator_RowChangingName="PLCReWriteRowChanging" msprop:Generator_RowEvHandlerName="PLCReWriteRowChangeEventHandler" msprop:Generator_RowDeletedName="PLCReWriteRowDeleted" msprop:Generator_RowClassName="PLCReWriteRow" msprop:Generator_UserTableName="PLCReWrite" msprop:Generator_RowEvArgName="PLCReWriteRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PLCNO" msprop:Generator_ColumnVarNameInTable="columnPLCNO" msprop:Generator_ColumnPropNameInRow="PLCNO" msprop:Generator_ColumnPropNameInTable="PLCNOColumn" msprop:Generator_UserColumnName="PLCNO" type="xs:unsignedShort" />
+              <xs:element name="DBNO" msprop:Generator_ColumnVarNameInTable="columnDBNO" msprop:Generator_ColumnPropNameInRow="DBNO" msprop:Generator_ColumnPropNameInTable="DBNOColumn" msprop:Generator_UserColumnName="DBNO" type="xs:unsignedShort" />
+              <xs:element name="Begin" msprop:Generator_ColumnVarNameInTable="columnBegin" msprop:Generator_ColumnPropNameInRow="Begin" msprop:Generator_ColumnPropNameInTable="BeginColumn" msprop:Generator_UserColumnName="Begin" type="xs:unsignedShort" />
+              <xs:element name="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" msprop:Generator_UserColumnName="Amount" type="xs:unsignedShort" />
+              <xs:element name="Value" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:base64Binary" />
+              <xs:element name="JoinTime" msprop:Generator_ColumnVarNameInTable="columnJoinTime" msprop:Generator_ColumnPropNameInRow="JoinTime" msprop:Generator_ColumnPropNameInTable="JoinTimeColumn" msprop:Generator_UserColumnName="JoinTime" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="WriteCount" msprop:Generator_ColumnVarNameInTable="columnWriteCount" msprop:Generator_ColumnPropNameInRow="WriteCount" msprop:Generator_ColumnPropNameInTable="WriteCountColumn" msprop:Generator_UserColumnName="WriteCount" type="xs:unsignedShort" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PLCReadInfo" />
+      <xs:field xpath="mstns:PLCNO" />
+      <xs:field xpath="mstns:ReadCount" />
+      <xs:field xpath="mstns:ReadBegin" />
+      <xs:field xpath="mstns:PLCDBNO" />
+    </xs:unique>
+    <xs:unique name="PLCReWrite_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:PLCReWrite" />
+      <xs:field xpath="mstns:PLCNO" />
+      <xs:field xpath="mstns:Amount" />
+      <xs:field xpath="mstns:Begin" />
+      <xs:field xpath="mstns:DBNO" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,780 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4BBFEA72-4675-4D99-9EC0-1FBD6C063B94}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTWH</RootNamespace>
+    <AssemblyName>CTWH</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\RunAble\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\AutoScanReleaseVersion\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ico.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.NavBar.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.UI, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StockIn\F_EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockIn\F_EditProduct.Designer.cs">
+      <DependentUpon>F_EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInAdd.Designer.cs">
+      <DependentUpon>U_StockInAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInConfirm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInConfirm.Designer.cs">
+      <DependentUpon>U_StockInConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInList.Designer.cs">
+      <DependentUpon>U_StockInList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInDetail.Designer.cs">
+      <DependentUpon>U_StockInDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInScanTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInScanTab.Designer.cs">
+      <DependentUpon>U_StockInScanTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInScan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInScan.Designer.cs">
+      <DependentUpon>U_StockInScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInScanPallet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInScanPallet.Designer.cs">
+      <DependentUpon>U_StockInScanPallet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\U_StockInStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockIn\U_StockInStat.Designer.cs">
+      <DependentUpon>U_StockInStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_AuxiliaryManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_AuxiliaryManager.Designer.cs">
+      <DependentUpon>U_AuxiliaryManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_BusinessManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_BusinessManager.Designer.cs">
+      <DependentUpon>U_BusinessManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_DepartmentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_DepartmentManager.Designer.cs">
+      <DependentUpon>U_DepartmentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_EmployerManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_EmployerManager.Designer.cs">
+      <DependentUpon>U_EmployerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_FactoryManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_FactoryManager.Designer.cs">
+      <DependentUpon>U_FactoryManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_MaterialManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_MaterialManager.Designer.cs">
+      <DependentUpon>U_MaterialManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_OrganizationManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_OrganizationManager.Designer.cs">
+      <DependentUpon>U_OrganizationManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_OrgMapping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_OrgMapping.Designer.cs">
+      <DependentUpon>U_OrgMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_ShiftManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_ShiftManager.Designer.cs">
+      <DependentUpon>U_ShiftManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_TransferScan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_TransferScan.Designer.cs">
+      <DependentUpon>U_TransferScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_TransportManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_TransportManager.Designer.cs">
+      <DependentUpon>U_TransportManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_UserManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_UserManager.Designer.cs">
+      <DependentUpon>U_UserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_WarehouseManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_WarehouseManager.Designer.cs">
+      <DependentUpon>U_WarehouseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockManage\U_WarehouseMapping.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockManage\U_WarehouseMapping.designer.cs">
+      <DependentUpon>U_WarehouseMapping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\F_VoucherPlanShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockOut\F_VoucherPlanShow.Designer.cs">
+      <DependentUpon>F_VoucherPlanShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_CT_RequestList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_CT_RequestList.Designer.cs">
+      <DependentUpon>U_CT_RequestList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutAdd.Designer.cs">
+      <DependentUpon>U_StockOutAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutPrint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutPrint.Designer.cs">
+      <DependentUpon>U_StockOutPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutScanTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutScanTab.Designer.cs">
+      <DependentUpon>U_StockOutScanTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutList.Designer.cs">
+      <DependentUpon>U_StockOutList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutScan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutScan.Designer.cs">
+      <DependentUpon>U_StockOutScan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutUploadList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutUploadList.Designer.cs">
+      <DependentUpon>U_StockOutUploadList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_VoucherPlanAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_VoucherPlanAdd.Designer.cs">
+      <DependentUpon>U_VoucherPlanAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutDetail.Designer.cs">
+      <DependentUpon>U_StockOutDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_VoucherPlanList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_VoucherPlanList.Designer.cs">
+      <DependentUpon>U_VoucherPlanList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockOut\U_StockOutStat.Designer.cs">
+      <DependentUpon>U_StockOutStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetailWithSplice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetailWithSplice.designer.cs">
+      <DependentUpon>PM27Rep_StockOutDetailWithSplice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail_International.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail_International.designer.cs">
+      <DependentUpon>PM27Rep_StockOutDetail_International.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail_InternationalWithSplice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail_InternationalWithSplice.designer.cs">
+      <DependentUpon>PM27Rep_StockOutDetail_InternationalWithSplice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_WithLength.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_WithLength.Designer.cs">
+      <DependentUpon>Rep_StockOutDetail_WithLength.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_Film.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_Film.Designer.cs">
+      <DependentUpon>Rep_StockOutDetail_Film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail.Designer.cs">
+      <DependentUpon>Rep_StockOutDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_Film_WG.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_Film_WG.Designer.cs" />
+    <Compile Include="StockReport\Rep_StockOutDetail_International_Film.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_International_Film.Designer.cs">
+      <DependentUpon>Rep_StockOutDetail_International_Film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_International.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetail_International.Designer.cs">
+      <DependentUpon>Rep_StockOutDetail_International.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutLink_International.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutLink_International.Designer.cs">
+      <DependentUpon>Rep_StockOutLink_International.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutLink_InternationalForPM27.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutLink_InternationalForPM27.designer.cs">
+      <DependentUpon>Rep_StockOutLink_InternationalForPM27.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutLink_International_Sub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutLink_International_Sub.Designer.cs">
+      <DependentUpon>Rep_StockOutLink_International_Sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainLayout.Designer.cs">
+      <DependentUpon>MainLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\U_PaperLife.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockReport\U_PaperLife.designer.cs">
+      <DependentUpon>U_PaperLife.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\U_StockDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockReport\U_StockDetail.Designer.cs">
+      <DependentUpon>U_StockDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\U_StockQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockReport\U_StockQuery.Designer.cs">
+      <DependentUpon>U_StockQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\U_StockStat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockReport\U_StockStat.Designer.cs">
+      <DependentUpon>U_StockStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetailWithSplice.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetailWithSplice.Designer.cs">
+      <DependentUpon>Rep_StockOutDetailWithSplice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetailWithSplice_International.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\Rep_StockOutDetailWithSplice_International.Designer.cs">
+      <DependentUpon>Rep_StockOutDetailWithSplice_International.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail.Designer.cs">
+      <DependentUpon>PM27Rep_StockOutDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail_International_Japan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="StockReport\PM27Rep_StockOutDetail_International_Japan.Designer.cs">
+      <DependentUpon>PM27Rep_StockOutDetail_International_Japan.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="StockIn\F_EditProduct.resx">
+      <DependentUpon>F_EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInAdd.resx">
+      <DependentUpon>U_StockInAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInConfirm.resx">
+      <DependentUpon>U_StockInConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInList.resx">
+      <DependentUpon>U_StockInList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInDetail.resx">
+      <DependentUpon>U_StockInDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInScanTab.resx">
+      <DependentUpon>U_StockInScanTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInScan.resx">
+      <DependentUpon>U_StockInScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInScanPallet.resx">
+      <DependentUpon>U_StockInScanPallet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockIn\U_StockInStat.resx">
+      <DependentUpon>U_StockInStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_AuxiliaryManager.resx">
+      <DependentUpon>U_AuxiliaryManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_BusinessManager.resx">
+      <DependentUpon>U_BusinessManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_DepartmentManager.resx">
+      <DependentUpon>U_DepartmentManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_EmployerManager.resx">
+      <DependentUpon>U_EmployerManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_FactoryManager.resx">
+      <DependentUpon>U_FactoryManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_MaterialManager.resx">
+      <DependentUpon>U_MaterialManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_OrganizationManager.resx">
+      <DependentUpon>U_OrganizationManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_OrgMapping.resx">
+      <DependentUpon>U_OrgMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_ShiftManager.resx">
+      <DependentUpon>U_ShiftManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_TransferScan.resx">
+      <DependentUpon>U_TransferScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_TransportManager.resx">
+      <DependentUpon>U_TransportManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_UserManager.resx">
+      <DependentUpon>U_UserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_WarehouseManager.resx">
+      <DependentUpon>U_WarehouseManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockManage\U_WarehouseMapping.resx">
+      <DependentUpon>U_WarehouseMapping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\F_VoucherPlanShow.resx">
+      <DependentUpon>F_VoucherPlanShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_CT_RequestList.resx">
+      <DependentUpon>U_CT_RequestList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutAdd.resx">
+      <DependentUpon>U_StockOutAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutPrint.resx">
+      <DependentUpon>U_StockOutPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutScanTab.resx">
+      <DependentUpon>U_StockOutScanTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutDetail.resx">
+      <DependentUpon>U_StockOutDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutList.resx">
+      <DependentUpon>U_StockOutList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutScan.resx">
+      <DependentUpon>U_StockOutScan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutUploadList.resx">
+      <DependentUpon>U_StockOutUploadList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_VoucherPlanAdd.resx">
+      <DependentUpon>U_VoucherPlanAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_VoucherPlanList.resx">
+      <DependentUpon>U_VoucherPlanList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockOut\U_StockOutStat.resx">
+      <DependentUpon>U_StockOutStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\PM27Rep_StockOutDetailWithSplice.resx">
+      <DependentUpon>PM27Rep_StockOutDetailWithSplice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\PM27Rep_StockOutDetail_International.resx">
+      <DependentUpon>PM27Rep_StockOutDetail_International.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\PM27Rep_StockOutDetail_InternationalWithSplice.resx">
+      <DependentUpon>PM27Rep_StockOutDetail_InternationalWithSplice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetail_WithLength.resx">
+      <DependentUpon>Rep_StockOutDetail_WithLength.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetail_Film.resx">
+      <DependentUpon>Rep_StockOutDetail_Film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetail.resx">
+      <DependentUpon>Rep_StockOutDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetail_Film_WG.resx" />
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetail_International_Film.resx">
+      <DependentUpon>Rep_StockOutDetail_International_Film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetail_International.resx">
+      <DependentUpon>Rep_StockOutDetail_International.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutLink_International.resx">
+      <DependentUpon>Rep_StockOutLink_International.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutLink_InternationalForPM27.resx">
+      <DependentUpon>Rep_StockOutLink_InternationalForPM27.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutLink_International_Sub.resx">
+      <DependentUpon>Rep_StockOutLink_International_Sub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainLayout.resx">
+      <DependentUpon>MainLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\U_PaperLife.resx">
+      <DependentUpon>U_PaperLife.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\U_StockDetail.resx">
+      <DependentUpon>U_StockDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\U_StockQuery.resx">
+      <DependentUpon>U_StockQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\U_StockStat.resx">
+      <DependentUpon>U_StockStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetailWithSplice.resx">
+      <DependentUpon>Rep_StockOutDetailWithSplice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\Rep_StockOutDetailWithSplice_International.resx">
+      <DependentUpon>Rep_StockOutDetailWithSplice_International.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\PM27Rep_StockOutDetail.resx">
+      <DependentUpon>PM27Rep_StockOutDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\PM27Rep_StockOutDetail_International_Japan.resx">
+      <DependentUpon>PM27Rep_StockOutDetail_International_Japan.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\DataSources\DataModel.WMSDS+T_Product_InDataTable.datasource" />
+    <None Include="Properties\DataSources\DataModel.WMSReportDS+T_OutStockDetail_Domestic_RepDataTable.datasource" />
+    <None Include="Properties\DataSources\DataModel.WMSReportDS+T_OutStockDetail_International_RepDataTable.datasource" />
+    <None Include="Properties\DataSources\DataModel.WMSReportDS+T_OutStockLink_International_RepDataTable.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\CTWH.Common.csproj">
+      <Project>{B233EC66-3614-44E5-9A1C-CDEACCE845E8}</Project>
+      <Name>CTWH.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{6F008F70-5E8A-417D-902A-B6F7820D9662}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WH_PDA_Service\WH_PDA_Service.csproj">
+      <Project>{E0E5E8C8-8BC7-420B-B605-E8DF7DD05ADC}</Project>
+      <Name>WH_PDA_Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_24x24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChaintTitle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChaintTitle24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Log Out_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Previous_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add Green Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus Green Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minus Red Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\action_remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\test.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sunpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15df1c26ebdd039fccbcf55d26612f74.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Download_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Upload_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Synchronize_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Chaint.ico" />
+    <Content Include="ico.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

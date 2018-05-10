@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B233EC66-3614-44E5-9A1C-CDEACCE845E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTWH.Common</RootNamespace>
+    <AssemblyName>CTWH.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\RunAble\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\AutoScanReleaseVersion\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CTSocket, Version=1.5.4280.3763, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DLL\CTSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSettings\AppSettings.cs" />
+    <Compile Include="AppSettings\AppSettingsBase.cs" />
+    <Compile Include="AppSettings\ChaintSettingsManager.cs" />
+    <Compile Include="DataType\DeviceType.cs" />
+    <Compile Include="DataType\LogInfoType.cs" />
+    <Compile Include="DataType\OffsetParameter.cs" />
+    <Compile Include="DataType\Privilige.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataType\SerialPortParameter.cs" />
+    <Compile Include="DataType\SocketParameter.cs" />
+    <Compile Include="DataType\ScannerParameter.cs" />
+    <Compile Include="DataType\ServiceParameter.cs" />
+    <Compile Include="DLD.cs" />
+    <Compile Include="HotKey\Class1.cs" />
+    <Compile Include="HotKey\Enums and Structs.cs" />
+    <Compile Include="HotKey\Event Args.cs" />
+    <Compile Include="HotKey\Event Handlers.cs" />
+    <Compile Include="HotKey\Exceptions.cs" />
+    <Compile Include="HotKey\Global Shortcut Manager.cs" />
+    <Compile Include="HotKey\Helpers.cs" />
+    <Compile Include="HotKey\HotKeyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HotKey\HotKeyControl.Designer.cs">
+      <DependentUpon>HotKeyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotKey\HotKeys.cs" />
+    <Compile Include="HotKey\Win32.cs" />
+    <Compile Include="JetChar.cs" />
+    <Compile Include="MaNet\CholeskyDecomposition.cs" />
+    <Compile Include="MaNet\EigenvalueDecomposition.cs" />
+    <Compile Include="MaNet\LUDecomposition.cs" />
+    <Compile Include="MaNet\Maths.cs" />
+    <Compile Include="MaNet\Matrix.cs" />
+    <Compile Include="MaNet\QRDecomposition.cs" />
+    <Compile Include="MaNet\SingularValueDecomposition.cs" />
+    <Compile Include="MSSQL\MSSQLAccess.cs" />
+    <Compile Include="MSSQL\MSSQLHelper.cs" />
+    <Compile Include="MSSQL\Pallet_ProductAccess.cs" />
+    <Compile Include="MSSQL\RollDSAccess.cs" />
+    <Compile Include="MSSQL\PalletDSAccess.cs" />
+    <Compile Include="MSSQL\ERPMSSQLAccess.cs" />
+    <Compile Include="MSSQL\WMSAccess.cs" />
+    <Compile Include="PLCSokcet\PLCReadClient.cs" />
+    <Compile Include="PLCSokcet\PLCReadServer.cs" />
+    <Compile Include="PLC\BufferOperate.cs" />
+    <Compile Include="PLC\PLCAddress.cs" />
+    <Compile Include="PLC\PLCReadServer.cs" />
+    <Compile Include="PLC\PLCStateEventArgs.cs" />
+    <Compile Include="PLC\Prodave5.cs" />
+    <Compile Include="PLC\Prodave5_Operate.cs" />
+    <Compile Include="PLC\Prodave6.cs" />
+    <Compile Include="PLC\Prodave6_Operate.cs" />
+    <Compile Include="Profile\Config.cs" />
+    <Compile Include="Profile\Events.cs" />
+    <Compile Include="Profile\Ini.cs" />
+    <Compile Include="Profile\IProfile.cs" />
+    <Compile Include="Profile\Profile.cs" />
+    <Compile Include="Profile\Registry.cs" />
+    <Compile Include="Profile\Xml.cs" />
+    <Compile Include="Profile\XmlHelper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PubFunction.cs" />
+    <Compile Include="Serialization\DrawingFastSerializationHelper.cs" />
+    <Compile Include="Serialization\IByteCompressor.cs" />
+    <Compile Include="Serialization\IFastSerializationTypeSurrogate.cs" />
+    <Compile Include="Serialization\IMemoryStreamByteCompressor.cs" />
+    <Compile Include="Serialization\IOwnedDataSerializable.cs" />
+    <Compile Include="Serialization\IOwnedDataSerializableAndRecreatable.cs" />
+    <Compile Include="Serialization\SerializationReader.cs" />
+    <Compile Include="Serialization\SerializationWriter.cs" />
+    <Compile Include="Serialization\SerializedType.cs" />
+    <Compile Include="Serialization\WebFastSerializationHelper.cs" />
+    <Compile Include="ServiceInstaller.cs" />
+    <Compile Include="ServiceMessageRemotable.cs" />
+    <Compile Include="SocketService\ClientSocketService.cs" />
+    <Compile Include="SocketService\ServerSocketService.cs" />
+    <Compile Include="SQLBase\SqlStateEventArgs.cs" />
+    <Compile Include="User32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\EventHandle.cs" />
+    <Compile Include="Utils\FilePath.cs" />
+    <Compile Include="Utils\PubFunction.cs" />
+    <Compile Include="Utils\OffsetParameter.cs" />
+    <Compile Include="Utils\SerialPortParameter.cs" />
+    <Compile Include="WMIHelper.cs" />
+    <Compile Include="zzFileAccess.cs" />
+    <Compile Include="FullScreen.cs" />
+    <Compile Include="MySecurity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemHotkey.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utils\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataModel\DataModel.csproj">
+      <Project>{6F008F70-5E8A-417D-902A-B6F7820D9662}</Project>
+      <Name>DataModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HotKey\HotKeyControl.resx">
+      <DependentUpon>HotKeyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HotKey\Del.png" />
+    <EmbeddedResource Include="HotKey\HotKeyControl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TextFile1.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

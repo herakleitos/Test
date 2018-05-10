@@ -1,0 +1,30 @@
+﻿  private static bool IsFirstLoadPLCAddress5 = true;
+        private static PLC.PLCAddress _PLCAddress5;
+        public static PLC.PLCAddress PLCAddress5
+        {
+            get
+            {
+                if (IsFirstLoadPLCAddress5)
+                {
+                    try
+                    {
+                        _PLCAddress5 = new PLC.PLCAddress(GetAppSettings("PLCAddress5"));
+                    }
+                    catch { }
+
+                    IsFirstLoadPLCAddress5 = false;
+                }
+                return _PLCAddress5;
+            }
+
+            set
+            {
+                _PLCAddress5 = value;
+                try
+                {
+                    SetAppSettings("PLCAddress5", _PLCAddress5.GetParameterString());
+                    
+                }
+                catch { }
+            }
+        }

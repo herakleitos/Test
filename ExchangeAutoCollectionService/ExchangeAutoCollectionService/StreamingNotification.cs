@@ -15,17 +15,21 @@ namespace ExchangeAutoCollectionService
     public class StreamingNotification
     {
         private ExchangeService exchangeService { get; }
+        string sSyncState = null;
         int index = 0;
         private BlockingCollection<int> blockCol = new BlockingCollection<int>();
 
-        public StreamingNotification(ExchangeService exchangeService)
+        public StreamingNotification(Account account)
         {
-            this.exchangeService = exchangeService;
-            System.Threading.Tasks.Task.Factory.StartNew(()=>
+            this.exchangeService = Service.ConnectToService(account,
+            null,
+            () => LoggerHelper.Logger.Info($"start connecting {account.EmailAddress}..."),
+            null);
+            System.Threading.Tasks.Task.Factory.StartNew(() =>
             {
                 foreach (int i in blockCol.GetConsumingEnumerable())
                 {
-                    ReceiveEmailFromServer(this.exchangeService);
+                    ReceiveEmailFromServer(exchangeService);
                 }
             });
         }
@@ -69,35 +73,34 @@ namespace ExchangeAutoCollectionService
             index++;
             blockCol.Add(index);
             //// Loop through all item-related events. 
-            //foreach (NotificationEvent notification in args.Events)
-            //{
-
-            //    switch (notification.EventType)
-            //    {
-            //        case EventType.NewMail:
-            //            LoggerHelper.Logger.Info("\n-------------Mail created:-------------");
-            //            break;
-            //        case EventType.Created:
-            //            LoggerHelper.Logger.Info("\n-------------Item or folder created:-------------");
-            //            break;
-            //        case EventType.Deleted:
-            //            LoggerHelper.Logger.Info("\n-------------Item or folder deleted:-------------");
-            //            break;
-            //    }
-            //    // Display the notification identifier. 
-            //    if (notification is ItemEvent)
-            //    {
-            //        // The NotificationEvent for an email message is an ItemEvent. 
-            //        ItemEvent itemEvent = (ItemEvent)notification;
-            //        LoggerHelper.Logger.Info("\nItemId: " + itemEvent.ItemId.UniqueId);
-            //    }
-            //    else
-            //    {
-            //        // The NotificationEvent for a folder is a FolderEvent. 
-            //        FolderEvent folderEvent = (FolderEvent)notification;
-            //        LoggerHelper.Logger.Info("\nFolderId: " + folderEvent.FolderId.UniqueId);
-            //    }
-            //}
+            foreach (NotificationEvent notification in args.Events)
+            {
+                switch (notification.EventType)
+                {
+                    case EventType.NewMail:
+                        LoggerHelper.Logger.Info("\n-------------Mail created:-------------");
+                        break;
+                    case EventType.Created:
+                        LoggerHelper.Logger.Info("\n-------------Item or folder created:-------------");
+                        break;
+                    case EventType.Deleted:
+                        LoggerHelper.Logger.Info("\n-------------Item or folder deleted:-------------");
+                        break;
+                }
+                // Display the notification identifier. 
+                if (notification is ItemEvent)
+                {
+                    // The NotificationEvent for an email message is an ItemEvent. 
+                    ItemEvent itemEvent = (ItemEvent)notification;
+                    LoggerHelper.Logger.Info("\nItemId: " + itemEvent.ItemId.UniqueId);
+                }
+                else
+                {
+                    // The NotificationEvent for a folder is a FolderEvent. 
+                    FolderEvent folderEvent = (FolderEvent)notification;
+                    LoggerHelper.Logger.Info("\nFolderId: " + folderEvent.FolderId.UniqueId);
+                }
+            }
             //System.Timers.Timer timer = new System.Timers.Timer(5 * 1000 * new Random().Next(1, 10));
             //timer.Elapsed += delegate (object send, System.Timers.ElapsedEventArgs e)
             //{
@@ -105,7 +108,7 @@ namespace ExchangeAutoCollectionService
             //};
             //timer.Enabled = true;
             //ReceiveEmailFromServer(exchangeService);
-           // AsyncReceiveEmailFromServer();
+            // AsyncReceiveEmailFromServer();
         }
 
         public void OnError(object sender, SubscriptionErrorEventArgs args)
@@ -131,13 +134,8 @@ namespace ExchangeAutoCollectionService
             connection.OnDisconnect +=
                 new StreamingSubscriptionConnection.SubscriptionErrorDelegate(OnDisconnect);
         }
-
         private void ReceiveEmailFromServer(ExchangeService service)
         {
-            ExchangeService loadMailService = new ExchangeService(service.RequestedServerVersion);
-            loadMailService.Credentials = service.Credentials;
-            loadMailService.Url = service.Url;
-            loadMailService.TraceEnabled = false;
             try
             {
                 StringBuilder sb = new StringBuilder();
@@ -147,30 +145,29 @@ namespace ExchangeAutoCollectionService
                 ItemView view = new ItemView(999);
                 view.PropertySet = new PropertySet(BasePropertySet.FirstClassProperties, EmailMessageSchema.IsRead);
                 SearchFilter filter = new SearchFilter.IsEqualTo(EmailMessageSchema.IsRead, false);
-                FindItemsResults<Item> findResults = loadMailService.FindItems(WellKnownFolderName.Inbox,
+                FindItemsResults<Item> findResults = service.FindItems(WellKnownFolderName.Inbox,
                     filter,
                     view);
+                service.LoadPropertiesForItems(findResults.Items, PropertySet.FirstClassProperties);
 
                 foreach (Item item in findResults.Items)
                 {
                     //每次循环花费时间2到3分钟，时间消耗在EmailMessage.Bind和email.Update上。
                     //需要更快速的方法获取邮件。
-                    EmailMessage email = EmailMessage.Bind(loadMailService, item.Id);
-
-                    if (!email.IsRead)
+                    //EmailMessage email = EmailMessage.Bind(service, item.Id);
+                    EmailMessage email = (EmailMessage)item;
+                    //标记为已读
+                    email.IsRead = true;
+                    Item newItem = email as Item;
+                    //将对邮件的改动提交到服务器  
+                    //email.Update(ConflictResolutionMode.AlwaysOverwrite);
+                    object _lock = new object();
+                    lock (_lock)
                     {
-                        LoggerHelper.Logger.Info(email.Body);
-                        //标记为已读  
-                        email.IsRead = true;
-                        //将对邮件的改动提交到服务器  
-                        email.Update(ConflictResolutionMode.AlwaysOverwrite);
-                        Object _lock = new Object();
-                        lock (_lock)
-                        {
-                            DownLoadEmail(email.Subject, email.Body, ((System.Net.NetworkCredential)((Microsoft.Exchange.WebServices.Data.WebCredentials)service.Credentials).Credentials).UserName);
-                        }
+                        DownLoadEmail(item.Subject, item.Body, ((System.Net.NetworkCredential)((Microsoft.Exchange.WebServices.Data.WebCredentials)service.Credentials).Credentials).UserName);
                     }
                 }
+                service.UpdateItems(findResults.Items, WellKnownFolderName.Inbox, ConflictResolutionMode.AlwaysOverwrite, null, null);
             }
             catch (Exception ex)
             {
@@ -207,7 +204,7 @@ namespace ExchangeAutoCollectionService
             {
                 var basePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "LogInfo");
                 if (!Directory.Exists(basePath))
-                { 
+                {
                     Directory.CreateDirectory(basePath);
                 }
                 using (FileStream fs = new FileStream($"{basePath}\\{Regex.Replace("Log", "[\\/:*\\?\\”“\\<>|,]", "")}.txt",

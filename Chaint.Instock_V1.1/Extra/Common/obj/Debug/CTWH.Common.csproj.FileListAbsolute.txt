@@ -1,0 +1,8 @@
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\CTWH.Common.dll
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\RunAble\CTWH.Common.pdb
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\Common\obj\Debug\CTWH.Common.csprojResolveAssemblyReference.cache
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\Common\obj\Debug\CTWH.Common.HotKey.HotKeyControl.resources
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\Common\obj\Debug\CTWH.Common.Properties.Resources.resources
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\Common\obj\Debug\CTWH.Common.csproj.GenerateResource.Cache
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\Common\obj\Debug\CTWH.Common.dll
+F:\SouceCode\太阳条码系统\自动扫描入库相关\Chaint.Instock_V1.1\Extra\Common\obj\Debug\CTWH.Common.pdb
