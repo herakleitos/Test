@@ -1,0 +1,9 @@
+D:\Downloads\weixin_api\MyHandler\bin\Debug\MyHandler.dll
+D:\Downloads\weixin_api\MyHandler\bin\Debug\MyHandler.pdb
+D:\Downloads\weixin_api\MyHandler\obj\Debug\MyHandler.dll
+D:\Downloads\weixin_api\MyHandler\obj\Debug\MyHandler.pdb
+E:\GitHub\Test\weixin_api\MyHandler\bin\Debug\MyHandler.dll
+E:\GitHub\Test\weixin_api\MyHandler\bin\Debug\MyHandler.pdb
+E:\GitHub\Test\weixin_api\MyHandler\obj\Debug\MyHandler.dll
+E:\GitHub\Test\weixin_api\MyHandler\obj\Debug\MyHandler.pdb
+E:\GitHub\Test\weixin_api\MyHandler\obj\Debug\MyHandler.csprojResolveAssemblyReference.cache

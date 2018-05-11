@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>E:\websiteTest</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/weixin_api.dll">
+      <publishTime>05/11/2018 09:25:07</publishTime>
+    </File>
+    <File Include="bin/weixin_api.pdb">
+      <publishTime>05/11/2018 09:25:07</publishTime>
+    </File>
+    <File Include="createMenu.aspx">
+      <publishTime>03/26/2014 13:52:49</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>05/10/2018 18:27:45</publishTime>
+    </File>
+    <File Include="interfaceTest.ashx">
+      <publishTime>03/26/2014 13:53:46</publishTime>
+    </File>
+    <File Include="menu.txt">
+      <publishTime>05/10/2018 17:06:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>03/26/2014 13:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>03/26/2014 13:52:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>03/26/2014 13:52:09</publishTime>
+    </File>
+    <File Include="selectMenu.aspx">
+      <publishTime>03/26/2014 13:53:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/11/2018 09:25:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

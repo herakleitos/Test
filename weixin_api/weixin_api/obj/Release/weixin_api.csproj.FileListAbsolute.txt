@@ -1,0 +1,5 @@
+D:\Downloads\weixin_api\weixin_api\bin\weixin_api.dll.config
+D:\Downloads\weixin_api\weixin_api\bin\weixin_api.dll
+D:\Downloads\weixin_api\weixin_api\bin\weixin_api.pdb
+D:\Downloads\weixin_api\weixin_api\obj\Release\weixin_api.dll
+D:\Downloads\weixin_api\weixin_api\obj\Release\weixin_api.pdb
