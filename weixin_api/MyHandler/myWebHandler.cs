@@ -24,7 +24,7 @@ namespace MyHandler
                     }
                 }
             }
-                HttpContext.Current.Response.ContentEncoding = Encoding.UTF8;
+            HttpContext.Current.Response.ContentEncoding = Encoding.UTF8;
             string postString = string.Empty;
             if (HttpContext.Current.Request.HttpMethod.ToUpper() == "POST")
             {
@@ -35,6 +35,12 @@ namespace MyHandler
                     postString = Encoding.UTF8.GetString(postBytes);
                     Handle(postString);
                 }
+            }
+            else
+            {
+                string responseContent = "微信公众号开发测试";
+                HttpContext.Current.Response.ContentEncoding = Encoding.UTF8;
+                HttpContext.Current.Response.Write(responseContent);
             }
         }
         /// <summary>

@@ -16,7 +16,7 @@ namespace MyHandler
         //返回消息
         public string ReturnMessage(string postStr)
         {
-            string responseContent = "";
+            string responseContent = "微信公众号开发测试";
             XmlDocument xmldoc = new XmlDocument();
             xmldoc.Load(new System.IO.MemoryStream(System.Text.Encoding.GetEncoding("UTF-8").GetBytes(postStr)));
             XmlNode MsgType = xmldoc.SelectSingleNode("/xml/MsgType");
