@@ -8028,10 +8028,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\documents\\visual studio 2017\\Projects\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
+      "projectUniqueName": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
       "projectName": "NetCoreTest",
-      "projectPath": "d:\\documents\\visual studio 2017\\Projects\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
-      "outputPath": "d:\\documents\\visual studio 2017\\Projects\\NetCoreTest\\NetCoreTest\\obj\\",
+      "projectPath": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
+      "outputPath": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

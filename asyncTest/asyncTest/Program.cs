@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 namespace asyncTest
@@ -19,7 +20,7 @@ namespace asyncTest
             Regex reg = new Regex("[abc]");
             string result = reg.Replace("akb", "?");
             Console.WriteLine(result);
-
+            Thread.Sleep(1000);
             //TestMethod();
             // var result = TestMethod(0);
             // Console.WriteLine(string.Format("output result :{0}",result.Result));

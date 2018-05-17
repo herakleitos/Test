@@ -187,8 +187,4 @@ namespace SignalRChat.HubClass
             Clients.All.publshMsg(new { Name = "系统消息", Msg = msg, Time = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") });
         }
     }
-
-
-
-
 }

@@ -7,3 +7,12 @@ d:\documents\visual studio 2017\Projects\NetCoreTest\NetCoreTest\obj\Debug\netco
 d:\documents\visual studio 2017\Projects\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\NetCoreTest.AssemblyInfo.cs
 d:\documents\visual studio 2017\Projects\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\NetCoreTest.dll
 d:\documents\visual studio 2017\Projects\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\NetCoreTest.pdb
+E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\NetCoreTest.deps.json
+E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\NetCoreTest.runtimeconfig.json
+E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\NetCoreTest.runtimeconfig.dev.json
+E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\NetCoreTest.dll
+E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\NetCoreTest.pdb
+E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\NetCoreTest.csprojResolveAssemblyReference.cache
+E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\NetCoreTest.AssemblyInfo.cs
+E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\NetCoreTest.dll
+E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\NetCoreTest.pdb

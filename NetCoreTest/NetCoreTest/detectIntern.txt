@@ -1,7 +1,7 @@
 ﻿{
   "queryInput": {
     "text": {
-      "text": "Hello,aaa",
+      "text": "おはよう,aaaa",
       "languageCode": "en"
     }
   }

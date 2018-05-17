@@ -56,30 +56,37 @@ namespace NetCoreTest
 
             var  response = 
                 JsonConvert.DeserializeObject<DetectIntentResponse>(msg);
-            JObject intent = JObject.FromObject(response.QueryResult.Intent);
-            JObject parameters = JObject.FromObject(response.QueryResult.Parameters);
-           
-            Console.WriteLine(msg);
-
-            Console.WriteLine("**************************************************************");
-
-            Console.WriteLine(intent.GetStringValue("Name"));
-
-            string[] splitName = intent.GetStringValue("Name").Split('/');
-
-            for (int i = 0; i < splitName.Length; i++)
+            if (response.QueryResult.Intent != null)
             {
-                Console.WriteLine(string.Format("{0}----{1}",i,splitName[i]));
+                JObject intent = JObject.FromObject(response.QueryResult.Intent);
+
+                Console.WriteLine(msg);
+
+                Console.WriteLine("**************************************************************");
+
+                Console.WriteLine("Name : " + intent.GetStringValue("Name"));
+                Console.WriteLine("Displayname : " + intent.GetStringValue("DisplayName"));
+
+                string[] splitName = intent.GetStringValue("Name").Split('/');
+
+                for (int i = 0; i < splitName.Length; i++)
+                {
+                    Console.WriteLine(string.Format("{0}----{1}", i, splitName[i]));
+                }
+                //textContent tc = new textContent();
+                //tc.language = "en";
+                //tc.text = "hello";
+                //DetectIntentDto content = new DetectIntentDto();
+                //queryInput qi = new queryInput();
+                //qi.text = tc;
+                //content.queryInput = qi;
+                //string json = JsonConvert.SerializeObject(content, Formatting.None);
+                //Console.Write(json);
             }
-            //textContent tc = new textContent();
-            //tc.language = "en";
-            //tc.text = "hello";
-            //DetectIntentDto content = new DetectIntentDto();
-            //queryInput qi = new queryInput();
-            //qi.text = tc;
-            //content.queryInput = qi;
-            //string json = JsonConvert.SerializeObject(content, Formatting.None);
-            //Console.Write(json);
+            else
+            {
+                Console.WriteLine("没有内容");
+            }
             Console.Read();
         }
 
