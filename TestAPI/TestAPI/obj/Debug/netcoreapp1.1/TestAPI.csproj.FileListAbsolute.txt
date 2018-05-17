@@ -1,0 +1,9 @@
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.deps.json
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.runtimeconfig.json
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.runtimeconfig.dev.json
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.dll
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.pdb
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.AssemblyInfo.cs
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.dll
+d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.pdb
