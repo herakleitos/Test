@@ -1,0 +1,8 @@
+﻿{
+  "queryInput": {
+    "text": {
+      "text": "Hello,aaa",
+      "languageCode": "en"
+    }
+  }
+}
