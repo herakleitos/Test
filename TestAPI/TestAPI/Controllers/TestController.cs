@@ -7,18 +7,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace TestAPI.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/test")]
     public class TestController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-        [HttpGet]
-        public IEnumerable<string> Do(int id ,[FromBody]People p)
+        [HttpPost("name")]
+        [Route("do/{id}")]
+        public async Task<IActionResult> Do(int id ,[FromBody]People p)
         {
-            string body  = Request.Body.ToString();
-            return new string[] { "test1", "test2" };
+            byte[] content = new byte[1000];
+            await Request.Body.ReadAsync(content,0,1000);
+            
+            string result = string.Format("FirstName:{0},LastName:{1}",p.FirstName,p.LastName);
+            return Ok(result);
         }
     }
     public class People

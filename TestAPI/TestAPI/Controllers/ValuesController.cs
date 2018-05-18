@@ -17,14 +17,14 @@ namespace TestAPI.Controllers
         }
 
         // GET api/values/5
-        [HttpPut("{name}")]
+        [HttpPut("name")]
         [Route("sayhello/{name}")]
         public string SayHello(string name)
         {
             return string.Format("Hello {0}!", name);
         }
         // GET api/values/5
-        [HttpPut("{name}")]
+        [HttpPut("name")]
         [Route("{name}/say/{words}")]
         public IActionResult Say(string name,string words)
         {
