@@ -14,7 +14,7 @@ namespace NetCoreTest
             string createEntityTypesFormat = "https://dialogflow.googleapis.com/v2/projects/{0}/agent/intents";
             string createEntityTypesUrl = string.Format(createEntityTypesFormat, projectId);
             HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Post, createEntityTypesUrl);
-            System.IO.FileStream fs = System.IO.File.OpenRead("..\\NetCoreTest\\json\\createIntent.json");
+            System.IO.FileStream fs = System.IO.File.OpenRead("..\\DialogflowTest\\json\\createIntent.json");
             StreamReader sr = new StreamReader(fs, Encoding.UTF8);
             string content = sr.ReadToEnd();
             message.Content = new StringContent(content, System.Text.Encoding.UTF8, "application/json");

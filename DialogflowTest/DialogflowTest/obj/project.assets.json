@@ -8028,10 +8028,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\DialogflowTest.csproj",
+      "projectUniqueName": "E:\\GitHub\\Test\\DialogflowTest\\DialogflowTest\\DialogflowTest.csproj",
       "projectName": "DialogflowTest",
-      "projectPath": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\DialogflowTest.csproj",
-      "outputPath": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\obj\\",
+      "projectPath": "E:\\GitHub\\Test\\DialogflowTest\\DialogflowTest\\DialogflowTest.csproj",
+      "outputPath": "E:\\GitHub\\Test\\DialogflowTest\\DialogflowTest\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

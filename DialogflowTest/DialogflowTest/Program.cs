@@ -19,7 +19,7 @@ namespace NetCoreTest
     {
         static void Main(string[] args)
         {
-            string jsonPath = "..\\NetCoreTest\\json\\My Project-2c0ddc26d37d.json";
+            string jsonPath = "..\\DialogflowTest\\json\\My Project-2c0ddc26d37d.json";
             string projectId = "regal-sled-204110";
             string sessionId = Guid.NewGuid().ToString();
 

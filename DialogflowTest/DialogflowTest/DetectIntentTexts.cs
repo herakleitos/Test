@@ -22,7 +22,7 @@ namespace NetCoreTest
             string detectInternFormat = "https://dialogflow.googleapis.com/v2/projects/{0}/agent/sessions/{1}:detectIntent";
             string detectInternUrl = string.Format(detectInternFormat, projectId, sessionId);
             HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Post, detectInternUrl);
-            System.IO.FileStream fs = System.IO.File.OpenRead("..\\NetCoreTest\\json\\detectIntern.json");
+            System.IO.FileStream fs = System.IO.File.OpenRead("..\\DialogflowTest\\json\\detectIntern.json");
             StreamReader sr = new StreamReader(fs, Encoding.UTF8);
             string content = sr.ReadToEnd();
             message.Content = new StringContent(content, System.Text.Encoding.UTF8, "application/json");
