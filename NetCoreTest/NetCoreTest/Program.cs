@@ -22,6 +22,7 @@ namespace NetCoreTest
             test bbb = new test();
             string jsonPath = "..\\NetCoreTest\\My Project-2c0ddc26d37d.json";
             string projectId = "regal-sled-204110";
+            string token = TokenService.GetToken(jsonPath).Result;
             ////string result  = EntityTypesOperate.Create(jsonPath, projectId);
             //string createEntityTypesFormat = "https://dialogflow.googleapis.com/v2/projects/{0}/agent/entityTypes";
             //string createEntityTypesUrl = string.Format(createEntityTypesFormat, projectId);
@@ -46,15 +47,15 @@ namespace NetCoreTest
             message.Content = new StringContent(content, System.Text.Encoding.UTF8, "application/json");
 
 
-
-            //string trainUrl = string.Format(trainFormat, projectId);
-            string token = TokenService.GetToken(jsonPath).Result;
+            //HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Post, "http://localhost:61973/api/test");
+            ////string trainUrl = string.Format(trainFormat, projectId);
+            //message.Content = new StringContent("{\"FirstName\":\"123456\",LastName:\"abcdef\"}", System.Text.Encoding.UTF8, "application/json");
 
             HttpResponseMessage responseMsg = WebRequestAsync.PostAsync(message, token, 60).Result;
 
             var msg = responseMsg.Content.ReadAsStringAsync().Result;
 
-            var  response = 
+            var response =
                 JsonConvert.DeserializeObject<DetectIntentResponse>(msg);
             if (response.QueryResult.Intent != null)
             {

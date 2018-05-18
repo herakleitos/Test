@@ -7,3 +7,12 @@ d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1
 d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.AssemblyInfo.cs
 d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.dll
 d:\documents\visual studio 2017\Projects\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.pdb
+E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.deps.json
+E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.runtimeconfig.json
+E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.runtimeconfig.dev.json
+E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.dll
+E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.pdb
+E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.csprojResolveAssemblyReference.cache
+E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.AssemblyInfo.cs
+E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.dll
+E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.pdb

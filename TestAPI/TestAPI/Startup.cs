@@ -69,7 +69,7 @@ namespace TestAPI
             {
                 routes.MapRoute(
                    name: "default",
-                   template: "api/{controller}/{action}/{id?}",
+                   template: "{controller}/{action}/{id?}",
                    defaults: new { controller = "Home", action = "Index" });
             });
         }

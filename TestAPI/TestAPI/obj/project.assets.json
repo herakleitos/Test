@@ -10728,10 +10728,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\documents\\visual studio 2017\\Projects\\TestAPI\\TestAPI\\TestAPI.csproj",
+      "projectUniqueName": "E:\\GitHub\\Test\\TestAPI\\TestAPI\\TestAPI.csproj",
       "projectName": "TestAPI",
-      "projectPath": "d:\\documents\\visual studio 2017\\Projects\\TestAPI\\TestAPI\\TestAPI.csproj",
-      "outputPath": "d:\\documents\\visual studio 2017\\Projects\\TestAPI\\TestAPI\\obj\\",
+      "projectPath": "E:\\GitHub\\Test\\TestAPI\\TestAPI\\TestAPI.csproj",
+      "outputPath": "E:\\GitHub\\Test\\TestAPI\\TestAPI\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
