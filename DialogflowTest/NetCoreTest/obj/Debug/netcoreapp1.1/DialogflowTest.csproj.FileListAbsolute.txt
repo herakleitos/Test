@@ -1,9 +1,0 @@
-E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\DialogflowTest.deps.json
-E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\DialogflowTest.runtimeconfig.json
-E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\DialogflowTest.runtimeconfig.dev.json
-E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\DialogflowTest.dll
-E:\GitHub\Test\NetCoreTest\NetCoreTest\bin\Debug\netcoreapp1.1\DialogflowTest.pdb
-E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\DialogflowTest.csprojResolveAssemblyReference.cache
-E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\DialogflowTest.AssemblyInfo.cs
-E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\DialogflowTest.dll
-E:\GitHub\Test\NetCoreTest\NetCoreTest\obj\Debug\netcoreapp1.1\DialogflowTest.pdb
