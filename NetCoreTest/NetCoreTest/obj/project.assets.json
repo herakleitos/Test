@@ -8028,9 +8028,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
-      "projectName": "NetCoreTest",
-      "projectPath": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\NetCoreTest.csproj",
+      "projectUniqueName": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\DialogflowTest.csproj",
+      "projectName": "DialogflowTest",
+      "projectPath": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\DialogflowTest.csproj",
       "outputPath": "E:\\GitHub\\Test\\NetCoreTest\\NetCoreTest\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
