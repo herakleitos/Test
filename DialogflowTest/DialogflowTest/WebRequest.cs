@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
-namespace NetCoreTest
+namespace DialogflowTest
 {
     public static class WebRequestAsync
     {
@@ -33,13 +33,6 @@ namespace NetCoreTest
             HttpResponseMessage responseMessage = null;
             request.Method = HttpMethod.Post;
             responseMessage = await SendAsync(request,token, timeOut);
-            return responseMessage;
-        }
-        public static async Task<HttpResponseMessage> PostAsync(HttpRequestMessage request, int timeOut)
-        {
-            HttpResponseMessage responseMessage = null;
-            request.Method = HttpMethod.Get;
-            responseMessage = await SendAsync(request, timeOut);
             return responseMessage;
         }
     }

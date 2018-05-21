@@ -11,7 +11,7 @@ using System.IO;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace NetCoreTest
+namespace DialogflowTest
 {
     public class DetectIntentTexts
     {

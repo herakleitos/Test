@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 
-namespace NetCoreTest
+namespace DialogflowTest
 {
     public static class Operation
     {

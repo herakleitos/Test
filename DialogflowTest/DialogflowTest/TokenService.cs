@@ -4,7 +4,7 @@ using System.Text;
 using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Dialogflow.V2;
 using System.Threading.Tasks;
-namespace NetCoreTest
+namespace DialogflowTest
 {
     public static class TokenService
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NetCoreTest
+namespace DialogflowTest
 {
     public static class Tools
     {

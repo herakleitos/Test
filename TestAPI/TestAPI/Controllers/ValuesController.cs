@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-
 namespace TestAPI.Controllers
 {
     [Route("api/values")]
@@ -17,29 +16,33 @@ namespace TestAPI.Controllers
         }
 
         // GET api/values/5
-        [HttpPut("name")]
         [Route("sayhello/{name}")]
         public string SayHello(string name)
         {
             return string.Format("Hello {0}!", name);
         }
         // GET api/values/5
-        [HttpPut("name")]
-        [Route("{name}/say/{words}")]
-        public IActionResult Say(string name,string words)
+        [HttpPost, Route("{name}/say/{words}")]
+        public IActionResult Say(string name, string words,[FromBody]string aaa)
         {
             return Ok(string.Format("{0} says :{1}!", name,words));
         }
-        // POST api/values
+        [Route("say")]
         [HttpPost]
+        public IActionResult Say()
+        {
+            return Ok(string.Format("{0} says :{1}!", "lily","long time no see"));
+        }
+        // POST api/values
         public void Post([FromBody]string value)
         {
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
+        [HttpPost("aaa"),Route("test/{id}")]
+        public void test(int id, [FromBody]string value)
         {
+
         }
 
         // DELETE api/values/5

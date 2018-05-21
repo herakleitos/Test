@@ -14,9 +14,8 @@ namespace TestAPI.Controllers
         {
             return View();
         }
-        [HttpPost("name")]
-        [Route("do/{id}")]
-        public async Task<IActionResult> Do(int id ,[FromBody]People p)
+        [HttpPost,Route("do/{id}")]
+        public async Task<IActionResult> Do(int id,[FromBody]People p)
         {
             byte[] content = new byte[1000];
             await Request.Body.ReadAsync(content,0,1000);

@@ -4,7 +4,7 @@ using System.IO;
 using System.Net.Http;
 using System.Text;
 
-namespace NetCoreTest
+namespace DialogflowTest
 {
     public static class Intents
     {

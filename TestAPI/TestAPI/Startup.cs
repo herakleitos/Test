@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
-
+using Microsoft.AspNetCore.Cors;
 namespace TestAPI
 {
     public class Startup
@@ -41,6 +41,7 @@ namespace TestAPI
                     options.SerializerSettings.ContractResolver = new DefaultContractResolver();
                     options.SerializerSettings.DateFormatString = "yyyy-MM-dd";
                 });
+            services.AddCors();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         //public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -64,14 +65,18 @@ namespace TestAPI
             }
 
             app.UseStaticFiles();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                   name: "default",
-                   template: "{controller}/{action}/{id?}",
-                   defaults: new { controller = "Home", action = "Index" });
-            });
+            app.UseMvc();
+            //app.UseCors(builder =>
+            //    builder.WithOrigins("http://example.com")
+            //    .AllowAnyHeader()
+            //    );
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //       name: "default",
+            //       template: "api/{controller}/{action}/{id?}",
+            //       defaults: new { controller = "Home", action = "Index" });
+            //});
         }
     }
 }
