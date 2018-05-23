@@ -25,7 +25,9 @@ namespace DialogflowTest
 
             //string result = DetectIntentTexts.DetectIntentFromTexts(projectId,sessionId,jsonPath);
             //string result = Intents.Create(projectId, jsonPath);
-            string result = TestApi.SendRequest("http://localhost:61973/api/test/do/123",HttpMethod.Post);
+
+            string result = TestApi.SendRequest("http://localhost:61973/api/values/test/123",HttpMethod.Post);
+
             Console.WriteLine(result);
             Console.Read();
         }

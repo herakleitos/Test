@@ -14,7 +14,8 @@ namespace DialogflowTest
             People p = new People();
             p.FirstName = "aaaa";
             p.LastName = "bbbb";
-            string json = JsonConvert.SerializeObject(p);
+            //string json = JsonConvert.SerializeObject(p);
+            string json = JsonConvert.SerializeObject("this is a test");
             message.Content = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
             HttpResponseMessage responseMsg = WebRequestAsync.SendAsync(message, 60).Result;
             var msg = responseMsg.Content.ReadAsStringAsync().Result;

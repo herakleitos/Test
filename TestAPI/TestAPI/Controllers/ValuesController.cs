@@ -3,11 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
 namespace TestAPI.Controllers
 {
     [Route("api/values")]
     public class ValuesController : Controller
     {
+        private ILogger<ValuesController> _logger;
+
+        public ValuesController(ILogger<ValuesController> logger)
+        {
+            _logger = logger;
+        }
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
@@ -39,10 +47,11 @@ namespace TestAPI.Controllers
         }
 
         // PUT api/values/5
-        [HttpPost("aaa"),Route("test/{id}")]
-        public void test(int id, [FromBody]string value)
+        [HttpPost,Route("test/{id}")]
+        public IActionResult test(int id, [FromBody]string value)
         {
-
+            _logger.LogDebug(string.Format("test/{0}", value));
+            return Ok(string.Format("test/{0}", value));
         }
 
         // DELETE api/values/5
