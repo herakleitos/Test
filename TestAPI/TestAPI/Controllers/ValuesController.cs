@@ -10,11 +10,11 @@ namespace TestAPI.Controllers
     [Route("api/values")]
     public class ValuesController : Controller
     {
-        private ILogger<ValuesController> _logger;
+        private ICalculate _calculate;
 
-        public ValuesController(ILogger<ValuesController> logger)
+        public ValuesController(ICalculate calculate)
         {
-            _logger = logger;
+            _calculate = calculate;
         }
         // GET api/values
         [HttpGet]
@@ -47,17 +47,18 @@ namespace TestAPI.Controllers
         }
 
         // PUT api/values/5
-        [HttpPost,Route("test/{id}")]
-        public IActionResult test(int id, [FromBody]string value)
+        [HttpPut,Route("test/{a:int}/{b:int}")]
+        public IActionResult test(int a, int b)
         {
-            _logger.LogDebug(string.Format("test/{0}", value));
-            return Ok(string.Format("test/{0}", value));
+
+            return Ok(string.Format("result is {0}", _calculate.Add(a,b)));
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+
         }
     }
 }

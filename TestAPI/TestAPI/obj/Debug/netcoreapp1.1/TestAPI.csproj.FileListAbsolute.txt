@@ -12,7 +12,6 @@ E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.runtimeconfig.jso
 E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.runtimeconfig.dev.json
 E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.dll
 E:\GitHub\Test\TestAPI\TestAPI\bin\Debug\netcoreapp1.1\TestAPI.pdb
-E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.csprojResolveAssemblyReference.cache
 E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.AssemblyInfo.cs
 E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.dll
 E:\GitHub\Test\TestAPI\TestAPI\obj\Debug\netcoreapp1.1\TestAPI.pdb

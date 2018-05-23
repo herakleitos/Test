@@ -12,7 +12,7 @@ using System.Text;
 using System.IO;
 using System.Security.Cryptography;
 using System.Linq;
-
+using AutoMapper.Mappers;
 namespace DialogflowTest
 {
     class Program
@@ -26,11 +26,34 @@ namespace DialogflowTest
             //string result = DetectIntentTexts.DetectIntentFromTexts(projectId,sessionId,jsonPath);
             //string result = Intents.Create(projectId, jsonPath);
 
-            string result = TestApi.SendRequest("http://localhost:61973/api/values/test/123",HttpMethod.Post);
+            //string result = TestApi.SendRequest("http://localhost:61973/api/values/test/123",HttpMethod.Post);
 
-            Console.WriteLine(result);
+            AutoMapper.Mapper.Initialize(config =>
+            {
+                //config.CreateMap<humanDto, human>().ForMember(dest => dest.id,opt=>opt.MapFrom(src=>0));
+                config.CreateMap<humanDto, human>().ForMember("id", dest => dest.MapFrom(src => 12));
+            });
+
+            humanDto hmDto = new humanDto();
+            hmDto.name = "lily";
+            hmDto.sex = "female";
+
+            var hm = AutoMapper.Mapper.Map<human>(hmDto);
+
+            //Console.WriteLine(result);
             Console.Read();
         }
 
+    }
+    public class humanDto
+    {
+        public string name { get; set; }
+        public string sex { get; set; }
+    }
+    public class human
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public string sex { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace TestAPI.Middlewares
         //
         public async Task Invoke(HttpContext context)
         {
-            await context.Response.WriteAsync("Hello World!");
+            //await context.Response.WriteAsync("Hello World!");
             context.Response.OnCompleted(ResponseCompletedCallback, context);
             await _next(context);
         }

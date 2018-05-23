@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-
+using Microsoft.Extensions.DependencyInjection;
 namespace TestAPI
 {
     public class Program
@@ -18,8 +18,13 @@ namespace TestAPI
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
+                //.ConfigureServices(
+                //    services =>
+                //    {
+                //        services.AddScoped<ICalculate, Calculate>();
+                //        services.AddScoped<IDeviation, Deviation>();
+                //    })
                 .Build();
-
             host.Run();
         }
     }
