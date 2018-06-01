@@ -13,7 +13,7 @@ namespace DialogflowTest
             string trainFormat = "https://dialogflow.googleapis.com/v2/projects/{0}/operations/{1}";
             string trainUrl = string.Format(trainFormat, projectId, operateName);
             HttpRequestMessage message = new HttpRequestMessage(HttpMethod.Post, trainUrl);
-            HttpResponseMessage responseMsg = WebRequestAsync.PostAsync(message, token, 60).Result;
+            HttpResponseMessage responseMsg = WebRequestAsync.GetAsync(message, token, 60).Result;
             var msg = responseMsg.Content.ReadAsStringAsync().Result;
             //var response =
             //    JsonConvert.DeserializeObject<Operation>(msg);

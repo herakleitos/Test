@@ -75,7 +75,7 @@ namespace TestAPI
 
             //使用中间件，处理全局事务
             //app.UseMiddleware(typeof(TestMiddlewares));
-            app.UseTestMid();
+            //app.UseTestMid();
 
 
             app.UseStaticFiles();

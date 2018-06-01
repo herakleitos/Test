@@ -18,6 +18,7 @@ namespace DialogflowTest
 
         public static string DetectIntentFromTexts(string projectId, string sessionId, string authJSONPath)
         {
+            //string token = "ya29.c.ElrHBatAIAlNZEjrQzyELWz2UGTz8gg8rm7nqRSJ0fupV8pWwLJZGDSpwfNeVLt0HTa6sh8WpQ3WYvlVTbE9EmLAB6cpZDPCj08bwq5jAiQvoNt_3LcAMjy5cS4";
             string token = TokenService.GetToken(authJSONPath).Result;
             string detectInternFormat = "https://dialogflow.googleapis.com/v2/projects/{0}/agent/sessions/{1}:detectIntent";
             string detectInternUrl = string.Format(detectInternFormat, projectId, sessionId);
@@ -31,22 +32,19 @@ namespace DialogflowTest
             var response =
                 JsonConvert.DeserializeObject<DetectIntentResponse>(msg);
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine(msg);
+            sb.AppendLine("**************************************************************");
             if (response.QueryResult.Intent != null)
             {
-                JObject intent = JObject.FromObject(response.QueryResult.Intent);
-                sb.AppendLine(msg);
-                sb.AppendLine("**************************************************************");
-                sb.AppendLine("Name : " + intent.GetStringValue("Name"));
-                sb.AppendLine("Displayname : " + intent.GetStringValue("DisplayName"));
-                string[] splitName = intent.GetStringValue("Name").Split('/');
-                for (int i = 0; i < splitName.Length; i++)
-                {
-                    sb.AppendLine(string.Format("{0}----{1}", i, splitName[i]));
-                }
-            }
-            else
-            {
-                return "没有内容";
+                //JObject intent = JObject.FromObject(response.QueryResult.Intent);
+                //sb.AppendLine("**************************************************************");
+                //sb.AppendLine("Name : " + intent.GetStringValue("Name"));
+                //sb.AppendLine("Displayname : " + intent.GetStringValue("DisplayName"));
+                //string[] splitName = intent.GetStringValue("Name").Split('/');
+                //for (int i = 0; i < splitName.Length; i++)
+                //{
+                //    sb.AppendLine(string.Format("{0}----{1}", i, splitName[i]));
+                //}
             }
             return sb.ToString();
         }

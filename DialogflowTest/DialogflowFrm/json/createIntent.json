@@ -1,0 +1,77 @@
+{
+  "messages": [
+    {
+      "text": {
+        "text": [
+          "hello",
+          "hi"
+        ]
+      }
+    }
+  ],
+  "displayName": "multi-language Test from api",
+  "trainingPhrases": [
+    {
+      "parts": [
+        {
+          "text": "hello,"
+        },
+        {
+          "text": "how are you!",
+          "entityType": "@abcd",
+          "userDefined": true,
+          "alias": "abcd"
+        }
+      ],
+      "timesAddedCount": 0,
+      "type": "EXAMPLE"
+    },
+    {
+      "parts": [
+        {
+          "text": "how do you do",
+          "userDefined": true
+        }
+      ],
+      "timesAddedCount": 0,
+      "type": "EXAMPLE"
+    },
+    {
+      "parts": [
+        {
+          "text": "how are you",
+          "userDefined": true
+        }
+      ],
+      "timesAddedCount": 0,
+      "type": "EXAMPLE"
+    },
+    {
+      "parts": [
+        {
+          "text": "it nice to meet you",
+          "userDefined": true
+        }
+      ],
+      "timesAddedCount": 0,
+      "type": "EXAMPLE"
+    },
+    {
+      "parts": [
+        {
+          "text": "nice to meet you",
+          "userDefined": true
+        }
+      ],
+      "timesAddedCount": 0,
+      "type": "EXAMPLE"
+    }
+  ],
+  "parameters": [
+    {
+      "displayName": "abcd",
+      "value": "$abcd",
+      "entityTypeDisplayName": "@abcd"
+    }
+  ]
+}

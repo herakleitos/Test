@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Text;
+using Newtonsoft.Json;
+using Google.Cloud.Dialogflow.V2;
 
 namespace DialogflowTest
 {
@@ -20,7 +22,9 @@ namespace DialogflowTest
             message.Content = new StringContent(content, System.Text.Encoding.UTF8, "application/json");
             HttpResponseMessage responseMsg = WebRequestAsync.PostAsync(message, token, 60).Result;
             var msg = responseMsg.Content.ReadAsStringAsync().Result;
+            var obj = JsonConvert.DeserializeObject<EntityType>(msg);
             return msg;
         }
+
     }
 }
