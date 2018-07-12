@@ -4,16 +4,6 @@
   +  `GET /api/v1/bot/bots/{botId}/intents`
   +  `GET /api/v1/bot/bots/{botId}/intents/{intentId}`
 
-### Secure Form Json Format
-Secure Form is represented as simple flat JSON objects with the following keys:  
-
-|name| Type| Read-only    | Mandatory | Description   
-| ------------- |--------------------- | ---------- | -------------------- | ------------------
-|id |integer  | yes | no |id of the secure form.
-|name| string  | no | yes |  name of the secure form.
-|description| string  | no | no | description of the secure form.when entityCollectionType is viaForm, this is a message that will be sent before the button.when entityCollectionType is viaForm, this is a message that will be sent before the button.
-|fields| Array | no | no |an array of [field](#field) object.
-
 #### IntentBase Json Format
 IntentBase is represented as simple flat json objects with the following keys: 
 
@@ -33,6 +23,7 @@ IntentBase is represented as simple flat json objects with the following keys:
 
 #### IntentSignInSettings Json Format
 IntentSignInSettings is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
 |id | integer  | yes | no |id of the current item.
@@ -46,6 +37,7 @@ IntentSignInSettings is represented as simple flat json objects with the followi
 
 #### Questions Json Format
 Questions is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
 |id | integer  | yes | no |id of the current item.
@@ -54,6 +46,7 @@ Questions is represented as simple flat json objects with the following keys:
 
 #### QuestionsEntities Json Format
 QuestionsEntities is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
 |id | integer  | yes | no |id of the current item.
@@ -64,6 +57,7 @@ QuestionsEntities is represented as simple flat json objects with the following 
 
 #### EntityCollectionFormFields Json Format
 EntityCollectionFormFields is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |fieldType | string | no | yes |enums contain test ,testArea,radioBox ,checkBox ,dropDownList ,checkBoxList, this is the type of fields appear on the form.
@@ -78,6 +72,7 @@ EntityCollectionFormFields is represented as simple flat json objects with the f
 
 #### EntityCollectionPrompts Json Format
 EntityCollectionPrompts is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -89,24 +84,28 @@ EntityCollectionPrompts is represented as simple flat json objects with the foll
 
 #### PromptsOption Json Format
 PromptsOption is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |option | string | no | yes |this will be sent to visitor as quick reply below prompt.
 
 #### FormFieldsOption Json Format
 PromptsOption is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |option | string | no | yes |this will be added to fields such as dropdownlist,checkboxlist.
 
 #### PromptQuestion Json Format
 PromptQuestion is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |prompt | string | no | yes |this is a question that bot will ask visitors,if a request doesn't contain current entity.
 
 #### TextResponse Json Format
 TextResponse is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -114,6 +113,7 @@ TextResponse is represented as simple flat json objects with the following keys:
 
 #### ResponseText Json Format
 ResponseTexts is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |text | string | no | yes |enums contain default,livechat,facebook and twitte
@@ -121,6 +121,7 @@ ResponseTexts is represented as simple flat json objects with the following keys
 
 #### ImageResponse Json Format
 ImageResponse is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -129,6 +130,7 @@ ImageResponse is represented as simple flat json objects with the following keys
 
 #### VideoResponse Json Format
 VideoResponse is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -136,6 +138,7 @@ VideoResponse is represented as simple flat json objects with the following keys
 
 #### WebhookResponse Json Format
 WebhookResponse is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -143,6 +146,7 @@ WebhookResponse is represented as simple flat json objects with the following ke
 
 #### ComplexResponse Json Format
 ComplexResponse is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -150,6 +154,7 @@ ComplexResponse is represented as simple flat json objects with the following ke
 
 #### QuickReplyResponse Json Format
 QuickReplyResponse is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -158,6 +163,7 @@ QuickReplyResponse is represented as simple flat json objects with the following
 
 #### ButtonResponse Json Format
 ButtonResponse is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -166,6 +172,7 @@ ButtonResponse is represented as simple flat json objects with the following key
 
 #### Button Json Format
 Button is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
@@ -180,6 +187,7 @@ Button is represented as simple flat json objects with the following keys:
 
 #### Response Json Format
 Response is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |type | string | no | yes |enums contain text,image,video,webhook,button,quickReply,complex.
@@ -188,6 +196,7 @@ Response is represented as simple flat json objects with the following keys:
 
 #### AnswerSubItem Json Format
 AnswerSubItem is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |response| aray| no |no | an array of [Response](#Response-Json-Format)
@@ -196,6 +205,7 @@ AnswerSubItem is represented as simple flat json objects with the following keys
 
 #### Answer Json Format
 Answer is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |default| json object| no |no | an json object of [AnswerSubItem](#AnswerSubItem-Json-Format),but AnswerSubItem.response.type can not be image,video,webhook,complex.
@@ -205,6 +215,7 @@ Answer is represented as simple flat json objects with the following keys:
 
 #### Intent Json Format
 Intent is represented as simple flat json objects with the following keys:
+
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |intentBase| json object| no |yes | an json object of [IntentBase](#IntentBase-Json-Format).
