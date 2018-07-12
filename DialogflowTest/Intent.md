@@ -15,7 +15,7 @@ Secure Form is represented as simple flat JSON objects with the following keys:
 |fields| Array | no | no |an array of [field](#field) object.
 
 #### IntentBase Json Format
- IntentBase is represented as simple flat json objects with the following keys: 
+IntentBase is represented as simple flat json objects with the following keys: 
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
 |id | integer | yes | yes except create |id of the intent.
