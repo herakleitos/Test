@@ -1,8 +1,8 @@
 ### Intent End Points
-  +  `POST /api/v1/bot/bots/{botId}/intents`
-  +  `PUT /api/v1/bot/bots/{botId}/intents`
-  +  `GET /api/v1/bot/bots/{botId}/intents`
-  +  `GET /api/v1/bot/bots/{botId}/intents/{intentId}`
+  +  `POST /api/v1/bot/bots/{botId}/intents` - [Create a new intent](#create-a-new-intent)
+  +  `PUT /api/v1/bot/bots/{botId}/intents` - [Edit a new intent](#edit-a-new-intent)
+  +  `GET /api/v1/bot/bots/{botId}/intents` - [Get intent by category or by intent name/question](#get-intent-by-category-or-by-intent-namequestion)
+  +  `GET /api/v1/bot/bots/{botId}/intents/{intentId}` - [Create a new intent](#get-a-intent)
 
 #### IntentBase Json Format
 IntentBase is represented as simple flat json objects with the following keys: 
@@ -67,7 +67,7 @@ EntityCollectionFormFields is represented as simple flat json objects with the f
 |entityLabel | string | no | yes |label to distinguish same entity marked on one question.
 |isRequired | bool | no | yes |it marks whether the field appear on the form is required or not.
 |isMasked | bool | no | yes |if this is true,visitor's information will replaced by anonymous symbol in chat logs.
-|options | array | no | no |an array of [FormFieldsOption](#formfieidsoption-json-format).
+|options | array | no | no |an array of [FormFieldsOption](#formfieldsoption-json-format).
 |orderNumber | integer | no | yes |sequence of this field.
 
 #### EntityCollectionPrompts Json Format
@@ -191,7 +191,7 @@ Response is represented as simple flat json objects with the following keys:
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |type | string | no | yes |enums contain text,image,video,webhook,button,quickReply,complex.
-|content | json object | no | yes |response's content. when type is text, it represents [TextResponse](#textresponse-json-format);when type is image ,it represents [ImageResponse](#imageresponse-json-format);when type is video, it represents [VideoResponse](#videoResponse-json-format); when type is webhook,it represents [WebhookResponse](#webhookresponse-json-format);when type is button,it represents [ButtonResponse](#buttonresponse-json-format);when type is quickReply, it represents [QuickReplyResponse](#quickreplyresponse-json-format);when type is complex,it represents [ComplexResponse](#complexresponse-json-format).
+|content | json object | no | yes |response's content. when type is text, it represents [TextResponse](#textresponse-json-format);when type is image ,it represents [ImageResponse](#imageresponse-json-format);when type is video, it represents [VideoResponse](#videoresponse-json-format); when type is webhook,it represents [WebhookResponse](#webhookresponse-json-format);when type is button,it represents [ButtonResponse](#buttonresponse-json-format);when type is quickReply, it represents [QuickReplyResponse](#quickreplyresponse-json-format);when type is complex,it represents [ComplexResponse](#complexresponse-json-format).
 |orderNumber | string | no | yes|sequence of current item.
 
 #### AnswerSubItem Json Format
@@ -208,10 +208,10 @@ Answer is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
-|default| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format),but AnswerSubItem.response.type can not be image,video,webhook,complex.
-|livechat| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format).
-|facebook| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format),but AnswerSubItem.response.type can not be complex.
-|twitter| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format),but AnswerSubItem.response.type can not be complex.
+|default| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be image,video,webhook,complex.
+|livechat| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format).
+|facebook| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
+|twitter| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
 
 #### Intent Json Format
 Intent is represented as simple flat json objects with the following keys:
