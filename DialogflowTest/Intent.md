@@ -42,7 +42,7 @@ Questions is represented as simple flat json objects with the following keys:
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
 |id | integer  | yes | no |id of the current item.
 |question | string  | no | yes |question you can expect from users,that will trigger this intent.
-|questionEntities | array  | no | yes |an array of [QuestionsEntities](#QuestionsEntities-Json-Format) that you want to mark on current question.
+|questionEntities | array  | no | yes |an array of [QuestionsEntities](#questionsEntities-json-format) that you want to mark on current question.
 
 ### QuestionsEntities Json Format
 QuestionsEntities is represented as simple flat json objects with the following keys:
