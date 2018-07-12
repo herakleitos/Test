@@ -11,14 +11,14 @@ Secure Form is represented as simple flat JSON objects with the following keys:
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id |integer  | yes | no |id of the secure form.
 |name| string  | no | yes |  name of the secure form.
-|description| string  | no | no | description of the secure form.
-|fields| Array | no | no |an array of [field](#field) object
+|description| string  | no | no | description of the secure form.when entityCollectionType is viaForm, this is a message that will be sent before the button.when entityCollectionType is viaForm, this is a message that will be sent before the button.
+|fields| Array | no | no |an array of [field](#field) object.
 
-### IntentBase Json Format
+#### IntentBase Json Format
  IntentBase is represented as simple flat json objects with the following keys: 
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
-|id | integer  | yes | yes except create |id of the intent.
+|id | integer | yes | yes except create |id of the intent.
 |siteId | integer  | yes | no |id of the current site.
 |botId | integer  | yes | no |id of the current bot.
 |intentName | string | no | yes | name of the intent.
