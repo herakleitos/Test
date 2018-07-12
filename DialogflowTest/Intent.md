@@ -1,8 +1,67 @@
 ### Intent End Points
   +  `POST /api/v1/bot/bots/{botId}/intents` - [Create a new intent](#create-a-new-intent)
   +  `PUT /api/v1/bot/bots/{botId}/intents` - [Edit a new intent](#edit-a-new-intent)
-  +  `GET /api/v1/bot/bots/{botId}/intents` - [Get intent by category or by intent name/question](#get-intent-by-category-or-by-intent-namequestion)
-  +  `GET /api/v1/bot/bots/{botId}/intents/{intentId}` - [Create a new intent](#get-a-intent)
+  +  `GET /api/v1/bot/bots/{botId}/intents/{intentId}` - [Get an intent](#get-an-intent)
+  +  `GET /api/v1/bot/bots/{botId}/intents` - [Get intent(s) by category or by intent name/question](#get-intent(s)-by-category-or-by-intent-namequestion)
+
+
+#### Intent Json Format
+Intent is represented as simple flat json objects with the following keys:
+
+|Name| Type| Read-only    |Mandatory | Description   
+| ------------- |--------------------- | ---------- | -------------------- | ------------------
+|intentBase| json object| no |yes | an json object of [IntentBase](#intentbase-json-format).
+|questions| array| no |yes | an array of [Question](#question-json-format).
+|entityCollectionFormFields| array| no |yes if intentBase.entityCollectionType is viaForm | an array of [EntityCollectionFormField](#entitycollectionformfield-json-format).
+|entityCollectionPrompts| array| no |yes if intentBase.entityCollectionType is viaPrompts | an array of [EntityCollectionPrompt](#entitycollectionprompt-json-format).
+|answer| json object| no |yes | an item of [Answer](#answer-json-format).
+
+{
+  "name": string,
+  "displayName": string,
+  "webhookState": enum(WebhookState),
+  "priority": number,
+  "isFallback": boolean,
+  "mlDisabled": boolean,
+  "inputContextNames": [
+    string
+  ],
+  "events": [
+    string
+  ],
+  "trainingPhrases": [
+    {
+      object(TrainingPhrase)
+    }
+  ],
+  "action": string,
+  "outputContexts": [
+    {
+      object(Context)
+    }
+  ],
+  "resetContexts": boolean,
+  "parameters": [
+    {
+      object(Parameter)
+    }
+  ],
+  "messages": [
+    {
+      object(Message)
+    }
+  ],
+  "defaultResponsePlatforms": [
+    enum(Platform)
+  ],
+  "rootFollowupIntentName": string,
+  "parentFollowupIntentName": string,
+  "followupIntentInfo": [
+    {
+      object(FollowupIntentInfo)
+    }
+  ]
+}
 
 #### IntentBase Json Format
 IntentBase is represented as simple flat json objects with the following keys: 
@@ -15,9 +74,9 @@ IntentBase is represented as simple flat json objects with the following keys:
 |intentName | string | no | yes | name of the intent.
 |categoryId| integer | no | yes | value of the custom field.
 |ifRequireDetailInfo | bool | no | no | whether need visitor to provide more detail information.
-|entityCollectionType | string | yes if ifRequireDetailInfo is true | no | enums contain viaForm and viaPrompts,this represents the way you want to collect  visitor's information. there are two options: viaForm and viaPrompts.
+|entityCollectionType | string | no | yes if ifRequireDetailInfo is true | enums contain viaForm and viaPrompts,this represents the way you want to collect  visitor's information. there are two options: viaForm and viaPrompts.
 |formMessage | string | no | yes if entityCollectionType is viaForm | when entityCollectionType is viaForm, this is a message that will be sent before the button.
-|formTitle | string | no | yes if entityCollectionType is viaForm | when entityCollectionType is viaForm,a button will sent to visitor if bot need to collect detail information,visitor can click this button to open the form to fillout information ,this is the text on this button.and also this is the title of that form.
+|formTitle | string | no | yes if entityCollectionType is viaForm | when entityCollectionType is viaForm,a button will be sent to visitor if bot need to collect detail information,visitor can click this button to open the form to fillout information. this is the text on this button,and also this is the title of that form.
 |ifRequireConfirm | bool | no | yes | whether need visitor to confirm after collect all detail information that bot needed.
 |ifRequireLocation | bool | no | yes | whether need to collect visitor's location information.
 
@@ -35,8 +94,8 @@ IntentSignInSettings is represented as simple flat json objects with the followi
 |customVariable | string  | no | yes |custom value sent to signin page.
 |openIn | string  | no | yes |enums contain sideWindow,newWindow,currentWindow,when channelType is livechat, it represents the way that a page will be opened.
 
-#### Questions Json Format
-Questions is represented as simple flat json objects with the following keys:
+#### Question Json Format
+Question is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
@@ -44,8 +103,8 @@ Questions is represented as simple flat json objects with the following keys:
 |question | string  | no | yes |question you can expect from users,that will trigger this intent.
 |questionEntities | array  | no | yes |an array of [QuestionsEntities](#questionsentities-json-format) that you want to mark on current question.
 
-#### QuestionsEntities Json Format
-QuestionsEntities is represented as simple flat json objects with the following keys:
+#### QuestionsEntity Json Format
+QuestionsEntity is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
@@ -55,8 +114,8 @@ QuestionsEntities is represented as simple flat json objects with the following 
 |entityId | integer | no | yes |id of entity marked on one question.
 |entityLabel | string | no | yes |label to distinguish same entity marked on one question.
 
-#### EntityCollectionFormFields Json Format
-EntityCollectionFormFields is represented as simple flat json objects with the following keys:
+#### EntityCollectionFormField Json Format
+EntityCollectionFormField is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
@@ -70,8 +129,8 @@ EntityCollectionFormFields is represented as simple flat json objects with the f
 |options | array | no | no |an array of [FormFieldsOption](#formfieldsoption-json-format).
 |orderNumber | integer | no | yes |sequence of this field.
 
-#### EntityCollectionPrompts Json Format
-EntityCollectionPrompts is represented as simple flat json objects with the following keys:
+#### EntityCollectionPrompt Json Format
+EntityCollectionPrompt is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
@@ -185,24 +244,6 @@ Button is represented as simple flat json objects with the following keys:
 |openStyle | string | no | yes if channelType is livechat or facebook and buttonType is webView |enums contain compact,tall and full,it represents the size of the webview that will be opened.
 |orderNumber | integer | no | yes |sequence of current item.
 
-#### Response Json Format
-Response is represented as simple flat json objects with the following keys:
-
-|Name| Type| Read-only    |Mandatory | Description   
-| ------------- |--------------------- | ---------- | -------------------- | ------------------
-|type | string | no | yes |enums contain text,image,video,webhook,button,quickReply,complex.
-|content | json object | no | yes |response's content. when type is text, it represents [TextResponse](#textresponse-json-format);when type is image ,it represents [ImageResponse](#imageresponse-json-format);when type is video, it represents [VideoResponse](#videoresponse-json-format); when type is webhook,it represents [WebhookResponse](#webhookresponse-json-format);when type is button,it represents [ButtonResponse](#buttonresponse-json-format);when type is quickReply, it represents [QuickReplyResponse](#quickreplyresponse-json-format);when type is complex,it represents [ComplexResponse](#complexresponse-json-format).
-|orderNumber | string | no | yes|sequence of current item.
-
-#### AnswerSubItem Json Format
-AnswerSubItem is represented as simple flat json objects with the following keys:
-
-|Name| Type| Read-only    |Mandatory | Description   
-| ------------- |--------------------- | ---------- | -------------------- | ------------------
-|response| aray| no |no | an array of [Response](#response-json-format)
-|isNeedSignInBeforeBotRespond| bool| no |yes | whether need sign in when bot response visitor's question   
-|intentSignInSettings| json object| no |yes if isNeedSignInBeforeBotRespond is true | an item of [IntentSignInSettings](#intentsigninsettings-json-format)
-
 #### Answer Json Format
 Answer is represented as simple flat json objects with the following keys:
 
@@ -213,16 +254,23 @@ Answer is represented as simple flat json objects with the following keys:
 |facebook| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
 |twitter| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
 
-#### Intent Json Format
-Intent is represented as simple flat json objects with the following keys:
+#### AnswerSubItem Json Format
+AnswerSubItem is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
-|intentBase| json object| no |yes | an json object of [IntentBase](#intentbase-json-format).
-|questions| array| no |yes | an array of [Questions](#questions-json-format).
-|entityCollectionFormFields| array| no |yes if intentBase.entityCollectionType is viaForm | an array of [EntityCollectionFormFields](#entitycollectionformfields-json-format).
-|entityCollectionPrompts| array| no |yes if intentBase.entityCollectionType is viaPrompts | an array of [EntityCollectionPrompts](#entitycollectionprompts-json-format).
-|answer| json object| no |yes | an item of [Answer](#answer-json-format).
+|response| aray| no |no | an array of [Response](#response-json-format)
+|isNeedSignInBeforeBotRespond| bool| no |yes | whether need sign in when bot response visitor's question   
+|intentSignInSettings| json object| no |yes if isNeedSignInBeforeBotRespond is true | an item of [IntentSignInSettings](#intentsigninsettings-json-format)
+
+#### Response Json Format
+Response is represented as simple flat json objects with the following keys:
+
+|Name| Type| Read-only    |Mandatory | Description   
+| ------------- |--------------------- | ---------- | -------------------- | ------------------
+|type | string | no | yes |enums contain text,image,video,webhook,button,quickReply,complex.
+|content | json object | no | yes |response's content. when type is text, it represents [TextResponse](#textresponse-json-format);when type is image ,it represents [ImageResponse](#imageresponse-json-format);when type is video, it represents [VideoResponse](#videoresponse-json-format); when type is webhook,it represents [WebhookResponse](#webhookresponse-json-format);when type is button,it represents [ButtonResponse](#buttonresponse-json-format);when type is quickReply, it represents [QuickReplyResponse](#quickreplyresponse-json-format);when type is complex,it represents [ComplexResponse](#complexresponse-json-format).
+|orderNumber | string | no | yes|sequence of current item.
 
 #### Create a new intent
 ##### End Point 
@@ -279,7 +327,7 @@ Intent is represented as simple flat json objects with the following keys:
   + `401`  -unauthorized
   + `404`  -not found
 
-####  Get a intent
+####  Get an intent
 ##### End Point
 
    `GET /api/v1/bot/bots/{botId}/intents/{intentId}`
@@ -302,7 +350,7 @@ Intent is represented as simple flat json objects with the following keys:
   + `401`  -unauthorized
   + `404`  -not found
 
-#### Get intent by category or by intent name/question
+#### Get intent(s) by category or by intent name/question
 ##### End Point
 
   `GET /api/v1/bot/bots/{botId}/intents`
@@ -321,7 +369,7 @@ Intent is represented as simple flat json objects with the following keys:
 
   when the http status code is 200, the response is as below:
 
-  + `intentBase` - an array of [IntentBase](#intentbase-json-format)
+  + `intentBases` - an array of [IntentBase](#intentbase-json-format)
 
   the other case, the http status code maybe:
 
