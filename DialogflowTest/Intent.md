@@ -35,7 +35,7 @@ IntentSignInSettings is represented as simple flat json objects with the followi
 |customVariable | string  | no | yes |custom value sent to signin page.
 |openIn | string  | no | yes |enums contain sideWindow,newWindow,currentWindow,when channelType is livechat, it represents the way that a page will be opened.
 
-#### Questions Json Format
+### Questions Json Format
 Questions is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    | Mandatory | Description   
@@ -44,7 +44,7 @@ Questions is represented as simple flat json objects with the following keys:
 |question | string  | no | yes |question you can expect from users,that will trigger this intent.
 |questionEntities | array  | no | yes |an array of [QuestionsEntities](#QuestionsEntities-Json-Format) that you want to mark on current question.
 
-#### QuestionsEntities Json Format
+### QuestionsEntities Json Format
 QuestionsEntities is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    | Mandatory | Description   
@@ -67,7 +67,7 @@ EntityCollectionFormFields is represented as simple flat json objects with the f
 |entityLabel | string | no | yes |label to distinguish same entity marked on one question.
 |isRequired | bool | no | yes |it marks whether the field appear on the form is required or not.
 |isMasked | bool | no | yes |if this is true,visitor's information will replaced by anonymous symbol in chat logs.
-|options | array | no | no |an array of [PromptsOption](#PromptsOption-Json-Format).
+|options | array | no | no |an array of [FormFieldsOption](##FormFieldsOption-Json-Format).
 |orderNumber | integer | no | yes |sequence of this field.
 
 #### EntityCollectionPrompts Json Format
@@ -79,7 +79,7 @@ EntityCollectionPrompts is represented as simple flat json objects with the foll
 |entityId | integer | no | yes |id of entity marked on one question.
 |entityLabel | string | no | yes |label to distinguish same entity marked on one question.
 |prompts | array | no | yes |an array of [PromptQuestion](#PromptQuestion-Json-Format).
-|options | array | no | no |an array of [FormFieldsOption](#FormFieldsOption-Json-Format).
+|options | array | no | no |an array of [PromptsOption](#PromptsOption-Json-Format).
 |orderNumber | integer | no | yes |sequence of this item.
 
 #### PromptsOption Json Format
