@@ -4,6 +4,16 @@
   +  `GET /api/v1/bot/bots/{botId}/intents`
   +  `GET /api/v1/bot/bots/{botId}/intents/{intentId}`
 
+### Secure Form Json Format
+Secure Form is represented as simple flat JSON objects with the following keys:  
+
+|name| Type| Read-only    | Mandatory | Description   
+| ------------- |--------------------- | ---------- | -------------------- | ------------------
+|id |integer  | yes | no |id of the secure form.
+|name| string  | no | yes |  name of the secure form.
+|description| string  | no | no | description of the secure form.
+|fields| Array | no | no |an array of [field](#field) object
+
 #### IntentBase Json Format
  IntentBase is represented as simple flat json objects with the following keys: 
 |Name| Type| Read-only    | Mandatory | Description   
