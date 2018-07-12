@@ -1,4 +1,4 @@
-### Intent
+### Intent End Points
   +  `POST /api/v1/bot/bots/{botId}/intents`
   +  `PUT /api/v1/bot/bots/{botId}/intents`
   +  `GET /api/v1/bot/bots/{botId}/intents`
@@ -67,7 +67,7 @@ EntityCollectionFormFields is represented as simple flat json objects with the f
 |entityLabel | string | no | yes |label to distinguish same entity marked on one question.
 |isRequired | bool | no | yes |it marks whether the field appear on the form is required or not.
 |isMasked | bool | no | yes |if this is true,visitor's information will replaced by anonymous symbol in chat logs.
-|options | array | no | no |an array of [FormFieldsOption](#FormFieldsOption-Json-Format).
+|options | array | no | no |an array of [FormFieldsOption](#formfieidsoption-json-format).
 |orderNumber | integer | no | yes |sequence of this field.
 
 #### EntityCollectionPrompts Json Format
@@ -78,8 +78,8 @@ EntityCollectionPrompts is represented as simple flat json objects with the foll
 |id | integer  | yes | no |id of the current item.
 |entityId | integer | no | yes |id of entity marked on one question.
 |entityLabel | string | no | yes |label to distinguish same entity marked on one question.
-|prompts | array | no | yes |an array of [PromptQuestion](#PromptQuestion-Json-Format).
-|options | array | no | no |an array of [PromptsOption](#PromptsOption-Json-Format).
+|prompts | array | no | yes |an array of [PromptQuestion](#promptquestion-json-format).
+|options | array | no | no |an array of [PromptsOption](#promptsoption-json-format).
 |orderNumber | integer | no | yes |sequence of this item.
 
 #### PromptsOption Json Format
@@ -109,7 +109,7 @@ TextResponse is represented as simple flat json objects with the following keys:
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
-|responseTexts | array | no | yes |an array of [ResponseText](#ResponseText-Json-Format).
+|responseTexts | array | no | yes |an array of [ResponseText](#responsetext-json-format).
 
 #### ResponseText Json Format
 ResponseTexts is represented as simple flat json objects with the following keys:
@@ -168,7 +168,7 @@ ButtonResponse is represented as simple flat json objects with the following key
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |id | integer  | yes | no |id of the current item.
 |responseText | string | no | yes |text above buttons,this text will be sent before buttons.
-|buttons | array | no | yes |an array of [Button](#Button-Json-Format).
+|buttons | array | no | yes |an array of [Button](#button-json-format).
 
 #### Button Json Format
 Button is represented as simple flat json objects with the following keys:
@@ -191,7 +191,7 @@ Response is represented as simple flat json objects with the following keys:
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
 |type | string | no | yes |enums contain text,image,video,webhook,button,quickReply,complex.
-|content | json object | no | yes |response's content. when type is text, it represents [TextResponse](#TextResponse-Json-Format);when type is image ,it represents [ImageResponse](#ImageResponse-Json-Format);when type is video, it represents [VideoResponse](#VideoResponse-Json-Format); when type is webhook,it represents [WebhookResponse](#WebhookResponse-Json-Format);when type is button,it represents [ButtonResponse](#ButtonResponse-Json-Format);when type is quickReply, it represents [QuickReplyResponse](#QuickReplyResponse-Json-Format);when type is complex,it represents [ComplexResponse](#ComplexResponse-Json-Format).
+|content | json object | no | yes |response's content. when type is text, it represents [TextResponse](#textresponse-json-format);when type is image ,it represents [ImageResponse](#imageresponse-json-format);when type is video, it represents [VideoResponse](#videoResponse-json-format); when type is webhook,it represents [WebhookResponse](#webhookresponse-json-format);when type is button,it represents [ButtonResponse](#buttonresponse-json-format);when type is quickReply, it represents [QuickReplyResponse](#quickreplyresponse-json-format);when type is complex,it represents [ComplexResponse](#complexresponse-json-format).
 |orderNumber | string | no | yes|sequence of current item.
 
 #### AnswerSubItem Json Format
@@ -199,110 +199,117 @@ AnswerSubItem is represented as simple flat json objects with the following keys
 
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
-|response| aray| no |no | an array of [Response](#Response-Json-Format)
+|response| aray| no |no | an array of [Response](#response-json-format)
 |isNeedSignInBeforeBotRespond| bool| no |yes | whether need sign in when bot response visitor's question   
-|intentSignInSettings| json object| no |yes if isNeedSignInBeforeBotRespond is true | an item of [IntentSignInSettings](#IntentSignInSettings-Json-Format)
+|intentSignInSettings| json object| no |yes if isNeedSignInBeforeBotRespond is true | an item of [IntentSignInSettings](#intentsigninsettings-json-format)
 
 #### Answer Json Format
 Answer is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
-|default| json object| no |no | an json object of [AnswerSubItem](#AnswerSubItem-Json-Format),but AnswerSubItem.response.type can not be image,video,webhook,complex.
-|livechat| json object| no |no | an json object of [AnswerSubItem](#AnswerSubItem-Json-Format).
-|facebook| json object| no |no | an json object of [AnswerSubItem](#AnswerSubItem-Json-Format),but AnswerSubItem.response.type can not be complex.
-|twitter| json object| no |no | an json object of [AnswerSubItem](#AnswerSubItem-Json-Format),but AnswerSubItem.response.type can not be complex.
+|default| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format),but AnswerSubItem.response.type can not be image,video,webhook,complex.
+|livechat| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format).
+|facebook| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format),but AnswerSubItem.response.type can not be complex.
+|twitter| json object| no |no | an json object of [AnswerSubItem](#answersubItem-json-format),but AnswerSubItem.response.type can not be complex.
 
 #### Intent Json Format
 Intent is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
-|intentBase| json object| no |yes | an json object of [IntentBase](#IntentBase-Json-Format).
-|questions| array| no |yes | an array of [Questions](#Questions-Json-Format).
-|entityCollectionFormFields| array| no |yes if intentBase.entityCollectionType is viaForm | an array of [EntityCollectionFormFields](#EntityCollectionFormFields-Json-Format).
-|entityCollectionPrompts| array| no |yes if intentBase.entityCollectionType is viaPrompts | an array of [EntityCollectionPrompts](#EntityCollectionPrompts-Json-Format).
-|answer| json object| no |yes | an item of [Answer](#Answer-Json-Format).
+|intentBase| json object| no |yes | an json object of [IntentBase](#intentbase-json-format).
+|questions| array| no |yes | an array of [Questions](#questions-json-format).
+|entityCollectionFormFields| array| no |yes if intentBase.entityCollectionType is viaForm | an array of [EntityCollectionFormFields](#entitycollectionformfields-json-format).
+|entityCollectionPrompts| array| no |yes if intentBase.entityCollectionType is viaPrompts | an array of [EntityCollectionPrompts](#entitycollectionprompts-json-format).
+|answer| json object| no |yes | an item of [Answer](#answer-json-format).
 
 #### Create a new intent
-- End Point 
+##### End Point 
   `POST /api/v1/bot/bots/{botId}/intents`
-- Parameters
+##### Parameters
 
-   path parameters
+  path parameters
 
   + `botId` - required , id of current bot
 
-   request body parameters
+  request body parameters
+
   + `learningQuestionId` - int,id from visitor's  not matched  questions,optional
-  + `intent` - an item of [Intent](#Intent-Json-Format),required
+  + `intent` - an item of [Intent](#intent-json-format),required
 
-- Response
+##### Response
 
-   when the http status Code is 200, the response is as below:
-  + `intent` - an item of [Intent](#Intent-Json-Format),required
+  when the http status Code is 200, the response is as below:
+
+  + `intent` - an item of [Intent](#intent-json-format),required
 
   the other case, the http status Code maybe:
+
   + `500`  -server internal error. when the http status code is 500, there may have detailled error message.
   + `400`  -bad request. when the http status code is 400, there will have detailled error message.
   + `401`  -unauthorized
   + `404`  -not found
 
 #### Edit a new intent
-- End Point 
+##### End Point 
 
   `PUT /api/v1/bot/bots/{botId}/intents`
-- Parameters
+##### Parameters
 
   path parameters
+
   + `botId` - required , id of current bot
 
   request body parameter
+
   + `learningQuestionId` - int,optional,id from visitor's  not matched  questions
-  + `intent` - an item of [Intent](#Intent-Json-Format),required
+  + `intent` - an item of [Intent](#intent-json-format),required
 
-- Response
+##### Response
 
-   when the http status code is 200, the response is as below:
-  + `intent` - an item of [Intent](#Intent-Json-Format),required
+  when the http status code is 200, the response is as below:
 
-   the other case, the http status code maybe:
+  + `intent` - an item of [Intent](#intent-json-format),required
+
+  the other case, the http status code maybe:
+
   + `500`  -server internal error. when the http status code is 500, there may have detailled error message.
   + `400`  -bad request. when the http status code is 400, there will have detailled error message.
   + `401`  -unauthorized
   + `404`  -not found
 
 ####  Get a intent
-- End Point
+##### End Point
 
    `GET /api/v1/bot/bots/{botId}/intents/{intentId}`
 
-- Parameter
+##### Parameter
 
   path parameters
   + `botId` - id of current bot,required
   + `intentId` - id of the intent you want to get,required
 
-- Response
+##### Response
 
-   when the http status code is 200, the response is as below:
+  when the http status code is 200, the response is as below:
 
-  + `intent` - an item of [Intent](#Intent-Json-Format)
+  + `intent` - an item of [Intent](#intent-json-format)
 
-   the other case, the http status code maybe:
+  the other case, the http status code maybe:
   + `500`  -server internal error. when the http status code is 500, there may have detailled error message.
   + `400`  -bad request. when the http status code is 400, there will have detailled error message.
   + `401`  -unauthorized
   + `404`  -not found
 
 #### Get intent by category or by intent name/question
-- End Point
+##### End Point
 
-   `GET /api/v1/bot/bots/{botId}/intents`
+  `GET /api/v1/bot/bots/{botId}/intents`
 
-- Parameters
+##### Parameters
 
-   path parameters
+  path parameters
   + `botId` - id of current bot,required
 
   query parameters
@@ -310,13 +317,14 @@ Intent is represented as simple flat json objects with the following keys:
   + `categoryId` -id of the category you want to explorer
   + `nameOrQuestion` -name or question of the intent you want to explorer
 
-- Response
+##### Response
 
-   when the http status code is 200, the response is as below:
+  when the http status code is 200, the response is as below:
 
-  +  `intentBase` - an array of [IntentBase](#IntentBase-Json-Format)
+  + `intentBase` - an array of [IntentBase](#intentbase-json-format)
 
-   the other case, the http status code maybe:
+  the other case, the http status code maybe:
+
   + `500`  -server internal error. when the http status code is 500, there may have detailled error message.
   + `400`  -bad request. when the http status code is 400, there will have detailled error message.
   + `401`  -unauthorized
