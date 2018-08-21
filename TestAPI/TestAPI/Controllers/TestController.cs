@@ -21,7 +21,9 @@ namespace TestAPI.Controllers
             await Request.Body.ReadAsync(content,0,1000);
             
             string result = string.Format("FirstName:{0},LastName:{1}",p.FirstName,p.LastName);
-            return Ok(result);
+            return NotFound();
+            //return BadRequest();
+            //return Ok(result);
         }
     }
     public class People

@@ -35,10 +35,10 @@ namespace DialogflowFrm
             responseMessage = await SendAsync(request,token, timeOut);
             return responseMessage;
         }
-        public static async Task<HttpResponseMessage> GetAsync(HttpRequestMessage request, string token, int timeOut)
+        public static async Task<HttpResponseMessage> DeleteAsync(HttpRequestMessage request, string token, int timeOut)
         {
             HttpResponseMessage responseMessage = null;
-            request.Method = HttpMethod.Get;
+            request.Method = HttpMethod.Delete;
             responseMessage = await SendAsync(request, token, timeOut);
             return responseMessage;
         }

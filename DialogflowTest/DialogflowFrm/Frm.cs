@@ -13,7 +13,7 @@ namespace DialogflowFrm
     public partial class Frm : Form
     {
         private string jsonPath = "..\\..\\json\\My Project-2c0ddc26d37d.json";
-        private string projectId = "virtue-d2a48";
+        private string projectId = "arestest-b3b93";
         private delegate void deleSetText(Control source,Control control,string text, string color);
         public Frm()
         {
@@ -43,12 +43,12 @@ namespace DialogflowFrm
         private void SetText(Control source,Control control,string oldText,string result)
         {
             string test = source.Text;
-            if (control.InvokeRequired)
+            if (control!=null&&control.InvokeRequired)
             {
                 deleSetText setText = new deleSetText(SetText);
                 this.Invoke(setText, new object[] { source, control, oldText, result });
             }
-            else
+            else if(control!=null)
             {
                 control.Text = result;
             }
@@ -132,6 +132,48 @@ namespace DialogflowFrm
                 string result = EntityTypes.Create(projectId, jsonPath, languageCode);
                 deleSetText setText = new deleSetText(SetText);
                 this.Invoke(setText, new object[] { this.button5, this.rtbIntentResult, "Create", result });
+            }, cts.Token);
+            cts.CancelAfter(50000);
+        }
+        private void btnTrain_Click(object sender, EventArgs e)
+        {
+            this.btnTrain.Enabled = false;
+            this.btnTrain.Text = "Processing...";
+            var cts = new CancellationTokenSource();
+            Task.Factory.StartNew(() => {
+
+                string result = TrainBot.Train(projectId, jsonPath);
+                deleSetText setText = new deleSetText(SetText);
+                this.Invoke(setText, new object[] { this.btnTrain, this.rtbMessage, "Train", result });
+            }, cts.Token);
+            cts.CancelAfter(50000);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string type = Agent.Val("123");
+            this.button4.Enabled = false;
+            this.button4.Text = "Processing...";
+            var cts = new CancellationTokenSource();
+            Task.Factory.StartNew(() => {
+
+                string msg = Agent.Restore(projectId, jsonPath);
+                deleSetText setText = new deleSetText(SetText);
+                this.Invoke(setText, new object[] { this.button4, this.richTextBox1, "Restore", msg});
+            }, cts.Token);
+            cts.CancelAfter(50000);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.button6.Enabled = false;
+            this.button6.Text = "Processing...";
+            var cts = new CancellationTokenSource();
+            Task.Factory.StartNew(() => {
+
+                string result = EntityTypes.Delete(projectId, jsonPath,"");
+                deleSetText setText = new deleSetText(SetText);
+                this.Invoke(setText, new object[] { this.button6, this.rtbIntentResult, "Delete", result });
             }, cts.Token);
             cts.CancelAfter(50000);
         }

@@ -16,53 +16,6 @@ Intent is represented as simple flat json objects with the following keys:
 |entityCollectionPrompts| array| no |yes if intentBase.entityCollectionType is viaPrompts | an array of [EntityCollectionPrompt](#entitycollectionprompt-json-format).
 |answer| json object| no |yes | an item of [Answer](#answer-json-format).
 
-{
-  "name": string,
-  "displayName": string,
-  "webhookState": enum(WebhookState),
-  "priority": number,
-  "isFallback": boolean,
-  "mlDisabled": boolean,
-  "inputContextNames": [
-    string
-  ],
-  "events": [
-    string
-  ],
-  "trainingPhrases": [
-    {
-      object(TrainingPhrase)
-    }
-  ],
-  "action": string,
-  "outputContexts": [
-    {
-      object(Context)
-    }
-  ],
-  "resetContexts": boolean,
-  "parameters": [
-    {
-      object(Parameter)
-    }
-  ],
-  "messages": [
-    {
-      object(Message)
-    }
-  ],
-  "defaultResponsePlatforms": [
-    enum(Platform)
-  ],
-  "rootFollowupIntentName": string,
-  "parentFollowupIntentName": string,
-  "followupIntentInfo": [
-    {
-      object(FollowupIntentInfo)
-    }
-  ]
-}
-
 #### IntentBase Json Format
 IntentBase is represented as simple flat json objects with the following keys: 
 
@@ -75,8 +28,8 @@ IntentBase is represented as simple flat json objects with the following keys:
 |categoryId| integer | no | yes | value of the custom field.
 |ifRequireDetailInfo | bool | no | no | whether need visitor to provide more detail information.
 |entityCollectionType | string | no | yes if ifRequireDetailInfo is true | enums contain viaForm and viaPrompts,this represents the way you want to collect  visitor's information. there are two options: viaForm and viaPrompts.
+|formTitle | string | no | yes if entityCollectionType is viaForm | when entityCollectionType is viaForm,a button will be sent to visitor if bot need to collect detail information,visitor can click this button to open a form to fillout information. this is the text on this button,and also this is the title of that form.The form's fields is defined with [EntityCollectionFormField](#entitycollectionformfield-json-format)
 |formMessage | string | no | yes if entityCollectionType is viaForm | when entityCollectionType is viaForm, this is a message that will be sent before the button.
-|formTitle | string | no | yes if entityCollectionType is viaForm | when entityCollectionType is viaForm,a button will be sent to visitor if bot need to collect detail information,visitor can click this button to open the form to fillout information. this is the text on this button,and also this is the title of that form.
 |ifRequireConfirm | bool | no | yes | whether need visitor to confirm after collect all detail information that bot needed.
 |ifRequireLocation | bool | no | yes | whether need to collect visitor's location information.
 
@@ -86,7 +39,6 @@ IntentSignInSettings is represented as simple flat json objects with the followi
 |Name| Type| Read-only    | Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------ 
 |id | integer  | yes | no |id of the current item.
-|channelType | string  | no | yes |enums contain default,livechat,facebook and twitter.
 |signInMessage | string  | no | yes |text sent to visitor before signin in button.
 |signInLinkText | string  | no | yes |text on signin button.
 |isSSO | string  | no | yes |whether is single sign on.
@@ -124,7 +76,7 @@ EntityCollectionFormField is represented as simple flat json objects with the fo
 |fieldName | string | no | yes |this is the field's name appear on the form.
 |entityId | integer | no | yes |id of entity marked on one question.
 |entityLabel | string | no | yes |label to distinguish same entity marked on one question.
-|isRequired | bool | no | yes |it marks whether the field appear on the form is required or not.
+|isRequired | bool | no | yes |it marks whether the field appeared on the form is required or not.
 |isMasked | bool | no | yes |if this is true,visitor's information will replaced by anonymous symbol in chat logs.
 |options | array | no | no |an array of [FormFieldsOption](#formfieldsoption-json-format).
 |orderNumber | integer | no | yes |sequence of this field.
@@ -249,10 +201,10 @@ Answer is represented as simple flat json objects with the following keys:
 
 |Name| Type| Read-only    |Mandatory | Description   
 | ------------- |--------------------- | ---------- | -------------------- | ------------------
-|default| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be image,video,webhook,complex.
-|livechat| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format).
-|facebook| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
-|twitter| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
+|defaultChannel| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be image,video,webhook,complex.
+|livechatChannel| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format).
+|facebookChannel| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
+|twitterChannel| json object| no |no | an json object of [AnswerSubItem](#answersubitem-json-format),but AnswerSubItem.response.type can not be complex.
 
 #### AnswerSubItem Json Format
 AnswerSubItem is represented as simple flat json objects with the following keys:

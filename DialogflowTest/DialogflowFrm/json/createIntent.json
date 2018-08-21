@@ -1,4 +1,4 @@
-{
+﻿{
   "messages": [
     {
       "text": {
@@ -9,69 +9,37 @@
       }
     }
   ],
-  "displayName": "multi-language Test from api",
+  "displayName": "test intent9999999998899",
   "trainingPhrases": [
     {
       "parts": [
         {
-          "text": "hello,"
+          "text": "hello,i want book a ticket "
         },
         {
-          "text": "how are you!",
-          "entityType": "@abcd",
-          "userDefined": true,
-          "alias": "abcd"
+          "text": "tomorrow",
+          "entityType": "@sys.date",
+          "userDefined": false,
+          "alias": "date"
         }
       ],
-      "timesAddedCount": 0,
       "type": "EXAMPLE"
     },
     {
       "parts": [
         {
-          "text": "how do you do",
-          "userDefined": true
+          "text": "hi,i want book a ticket"
         }
       ],
-      "timesAddedCount": 0,
-      "type": "EXAMPLE"
-    },
-    {
-      "parts": [
-        {
-          "text": "how are you",
-          "userDefined": true
-        }
-      ],
-      "timesAddedCount": 0,
-      "type": "EXAMPLE"
-    },
-    {
-      "parts": [
-        {
-          "text": "it nice to meet you",
-          "userDefined": true
-        }
-      ],
-      "timesAddedCount": 0,
-      "type": "EXAMPLE"
-    },
-    {
-      "parts": [
-        {
-          "text": "nice to meet you",
-          "userDefined": true
-        }
-      ],
-      "timesAddedCount": 0,
       "type": "EXAMPLE"
     }
   ],
   "parameters": [
     {
-      "displayName": "abcd",
-      "value": "$abcd",
-      "entityTypeDisplayName": "@abcd"
+      "displayName": "date",
+      "value": "$date",
+      "entityTypeDisplayName": "@sys.date"
     }
-  ]
+  ],
+  "priority": 500000
 }
