@@ -147,11 +147,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Filter\CustomActionFilter.cs" />
+    <Compile Include="Filter\CustomAuthFilter.cs" />
+    <Compile Include="Filter\CustomExceptionFilter.cs" />
     <Compile Include="Business\EmployeeBusinessLayer.cs" />
     <Compile Include="Config\WebConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="DataAccessLayer\MVCTestContext.cs" />
+    <Compile Include="Filter\CustomResultFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
