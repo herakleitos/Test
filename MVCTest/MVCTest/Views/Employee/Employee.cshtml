@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Employee List</title>
+</head>
+<body>
+    hello @Model.UserName
+    <hr />
+    <a href ="/Employee/AddNew">Add New</a>
+        <div>
+            <table>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Salary</th>
+                </tr>
+                @using MVCTest.ViewModels
+                @foreach (EmployeeViewModel item in Model.Employees)
+                {
+                    <tr>
+                        <td> @item.EmployeeName </td>
+                        <td style="background-color:@item.SalaryColor"> @item.Salary </td>
+                    </tr>
+                }
+            </table>
+        </div>
+</body>
+</html>
