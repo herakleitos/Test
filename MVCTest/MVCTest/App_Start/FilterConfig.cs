@@ -9,7 +9,6 @@ namespace MVCTest
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
             filters.Add(new HandleErrorAttribute());
-
             //auth
             filters.Add(new CustomAuthFilter());
             //exception

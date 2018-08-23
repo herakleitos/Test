@@ -11,7 +11,7 @@ namespace MVCTest.Repository
         where TDBContext:DbContext
         where TEntity : Entity
     {
-        TDBContext _dbContext;
+        protected TDBContext _dbContext;
         IDbSet<TEntity> _dataSet;
         public Repository(TDBContext dbContext)
         {

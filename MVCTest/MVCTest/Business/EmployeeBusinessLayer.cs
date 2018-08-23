@@ -18,6 +18,7 @@ namespace MVCTest.Controllers
         }
         public List<Employee> GetEmployees()
         {
+            string name = _respository.GetNameById(1);
             return _respository.FindAll().ToList();
         }
         public bool Save(Employee emp)

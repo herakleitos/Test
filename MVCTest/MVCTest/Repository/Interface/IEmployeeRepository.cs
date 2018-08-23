@@ -9,6 +9,6 @@ namespace MVCTest.Repository
 {
     public interface IEmployeeRepository:IRepository<DbContext, Employee>
     {
-
+        string GetNameById(int id);
     }
 }

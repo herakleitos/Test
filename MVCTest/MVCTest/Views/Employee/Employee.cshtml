@@ -6,26 +6,51 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Employee List</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#DrpClass').change(function () {
+                $.ajax({
+                    url: '/Employee/GetStudent',
+                    type: "GET",
+                    dataType: "JSON",
+                    data: { id: $('#DrpClass').val()},
+                    success: function (items) {
+                        $("#DrpStudent").html("");
+                        $.each(items, function (i, item) {
+                            $("#DrpStudent").append(
+                                $('<option></option>').val(item.Value).html(item.Text));
+                        });
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                        alert(errorThrown);
+                    },
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     hello @Model.UserName
     <hr />
-    <a href ="/Employee/AddNew">Add New</a>
-        <div>
-            <table>
+    <a href="/Employee/AddNew">Add New</a>
+    <div>
+        <table>
+            <tr>
+                <th>Employee Name</th>
+                <th>Salary</th>
+            </tr>
+            @using MVCTest.ViewModels
+            @foreach (EmployeeViewModel item in Model.Employees)
+            {
                 <tr>
-                    <th>Employee Name</th>
-                    <th>Salary</th>
+                    <td> @item.EmployeeName </td>
+                    <td style="background-color:@item.SalaryColor"> @item.Salary </td>
                 </tr>
-                @using MVCTest.ViewModels
-                @foreach (EmployeeViewModel item in Model.Employees)
-                {
-                    <tr>
-                        <td> @item.EmployeeName </td>
-                        <td style="background-color:@item.SalaryColor"> @item.Salary </td>
-                    </tr>
-                }
-            </table>
-        </div>
+            }
+        </table>
+        @Html.DropDownList("DrpClass")
+        @Html.DropDownList("DrpStudent")
+    </div>
 </body>
 </html>

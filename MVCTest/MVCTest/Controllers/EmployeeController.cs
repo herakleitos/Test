@@ -40,10 +40,34 @@ namespace MVCTest.Controllers
             }
             employeeListViewModel.Employees = empViewModels;
             employeeListViewModel.UserName = "Admin";
-
+            ViewData["DrpClass"]= new List<SelectListItem>()
+                {
+                    new SelectListItem {Text = "请选择班级", Value = "-1"},
+                    new SelectListItem {Text = "一班", Value = "1"},
+                    new SelectListItem {Text = "二班", Value = "2"},
+                    new SelectListItem {Text = "三班", Value = "3"},
+                    new SelectListItem {Text = "四班", Value = "4"}
+                };
+            ViewData["DrpStudent"] = new List<SelectListItem>()
+                {
+                    new SelectListItem {Text = "请选择学生", Value = "-1"}
+                };
             return View("Employee", employeeListViewModel);
         }
-
+        [HttpGet]
+        public JsonResult GetStudent(int id)
+        {
+            object result = new List<SelectListItem>()
+                {
+                    new SelectListItem {Text = "请选择学生", Value = "-1"},
+                    new SelectListItem {Text = "张三", Value = "1"},
+                    new SelectListItem {Text = "李四", Value = "2"},
+                    new SelectListItem {Text = "王五", Value = "3"},
+                    new SelectListItem {Text = "赵六", Value = "4"}
+                };
+            var temp = Json(result,JsonRequestBehavior.AllowGet);
+            return temp;
+        }
         public ActionResult AddNew()
         {
             return View("CreateEmployee");
