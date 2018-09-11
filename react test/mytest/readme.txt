@@ -13,3 +13,8 @@ npm init   （然后一路回车）
 npm install --save react react-dom  ( 在该目录下导入react和react-dom）
 npm install --save  react-router-dom   （react路由，以后会用到）
 6. npm start 启动项目，Ctrl+C 终止
+
+
+
+
+ps. 引入jquery npm i jquery -S , import $ from  'jquery'

@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import $ from 'jquery'
 class requestTest extends Component{
     constructor(props){
         super(props);
@@ -15,13 +16,13 @@ class requestTest extends Component{
                 });
             }
         );
-        fetch('http://127.0.0.1:8081/json',{method:'GET'}).then(rest=>rest.json()).then(
-            data=>{
-                this.setState({
-                    json:data
-                });
-            }
-        );
+        $.get('http://127.0.0.1:8081/json', function (result) {
+            this.setState({
+              json:result
+            });
+          }.bind(this));
+    }
+    componentDidMount(){
     }
     componentWillMount(){
         this.getData();
@@ -29,8 +30,8 @@ class requestTest extends Component{
     render(){
         return(<div>
             <div>{this.state.json.name}</div>
-            <div>{this.state.json.age}</div>
             <div>{this.state.json.sex}</div>
+            <div>{this.state.json.age}</div>
             <div>{this.state.text}</div>
             </div>)
     }

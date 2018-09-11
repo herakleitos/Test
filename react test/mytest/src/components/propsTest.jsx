@@ -18,6 +18,17 @@ class propsTest extends Component
             })
             i++
         }
+        console.log('componentWillReceiveProps '+this.state.text);
+    }
+    componentDidUpdate(){
+        console.log('componentDidUpdate '+this.state.text);
+    }
+    componentWillMount(){
+        console.log('componentWillMount '+this.state.text);
+    }
+    shouldComponentUpdate(props){
+        console.log('shouldComponentUpdate '+this.state.text);
+        return true;
     }
     render(){
         const style={

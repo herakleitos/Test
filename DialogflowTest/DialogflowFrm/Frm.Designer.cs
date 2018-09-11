@@ -48,10 +48,10 @@
             this.btEntityGetList = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -228,7 +228,8 @@
             "fr",
             "de",
             "zh-TW",
-            "ZH-CN"});
+            "ZH-CN",
+            "pt-br"});
             this.comboBox1.Location = new System.Drawing.Point(343, 3);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 32);
@@ -326,6 +327,16 @@
             this.comboBox3.Size = new System.Drawing.Size(108, 32);
             this.comboBox3.TabIndex = 5;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(173, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(130, 32);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "Delete";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.richTextBox1);
@@ -338,6 +349,14 @@
             this.tabPage4.Text = "Agent";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(32, 105);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(924, 399);
+            this.richTextBox1.TabIndex = 1;
+            this.richTextBox1.Text = "";
+            // 
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(32, 17);
@@ -347,24 +366,6 @@
             this.button4.Text = "Restore";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(32, 105);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(924, 399);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(173, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 32);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Delete";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Frm
             // 

@@ -13,7 +13,7 @@ namespace DialogflowFrm
     public partial class Frm : Form
     {
         private string jsonPath = "..\\..\\json\\My Project-2c0ddc26d37d.json";
-        private string projectId = "arestest-b3b93";
+        private string projectId = "test-1a7ed";
         private delegate void deleSetText(Control source,Control control,string text, string color);
         public Frm()
         {

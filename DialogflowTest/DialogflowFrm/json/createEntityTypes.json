@@ -1,11 +1,11 @@
 ﻿{
   "autoExpansionMode": "AUTO_EXPANSION_MODE_DEFAULT",
-  "displayName": "abcd",
+  "displayName": "rrrrrrrrrrrrrr",
   "kind": "KIND_LIST",
   "entities": [
     {
       "synonyms": [
-        "abcd"
+        "abc_*d"
       ],
       "value": "abcd"
     }
