@@ -33,7 +33,7 @@ class home extends Component {
             <li>window.location.host ---- {window.location.host}</li>
             <li>window.location.search ---- {window.location.search}</li>
             <div style={styleC0}>
-                <Link to="/hello" target='_blank' style={{ color: 'black' }}>
+                <Link to="/hello"  style={{ color: 'black' }}>
                     <div style={styleC1}>点击跳转到hello</div>
                 </Link>
                 <Link to="/requesttest" style={{ color: 'black' }}>

@@ -10,9 +10,12 @@ next();
 });
 
 app.get('/', function (req, res) {
-res.send('This is test message!');
+res.status(500).send(error);
 })
-
+const error={
+    code : "500001",
+    message : "this is an error"
+}
 app.get('/json', function (req, res) { //添加的代码
 let myjson = {
 name : '张三',

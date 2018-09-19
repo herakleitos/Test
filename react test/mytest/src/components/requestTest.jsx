@@ -14,8 +14,14 @@ class requestTest extends Component{
                 this.setState({
                     text:data
                 });
-            }
-        );
+            },
+            console.log('Request success')
+        ).catch(function (error) { 
+
+            console.log('Request failed', error); 
+        
+        });
+
         $.get('http://127.0.0.1:8081/json', function (result) {
             this.setState({
               json:result
