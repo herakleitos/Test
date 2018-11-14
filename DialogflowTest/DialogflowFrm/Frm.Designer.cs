@@ -36,6 +36,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnTrain = new System.Windows.Forms.Button();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.deleteContext = new System.Windows.Forms.CheckBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
@@ -132,6 +133,7 @@
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnTrain, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.comboBox2, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.deleteContext, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -141,6 +143,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 422F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(973, 506);
             this.tableLayoutPanel1.TabIndex = 3;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // btnTrain
             // 
@@ -165,6 +168,16 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(174, 32);
             this.comboBox2.TabIndex = 3;
+            // 
+            // deleteContext
+            // 
+            this.deleteContext.AutoSize = true;
+            this.deleteContext.Location = new System.Drawing.Point(796, 43);
+            this.deleteContext.Name = "deleteContext";
+            this.deleteContext.Size = new System.Drawing.Size(131, 28);
+            this.deleteContext.TabIndex = 5;
+            this.deleteContext.Text = "删除Context";
+            this.deleteContext.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -414,6 +427,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.CheckBox deleteContext;
     }
 }
 

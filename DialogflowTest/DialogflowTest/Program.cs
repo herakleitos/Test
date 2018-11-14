@@ -25,7 +25,16 @@ namespace DialogflowTest
     {
         static void Main(string[] args)
         {
+            string aa = ",111,222,333,";
+            string bb = aa.Trim(',');
 
+
+            DateTime time = DateTime.Now;
+            string aaa = time.ToString();
+
+            DateTime date = time.AddDays(-(int)time.DayOfWeek).AddDays(-1);
+
+            DateTime date2 = time.AddDays(-7);
 
 
             Mapper.Initialize(ini => ini.AddProfiles(new[] { "DialogflowTest" }));

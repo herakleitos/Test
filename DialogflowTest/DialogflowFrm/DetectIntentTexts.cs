@@ -16,7 +16,7 @@ namespace DialogflowFrm
     public class DetectIntentTexts
     {
 
-        public static string DetectIntentFromTexts(string projectId, string sessionId, string authJSONPath,string question,string languageCode)
+        public static string DetectIntentFromTexts(string projectId, string sessionId, string authJSONPath,string question,string languageCode,bool isDelContext)
         {
             StringBuilder sb = new StringBuilder();
             try
@@ -46,6 +46,20 @@ namespace DialogflowFrm
                     for (int i = 0; i < splitName.Length; i++)
                     {
                         sb.AppendLine(string.Format("{0}----{1}", i, splitName[i]));
+                    }
+                }
+                if (isDelContext)
+                {
+                    if (response != null && response.QueryResult != null && response.QueryResult.OutputContexts != null && response.QueryResult.OutputContexts.Count > 0)
+                    {
+                        foreach (var context in response.QueryResult.OutputContexts)
+                        {
+                            string deleteFormat = "https://dialogflow.googleapis.com/v2/{0}";
+                            string deleteUrl = string.Format(deleteFormat, context.Name);
+                            HttpRequestMessage requestMessage = new HttpRequestMessage(HttpMethod.Post, deleteUrl);
+                            message.Content = new StringContent(content, System.Text.Encoding.UTF8, "application/json");
+                            HttpResponseMessage delteResponse = WebRequestAsync.DeleteAsync(requestMessage, token, 60).Result;
+                        }
                     }
                 }
             }

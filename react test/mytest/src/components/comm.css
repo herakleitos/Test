@@ -1,5 +1,89 @@
 .inputArea{
-    background-color: red;  
-    color: white;  
-    font-size: 40px;  
+    width:598px;
+    height: 40px;
+    background-color:white;  
+    border: 1px solid black;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top:-1px;
+}
+.inputAreaEdit{
+    width:598px;
+    height: 400px;   
+    background-color:white; 
+    border: 1px solid black;
+    font-size: 20px;
+    z-index: 999;
+    position:absolute;
+    overflow: auto;
+    white-space: normal;
+    text-overflow: unset;
+    margin-top:-1px;
+}
+.draftBox{
+    width:598px;
+    min-height: 80px;
+    border: 1px solid black;
+    left:20px;
+}
+.button{
+    width:100px;
+    height: 40px;
+}
+
+.floatingBox{
+    width: 190px!important;
+    border-radius: 4px!important;
+    padding:5px 5px!important;
+    line-height:18px!important;
+    max-width:300px!important;
+    word-wrap: break-word!important;
+    opacity: .8!important;
+    filter:alpha(opacity=80)!important;
+    background-color: red!important;
+    text-shadow: 0 0 2px black!important;
+    font-size: 12px!important;
+    color:white!important;
+}
+.body{
+    width:600px;
+}
+.container{
+    width:600px;
+    background: red;
+}
+.head{
+    width:600px;
+    height: 40px;
+    background-color:grey;
+}
+.content{
+    width:600px;
+}
+.bottom{
+    width:600px;
+    height: 40px;
+    background-color: grey;
+}
+
+.aa{
+    width: 400px;
+    height: 600px;
+    background-color: grey;
+}
+.bb{
+    width: 400px;
+    height: 100px;
+    background-color: green;
+    display: flex;
+}
+.cc{
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    display: block;
 }

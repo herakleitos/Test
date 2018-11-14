@@ -13,7 +13,7 @@ namespace DialogflowFrm
     public partial class Frm : Form
     {
         private string jsonPath = "..\\..\\json\\My Project-2c0ddc26d37d.json";
-        private string projectId = "german-bottest";
+        private string projectId = "virtue-d2a48";
         private delegate void deleSetText(Control source,Control control,string text, string color);
         public Frm()
         {
@@ -29,12 +29,12 @@ namespace DialogflowFrm
             }
             this.button1.Enabled = false;
             this.button1.Text = "Processing...";
-            string sessionId = Guid.NewGuid().ToString();
+            string sessionId = "9999999";
             string question = this.tbQuestion.Text;
             var cts = new CancellationTokenSource();
+            bool isDelContext = this.deleteContext.Checked;
             Task.Factory.StartNew(() =>{
-
-                string result = DetectIntentTexts.DetectIntentFromTexts(projectId, sessionId, jsonPath, question, languageCode);
+                string result = DetectIntentTexts.DetectIntentFromTexts(projectId, sessionId, jsonPath, question, languageCode, isDelContext);
                 deleSetText setText = new deleSetText(SetText);
                 this.Invoke(setText, new object[] {this.button1,this.rtbMessage, "DetectIntentTexts", result });
             },cts.Token);
@@ -176,6 +176,11 @@ namespace DialogflowFrm
                 this.Invoke(setText, new object[] { this.button6, this.rtbIntentResult, "Delete", result });
             }, cts.Token);
             cts.CancelAfter(50000);
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
