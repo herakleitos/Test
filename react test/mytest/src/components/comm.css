@@ -29,6 +29,9 @@
     border: 1px solid black;
     left:20px;
 }
+.richTexts{
+    margin-left: 140px;
+}
 .button{
     width:100px;
     height: 40px;

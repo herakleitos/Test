@@ -56,6 +56,7 @@ const configs = {
                         modules: true,
                         sourceMap: true,
                         minimize: true,
+                        localIdentName: '[name]_[local]--[hash:base64:5]',
                       },
                     }
                   ],
