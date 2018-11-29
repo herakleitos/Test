@@ -1,0 +1,54 @@
+.header{
+    display: flex;
+    width: 450px;
+}
+.lineContainer{
+    margin-bottom: 20px;
+    display: flex;
+    width: 450px;
+}
+.imageContainer{
+    width: 450px;
+    height: 120px;
+}
+.input{
+    width: 300px!important;
+}
+.title{
+    font-size: 11pt;
+    margin-right: 10px;
+    width: 150px!important;
+}
+.narrowTitle{
+    font-size: 11pt;
+    margin-right: 10px;
+    width: 100px!important;
+}
+.description{
+    font-size: 11pt;
+    margin-right: 10px;
+    width: 450px;
+}
+.mainTitle{
+    font-size: 18pt;
+    color: rgb(1, 144, 200);
+    margin-bottom: 15px;
+}
+.button{
+    margin-right: 10px;
+    color: white!important;
+    background-color: rgb(135, 177, 7)!important;
+}
+.datePicker{
+    width: 240px!important;
+}
+.leftItem{
+    float: left;
+    padding-top: 20px;
+}
+.rightItem{
+    float: right;
+}
+.mainContent{
+    width: 450px;
+}

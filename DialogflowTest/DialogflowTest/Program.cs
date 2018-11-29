@@ -25,17 +25,18 @@ namespace DialogflowTest
     {
         static void Main(string[] args)
         {
-            string aa = ",111,222,333,";
-            string bb = aa.Trim(',');
 
+            string aaa = utils.CreateMD5Hash("123456789@#$%");
+            string bbb = utils.CreateMD5Hash("123456789@#$%");
+            string ccc = utils.CreateMD5Hash("123456789@#$%");
 
-            DateTime time = DateTime.Now;
-            string aaa = time.ToString();
+            string ddd = utils.CreateMD5Hash("qqqqqqqqqqqqqq");
+            string eee = utils.CreateMD5Hash("qqqqqqqqqqqqqq");
+            string fff = utils.CreateMD5Hash("book ticket ---1");
 
-            DateTime date = time.AddDays(-(int)time.DayOfWeek).AddDays(-1);
-
-            DateTime date2 = time.AddDays(-7);
-
+            string ggg = utils.CreateMD5Hash("&*()^%&^%$&^$&^%#$%");
+            string hhh = utils.CreateMD5Hash("&*()^%&^%$&^$&^%#$%");
+            string iii = utils.CreateMD5Hash("&*()^%&^%$&^$&^%#$%");
 
             Mapper.Initialize(ini => ini.AddProfiles(new[] { "DialogflowTest" }));
 
@@ -108,6 +109,28 @@ namespace DialogflowTest
         public CustomMapping()
         {
             CreateMap<a,b>();
+        }
+    }
+
+    public static class utils
+    {
+        public static string CreateMD5Hash(string input)
+        {
+            // Use input string to calculate MD5 hash
+            MD5 md5 = System.Security.Cryptography.MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(input);
+            byte[] hashBytes = md5.ComputeHash(inputBytes);
+
+            // Convert the byte array to hexadecimal string
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < hashBytes.Length; i++)
+            {
+                sb.Append(hashBytes[i].ToString("X2"));
+                // To force the hex string to lower-case letters instead of
+                // upper-case, use he following line instead:
+                // sb.Append(hashBytes[i].ToString("x2")); 
+            }
+            return sb.ToString();
         }
     }
 }

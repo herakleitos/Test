@@ -7,6 +7,8 @@ import {
     Editor,
     EditorState,
     convertToRaw,
+    convertFromHTML,
+    convertFromRaw,
     RichUtils
 } from 'draft-js';
 import { debug } from 'util';
@@ -24,6 +26,8 @@ class draftBox extends Component {
                 component: Link
             }
         ]);
+        const html ='<div>hello , this is a <a href="www.123.com">link</a></div>';
+        const content = convertFromHTML(html);
         this.state = {
             editorStates: [
                 EditorState.createEmpty(decorator),
@@ -130,13 +134,20 @@ class draftBox extends Component {
         }
     }
     showLog(){
-        console.log('state0',convertToRaw(this.state.editorStates[0].getCurrentContent()));
-        console.log('state1',convertToRaw(this.state.editorStates[1].getCurrentContent()));
+ /*        const content= convertToRaw(this.state.editorStates[0].getCurrentContent());
+        console.log('state0',convertFromRaw(content)); */
     }
     /**
      * 展示弹窗
      */
     showModal() {
+        const editorState = this.state.editorStates[this.currentEditor];
+        //debugger
+        const selection = editorState.getSelection();
+        if(RichUtils.currentBlockContainsLink()){
+            const obj = RichUtils.getDataObjectForLinkURL();
+        }
+        console.log('showModal',selection);
         this.setState({
             showModal: true
         })
@@ -181,7 +192,7 @@ class draftBox extends Component {
     }
     render() {
         return (
-            <div  className={Styles.richTexts}>
+            <div>
                 <Button onClick={this.showModal}>LINK</Button>
                 <Button onClick={this.removeLink}>REMOVE LINK</Button>
                 <Button onClick={() => this.toggleInlineStyle('UNDERLINE')}>UNDERLINE</Button>

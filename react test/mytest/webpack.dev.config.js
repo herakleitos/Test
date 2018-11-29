@@ -1,14 +1,22 @@
-const path = require('path');
+const path = require("path");
 const webpack = require('webpack');
+const merge = require("webpack-merge");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const configs = {
-    entry: path.resolve(__dirname, 'src/index.js'), //相对路径
-    output: {
-        path: path.resolve(__dirname, 'build'), //打包文件的输出路径
-        filename: 'bundle.js' //打包文件名
-    },
+const webpackConfigBase = require("./webpack.base.config");
+ 
+const webpackConfigDev = {
+    devtool: 'cheap-module-eval-source-map',
+    mode:'development',
     module: {
         rules: [
+             {
+                test: /\.bundle\.js$/,
+                loader: 'bundle-loader',
+                options: {
+                    lazy: true,
+                    name: '[name]'
+                }
+            },
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
@@ -18,6 +26,7 @@ const configs = {
                     plugins:[
                         ["import", {
                             "libraryName" : "antd",
+                            "libraryDirectory": "es",
                             "style" : "css",
                         }]
                     ]
@@ -97,16 +106,12 @@ const configs = {
         inline: true,
         port: 9000,
         open:true,
-        contentBase: path.resolve(__dirname, 'build'),
+        contentBase: path.join(__dirname,"./dist"),
         historyApiFallback: true,
-    },
-    resolve: {
-        extensions: ['.js', '.jsx'], //后缀名自动补全
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.EvalSourceMapDevToolPlugin(),
-        new ExtractTextPlugin("styles.css"),
       ],
 }
-module.exports= configs
+module.exports = merge(webpackConfigBase, webpackConfigDev);

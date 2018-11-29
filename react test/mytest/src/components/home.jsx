@@ -1,9 +1,25 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import Styles from './comm.css'
 class home extends Component {
     constructor(props) {
         super(props)
+        this.buttonClick = this.buttonClick.bind(this);
     }
+    buttonClick(){
+        let postData = {a:'b'};
+        fetch('http://localhost:51598/sendMesageBaseOnLocation.ashx', {
+            method: 'POST',
+            mode: 'cors',
+            credentials: 'include',
+            headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: JSON.stringify(postData)
+            }).then(function(response) {
+            console.log(response);
+        })
+    }   
     render() {
         let link = {
             fontSize: '26px',
@@ -17,6 +33,9 @@ class home extends Component {
                 <Link to="/hello"  style={{ color: 'black' }}>hello
                 </Link>
                 <br></br>
+                <Link to="/tell-us-about-you"  style={{ color: 'black' }}>tell us about you
+                </Link>
+                <br></br>
                 <Link to="/stateTest" style={{ color: 'black' }}>
                 stateTest
                 </Link>  
@@ -25,7 +44,8 @@ class home extends Component {
                 draftBox
                 </Link>  
                 <br></br>
-                <div style={{ marginTop: '1.5em' }}>{this.props.children}</div>
+                <button className={Styles.button} onClick={() => this.buttonClick()}>Post</button>
+                <div style={{ marginTop: '1.5em',marginLeft:'140px' }}>{this.props.children}</div>
         </div>);
     }
 }

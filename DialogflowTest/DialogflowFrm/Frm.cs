@@ -29,7 +29,7 @@ namespace DialogflowFrm
             }
             this.button1.Enabled = false;
             this.button1.Text = "Processing...";
-            string sessionId = "9999999";
+            string sessionId = DateTime.Now.ToString("yyyy-MM-DD HH:mm:ss.fff");
             string question = this.tbQuestion.Text;
             var cts = new CancellationTokenSource();
             bool isDelContext = this.deleteContext.Checked;
