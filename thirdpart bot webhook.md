@@ -81,34 +81,38 @@
   | `url` | string  | no | yes | url of the video |
 
 #### TextResponse
-  TextResponse is represented as simple flat JSON objects with the following keys:  
+  TextResponse is represented as simple flat JSON objects with the following keys:
+
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
-  | `message` | string  | no | yes | text of the response|
-  | [linkInfo](#linkinfo) | object  | no | no | link information of the text|  
+  | `message` | string  | no | yes | text of the response |
+  | [linkInfo](#linkinfo) | object  | no | no | link information of the text |  
 
 #### LinkInfo
-  TextResponse is represented as simple flat JSON objects with the following keys:  
+  TextResponse is represented as simple flat JSON objects with the following keys:
+
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
-  | `type` | enums | no | yes | enums contain weblink and goToIntent|
-  | `startPos` | int | no | yes | start index of text which contains link info|
-  | `endPos` | int | no | yes | end index of text which contains link info|
-  | `url` | string | no | yes when type is weblink | url of the web resource that you want user to open,including web forms,articles,images,video,etc.|
-  | `intentId` | string| no | yes when type is goToIntent | id of intent that you want user to click.|
-  | `intentName` | string| no | yes when type is goToIntent | name of intent that you want user to click.|
-  | `openIn` | enums | no | yes when type is weblink | enums contain currentWindow,sideWindow,newWindow. This field defined the way that webpage will be opened.|
+  | `type` | enums | no | yes | enums contain weblink and goToIntent |
+  | `startPos` | int | no | yes | start index of text which contains link info |
+  | `endPos` | int | no | yes | end index of text which contains link info |
+  | `url` | string | no | yes when type is weblink | url of the web resource that you want user to open,including web forms,articles,images,video,etc. |
+  | `intentId` | string| no | yes when type is goToIntent | id of intent that you want user to click. |
+  | `intentName` | string| no | yes when type is goToIntent | name of intent that you want user to click. |
+  | `openIn` | enums | no | yes when type is weblink | enums contain currentWindow,sideWindow,newWindow. This field defined the way that webpage will be opened. |
 
 
 #### QuickReplyResponse
-  QuickReplyResponse is represented as simple flat JSON objects with the following keys:  
+  QuickReplyResponse is represented as simple flat JSON objects with the following keys:
+
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `message` | string  | no | yes | text of the response|
   | [quickReplyItems]| an array of [QuickReplyItem](#quickreplyitem)  | no | no | link information of the text|  
 
 #### QuickReplyItem
-  QuickReplyItem is represented as simple flat JSON objects with the following keys:  
+  QuickReplyItem is represented as simple flat JSON objects with the following keys: 
+
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `type` | string  | no | yes | enums contain  goToIntent, contactAgent, text|
@@ -118,6 +122,7 @@
 
 #### ButtonResponse
   ButtonResponse is represented as simple flat JSON objects with the following keys:  
+
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `message` | string  | no | yes | text of the response|
@@ -125,6 +130,7 @@
 
 #### ButtonItem
   QuickReplyResponse is represented as simple flat JSON objects with the following keys:  
+
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `type` | string  | no | yes | enums contain  enums contain weblink,webview and goToIntent|
@@ -138,6 +144,7 @@
 
 #### CollectInformationResponse
   CollectInformationResponse is represented as simple flat JSON objects with the following keys:  
+  
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `text` | string  | no | yes | text on the button which can be clicked to open a webview to collection information|
@@ -148,6 +155,7 @@
 #### Field
 
   Field is represented as simple flat JSON objects with the following keys:  
+  
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `Id` | int  | no | yes | id of the field |
