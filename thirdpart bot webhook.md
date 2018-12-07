@@ -1,84 +1,118 @@
 
-## Third part bot webhook
-  - [Visitor message sent](#visitor-message-sent)
+## Custom Bot webhook
+  - [Visitor question sent](#visitor-question-sent)
+
+When visitor sent a question through live chat, we will pass this question and other information we defined to this webhook. 
+You need process this question and information within this webhook using your own bot engine and give us a formatted 
+response so that we can give visitor an answer base on your response through live chat. 
+
   - [Intent link clicked](#Intent-link-clicked)
+
+If the answer we give to visitor contains link/button/quickreply which point to an intent, when visitor click this link/button/quickreply, we will pass this action to this webhook with intent id and other information we defined. You need process this action within this webhook and give us a formatted response so than we can give an answer to visitor base on your response through live chat.
+
   - [Helpful or not-helpful clicked](#helpful-or-not-helpful-clicked)
-  - [Location Collected](#location-collected)
-  - [Information Collected](#information-collected)
-### Third part bot webhook Related Object Json Format
 
-#### VisitorInfo
+Visitor can click helpful or not-helpful button to rate our answers. When visitor clicked these buttons, we will pass this action to this webhook, you can use this webhook to collect information about your bot’s correctness and improve your bot’s experience. Also, we need a formatted response from this webhook to give visitor a message for his/her rating.
 
-  Visitor info is represented as simple flat JSON objects with the following keys:  
+  - [Location sent](#location-sent)
 
-  | Name | Type | Read-only | Mandatory | Description |    
-  | - | - | - | - | - | 
-  | `id` | integer | yes | no | id of the visitor |
-  | `longitude` | float | no | no | longitude of the visitor location |
-  | `latitude` | float | no | no | latitude of the visitor location |
-  | `page_views` | integer | no | yes | count of the visited |
-  | `browser` | string | no | yes | visitor use browser type |
-  | `chats` | integer | no | yes | count of chat |
-  | `city` | string | no | yes | the city of the visitor |
-  | `company` | string | no | yes | the company of the visitor |
-  | `country` | string | no | yes | the country of the visitor |
-  | `current_browsing` | string | no | yes | page of the current browsing |
-  | `custom_fields` | [CustomFields](#customfields) | no | yes | an array of custom fields |
-  | `custom_variables` | [CustomVariables](#customvariables) | no | yes | an array of custom variables |
-  | `department` | int | no | yes | department of the visitor |
-  | `email` | string | no | yes | email of the visitor |
-  | `first_visit_time` | string | no | yes | the time of first visit |
-  | `flash_version` | string | no | yes | version of the flash |
-  | `ip` | string | no | yes | ip of the visitor |
-  | `keywords` | string | no | yes | search engine key |
-  | `landing_page` | string | no | yes | the page of login |
-  | `language` | string | no | yes | language |
-  | `name` | string | no | yes | name of the visitor |
-  | `operating_system` | string | no | yes | operating system of the visitor |
-  | `phone` | string | no | yes | phone of the visitor |
-  | `product_service` | string | no | yes | product service |
-  | `referrer_url` | string | no | yes | referrer url |
-  | `screen_resolution` | string | no | yes | screen resolution |
-  | `search_engine` | string | no | yes | search engine |
-  | `state` | string | no | yes | state of the visitor |
-  | `status` | string | no | yes | status of the visitor |
-  | `time_zone` | string | no | yes | time zone of the visitor |
-  | `visit_time` | string | no | yes | time of the visitor |
-  | `visits` | integer | no | yes | count of the visited |
+When we received a response whose type is collectLocation, we will display an webview for visitor to collect his/her location, when visitor shared his/her location to us, we will pass these information to this webhook and you can give us a response based on information we provided through this webhook.
 
-#### CustomFields
+  - [Information sent](#information-sent)
 
-  Custom fields is represented as simple flat JSON objects with the following keys:  
+When we received a response whose type is collectInformation, we will display an webview for visitor to collect more information about him/her, when visitor filled out webview, we will pass these information to this webhook, and you can give us a response based on information we provided through this webhook.
 
-  | Name | Type | Read-only | Mandatory | Description |    
-  | - | - | - | - | - | 
-  | `id` | integer  | yes | no | id of the field |
-  | `name` | string  | no | yes | name of the field |
-  | `value` | string  | no | yes | value of the field |
+### Visitor question Sent
 
-#### CustomVariables
+#### Request data
 
-  Custom variables is represented as simple flat JSON objects with the following keys:  
+  - `sessionId ` -  id of the session
+  - `campaignId` - id of the campaign in comm100 live chat
+  - `question` - the last question that Bot receives from visitor
+  - `questionId` - id of current question
+  - [visitorInfo](#VisitorInfo)
 
-  | Name | Type | Read-only | Mandatory | Description |    
-  | - | - | - | - | - | 
-  | `name` | string  | no | yes | name of the variable |
-  | `value` | string  | no | yes | value of the variable |
+#### Response data
+  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
+  - `answer` - an array of [Response](#response)
+  
+  [Sample Json](#sample-json)
 
-#### ImageResponse
-  ImageResponse is represented as simple flat JSON objects with the following keys:  
 
-  | Name | Type | Read-only | Mandatory | Description |    
-  | - | - | - | - | - | 
-  | `name` | string  | no | yes | name of the image |
-  | `url` | string  | no | yes | url of the image |  
+### Intent link clicked
 
-#### VideoResponse
-  VideoResponse is represented as simple flat JSON objects with the following keys:  
+#### Request data
 
-  | Name | Type | Read-only | Mandatory | Description |    
-  | - | - | - | - | - | 
-  | `url` | string  | no | yes | url of the video |
+  - `sessionId ` -  id of the session
+  - `campaignId` - id of the campaign in comm100 live chat
+  - `questionId` - id of originall question
+  - `intentId` - id of intent which visitor clicked,it is originally from the response of the webhook [Visitor question Sent](#visitor-question-sent), another [Intent link clicked](#intent-link-clicked), [Location Collected](#location-collected), [Information Collection](#information-collected)
+  - [visitorInfo](#VisitorInfo)
+
+#### Response data
+  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
+  - `answer` - an array of [Response](#response)
+
+  [Sample Json](#sample-json)
+
+### Helpful or not-helpful clicked
+
+#### Request data
+
+  - `sessionId ` -  id of the session
+  - `campaignId` - id of the campaign in comm100 live chat
+  - `questionId` - id of [response](#response),it is originally from the response of the webhook [Visitor question Sent](#visitor-question-sent) or [Intent link clicked](#intent-link-clicked)
+  - `isHelpful` - true or false
+  - [visitorInfo](#VisitorInfo)
+
+#### Response data
+  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
+  - `answer` - an array of [Response](#response)
+
+  [Sample Json](#sample-json)
+
+### Location sent
+
+#### Request data
+
+  - `sessionId ` -  id of the session
+  - `campaignId` - id of the campaign in comm100 live chat
+  - `questionId` - id of originall question
+  - `intentId` - id of intent which visitor clicked,it is originally from the response of the webhook [Visitor question Sent](#visitor-question-sent), another [Intent link clicked](#intent-link-clicked), [Location Collected](#location-collected), [Information Collection](#information-collected)
+  - [visitorInfo](#VisitorInfo)
+
+#### Response data
+  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
+  - `answer` - an array of [Response](#response)
+
+  [Sample Json](#sample-json)
+
+### Information sent
+
+#### Request data
+
+  - `sessionId ` -  id of the session
+  - `campaignId` - id of the campaign in comm100 live chat
+  - `questionId` - id of originall question
+  - `intentId` - id of intent which visitor clicked,it is originally from the response of the webhook [Visitor question Sent](#visitor-question-sent), another [Intent link clicked](#intent-link-clicked), [Location Collected](#location-collected), [Information Collection](#information-collected)
+  - [visitorInfo](#VisitorInfo)
+
+#### Response data
+  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
+  - `answer` - an array of [Response](#response)
+
+  [Sample Json](#sample-json)
+
+### Custom Bot webhook Related Object Json Format
+
+#### Response
+Response is represented as simple flat json objects with the following keys:
+
+|Name| Type| Read-only    |Mandatory | Description     | 
+| - | - | - | - | - | 
+|`type` | string | no | yes |enums contain text,image,video, quickreply, button, collectLocation, collectInformation.  | 
+|`id` | string | no | yes |id of current response.  | 
+|`content` | object | no | yes |response's content. when type is text, it represents [TextResponse](#textresponse);when type is image ,it represents [ImageResponse](#imageresponse);when type is video, it represents [VideoResponse](#videoresponse); when type is quickreply, it represents [QuickReplyResponse](#quickreplyresponse); when type is button, it represents [ButtonResponse](#buttonresponse); when type is collectLocation, it should be null; when type is collectInformation, it represents [CollectInformationResponse](#collectinformationresponse)| 
 
 #### TextResponse
   TextResponse is represented as simple flat JSON objects with the following keys:
@@ -101,6 +135,21 @@
   | `intentName` | string| no | yes when type is goToIntent | name of intent that you want user to click. |
   | `openIn` | enums | no | yes when type is weblink | enums contain currentWindow,sideWindow,newWindow. This field defined the way that webpage will be opened. |
 
+#### ImageResponse
+
+  ImageResponse is represented as simple flat JSON objects with the following keys:  
+
+  | Name | Type | Read-only | Mandatory | Description |    
+  | - | - | - | - | - | 
+  | `name` | string  | no | yes | name of the image |
+  | `url` | string  | no | yes | url of the image |  
+
+#### VideoResponse
+  VideoResponse is represented as simple flat JSON objects with the following keys:  
+
+  | Name | Type | Read-only | Mandatory | Description |    
+  | - | - | - | - | - | 
+  | `url` | string  | no | yes | url of the video |
 
 #### QuickReplyResponse
   QuickReplyResponse is represented as simple flat JSON objects with the following keys:
@@ -108,7 +157,7 @@
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `message` | string  | no | yes | text of the response|
-  | [quickReplyItems]| an array of [QuickReplyItem](#quickreplyitem)  | no | no | link information of the text|  
+  | `quickReplyItems`| an array of [QuickReplyItem](#quickreplyitem)  | no | no | link information of the text|  
 
 #### QuickReplyItem
   QuickReplyItem is represented as simple flat JSON objects with the following keys: 
@@ -126,7 +175,7 @@
   | Name | Type | Read-only | Mandatory | Description |    
   | - | - | - | - | - | 
   | `message` | string  | no | yes | text of the response|
-  | [buttonItem]| an array of [ButtonItem](#buttonItem)  | no | no | link information of the text|  
+  | `buttonItems`| an array of [ButtonItem](#buttonItem)  | no | no | link information of the text|  
 
 #### ButtonItem
   QuickReplyResponse is represented as simple flat JSON objects with the following keys:  
@@ -166,82 +215,205 @@
   | `isMasked` | bool  | no | yes | when it is true, information collected will replaced by * in chat log for security |
   | `option` | an array of string  | no | yes when type is dropDownList, checkBoxList | values displayed in the field when type is dropDownList, checkBoxList for visitor to choose|
 
-#### Response
-Response is represented as simple flat json objects with the following keys:
+#### VisitorInfo
 
-|Name| Type| Read-only    |Mandatory | Description     | 
-| - | - | - | - | - | 
-|`type` | string | no | yes |enums contain text,image,video, quickreply, button, collectLocation, collectInformation.  | 
-|`id` | string | no | yes |id of current response.  | 
-|`content` | object | no | yes |response's content. when type is text, it represents [TextResponse](#textresponse);when type is image ,it represents [ImageResponse](#imageresponse);when type is video, it represents [VideoResponse](#videoresponse); when type is quickreply, it represents [QuickReplyResponse](#quickreplyresponse); when type is button, it represents [ButtonResponse](#buttonresponse); when type is collectLocation, it should be null; when type is collectInformation, it represents [CollectInformationResponse](#collectinformationresponse)| 
+  Visitor info is represented as simple flat JSON objects with the following keys:  
 
+  | Name | Type | Read-only | Mandatory | Description |    
+  | - | - | - | - | - | 
+  | `id` | integer | yes | no | id of the visitor |
+  | `chats` | integer | no | yes | count of chat |
+  | `name` | string | no | yes | name of the visitor |
+  | `language` | string | no | yes | language |
+  | `email` | string | no | yes | email of the visitor |
+  | `phone` | string | no | yes | phone of the visitor |
+  | `longitude` | float | no | no | longitude of the visitor location |
+  | `latitude` | float | no | no | latitude of the visitor location |
+  | `department` | int | no | yes | department of the visitor |
+  | `company` | string | no | yes | the company of the visitor |
+  | `city` | string | no | yes | the city of the visitor |
+  | `country` | string | no | yes | the country of the visitor |
+  | `browser` | string | no | yes | visitor use browser type |
+  | `page_views` | integer | no | yes | count of the visited |
+  | `current_browsing` | string | no | yes | page of the current browsing |
+  | `referrer_url` | string | no | yes | referrer url |
+  | `landing_page` | string | no | yes | the page of login |
+  | `search_engine` | string | no | yes | search engine |
+  | `keywords` | string | no | yes | search engine key |
+  | `operating_system` | string | no | yes | operating system of the visitor |
+  | `ip` | string | no | yes | ip of the visitor |
+  | `flash_version` | string | no | yes | version of the flash |
+  | `product_service` | string | no | yes | product service |
+  | `screen_resolution` | string | no | yes | screen resolution |
+  | `time_zone` | string | no | yes | time zone of the visitor |
+  | `first_visit_time` | string | no | yes | the time of first visit |
+  | `visit_time` | string | no | yes | time of the visitor |
+  | `visits` | integer | no | yes | count of the visited |
+  | `state` | string | no | yes | state of the visitor |
+  | `status` | string | no | yes | status of the visitor |
+  | `custom_fields` | [CustomFields](#customfields) | no | yes | an array of custom fields |
+  | `custom_variables` | [CustomVariables](#customvariables) | no | yes | an array of custom variables |
 
-#### Visitor Message Sent
+#### CustomFields
 
-##### Request
+  Custom fields is represented as simple flat JSON objects with the following keys:  
 
-  - `sessionId ` -  id of the session
-  - `campaignId` - id of the campaign in comm100 live chat
-  - `question` - the last question that Bot receives from visitor
-  - `questionId` - id of current question
-  - [visitorInfo](#VisitorInfo)
+  | Name | Type | Read-only | Mandatory | Description |    
+  | - | - | - | - | - | 
+  | `id` | integer  | yes | no | id of the field |
+  | `name` | string  | no | yes | name of the field |
+  | `value` | string  | no | yes | value of the field |
 
-##### Response
-  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
-  - `answer` - an array of [Response](#response)
+#### CustomVariables
 
+  Custom variables is represented as simple flat JSON objects with the following keys:  
 
-#### Intent link clicked
+  | Name | Type | Read-only | Mandatory | Description |    
+  | - | - | - | - | - | 
+  | `name` | string  | no | yes | name of the variable |
+  | `value` | string  | no | yes | value of the variable |
 
-##### Request
-
-  - `sessionId ` -  id of the session
-  - `campaignId` - id of the campaign in comm100 live chat
-  - `questionId` - id of originall question
-  - `intentId` - id of intent which visitor clicked,it is originally from the response of the webhook [Visitor Message Sent](#visitor-message-sent), another [Intent link clicked](#intent-link-clicked), [Location Collected](#location-collected), [Information Collection](#information-collected)
-  - [visitorInfo](#VisitorInfo)
-
-##### Response
-  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
-  - `answer` - an array of [Response](#response)
-
-
-#### Location Collected
-
-##### Request
-
-  - `sessionId ` -  id of the session
-  - `campaignId` - id of the campaign in comm100 live chat
-  - `questionId` - id of originall question
-  - `intentId` - id of intent which visitor clicked,it is originally from the response of the webhook [Visitor Message Sent](#visitor-message-sent), another [Intent link clicked](#intent-link-clicked), [Location Collected](#location-collected), [Information Collection](#information-collected)
-  - [visitorInfo](#VisitorInfo)
-
-##### Response
-  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
-  - `answer` - an array of [Response](#response)
-
-#### Information Collected
-
-  - `sessionId ` -  id of the session
-  - `campaignId` - id of the campaign in comm100 live chat
-  - `questionId` - id of originall question
-  - `intentId` - id of intent which visitor clicked,it is originally from the response of the webhook [Visitor Message Sent](#visitor-message-sent), another [Intent link clicked](#intent-link-clicked), [Location Collected](#location-collected), [Information Collection](#information-collected)
-  - [visitorInfo](#VisitorInfo)
-
-##### Response
-  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
-  - `answer` - an array of [Response](#response)
-
-#### Helpful or not-helpful clicked
-
-##### Request
-
-  - `sessionId ` -  id of the session
-  - `campaignId` - id of the campaign in comm100 live chat
-  - `questionId` - id of [response](#response),it is originally from the response of the webhook [Visitor Message Sent](#visitor-message-sent) or [Intent link clicked](#intent-link-clicked)
-  - `isHelpful` - true or false
-  - [visitorInfo](#VisitorInfo)
-
-##### Response
-  - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
-  - `answer` - an array of [Response](#response)
+  #### Sample Json
+  {
+    "type": "highConfidenceAnswer",
+    "answer": [
+        {
+            "id": "1",
+            "type": "text",
+            "content": {
+                "message": "this is a plain message"
+            }
+        },
+        {
+            "id": "2",
+            "type": "text",
+            "content": {
+                "message": "this is a web link message",
+                "linkInfo": {
+                    "type": "weblink",
+                    "startPos": 10,
+                    "endPos": 17,
+                    "url": "www.test.com",
+                    "openIn": "currentWindow"
+                }
+            }
+        },
+        {
+            "id": "3",
+            "type": "text",
+            "content": {
+                "message": "this is a go to intent message",
+                "linkInfo": {
+                    "type": "weblink",
+                    "startPos": 10,
+                    "endPos": 17,
+                    "intentId": "test-intent-id",
+                    "intentName": "test-intent-name",
+                    "openIn": "currentWindow"
+                }
+            }
+        },
+        {
+            "id": "4",
+            "type": "image",
+            "content": {
+                "name": "test-image.jpg",
+                "url": "www.test.com/test-image.jpg"
+            }
+        },
+        {
+            "id": "5",
+            "type": "video",
+            "content": {
+                "url": "www.test.com/test-video.jpg"
+            }
+        },
+        {
+            "id": "6",
+            "type": "quickreply",
+            "content": {
+                "message": "this is a quick reply response",
+                "quickReplyItems": [
+                    {
+                        "type": "goToIntent",
+                        "name": "click to trigger test-intent-name",
+                        "intentId": "test-intent-id",
+                        "intentName": "test-intent-name"
+                    },
+                    {
+                        "type": "contactAgent",
+                        "name": "click to contact agent"
+                    },
+                    {
+                        "type": "text",
+                        "name": "click to send this text"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "7",
+            "type": "button",
+            "content": {
+                "message": "this is a button response",
+                "buttonItems": [
+                    {
+                        "type": "goToIntent",
+                        "text": "click to trigger test-intent-name",
+                        "intentId": "test-intent-id",
+                        "intentName": "test-intent-name"
+                    },
+                    {
+                        "type": "weblink",
+                        "text": "click to open this url in web page",
+                        "url": "www.test.com",
+                        "openIn": "currentWindow"
+                    },
+                    {
+                        "type": "webview",
+                        "text": "click to open this url in web view",
+                        "url": "www.test.com",
+                        "openStyle": "full"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "8",
+            "type": "collectLocation",
+            "content": null
+        },
+        {
+            "id": "9",
+            "type": "collectInformation",
+            "content": {
+                "text": "",
+                "message": "",
+                "isNeedConfirm": "true",
+                "fields": [
+                    {
+                        "Id": 1,
+                        "name": "field-1",
+                        "value": "",
+                        "type": "text",
+                        "isRequired": true,
+                        "isMasked": true
+                    },
+                    {
+                        "Id": 2,
+                        "name": "field-2",
+                        "value": "",
+                        "type": "dropDownList",
+                        "isRequired": true,
+                        "isMasked": true,
+                        "option": [
+                            "value-1",
+                            "value-2",
+                            "value-3"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
