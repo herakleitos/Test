@@ -274,6 +274,7 @@ Response is represented as simple flat json objects with the following keys:
   | `value` | string  | no | yes | value of the variable |
 
   #### Sample Json
+  ```json
   {
     "type": "highConfidenceAnswer",
     "answer": [
