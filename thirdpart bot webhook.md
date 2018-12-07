@@ -36,7 +36,7 @@ When we received a response whose type is collectInformation, we will display an
   - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
   - `answer` - an array of [Response](#response)
   
-  [Sample Json](#sample-json)
+    [Sample Json](#sample-json)
 
 
 ### Intent link clicked
@@ -53,7 +53,7 @@ When we received a response whose type is collectInformation, we will display an
   - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
   - `answer` - an array of [Response](#response)
 
-  [Sample Json](#sample-json)
+    [Sample Json](#sample-json)
 
 ### Helpful or not-helpful clicked
 
@@ -69,7 +69,7 @@ When we received a response whose type is collectInformation, we will display an
   - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
   - `answer` - an array of [Response](#response)
 
-  [Sample Json](#sample-json)
+    [Sample Json](#sample-json)
 
 ### Location sent
 
@@ -85,7 +85,7 @@ When we received a response whose type is collectInformation, we will display an
   - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
   - `answer` - an array of [Response](#response)
 
-  [Sample Json](#sample-json)
+    [Sample Json](#sample-json)
 
 ### Information sent
 
@@ -101,7 +101,7 @@ When we received a response whose type is collectInformation, we will display an
   - `type` - string , contains  highConfidenceAnswer, possibleAnswer, noAnswer
   - `answer` - an array of [Response](#response)
 
-  [Sample Json](#sample-json)
+    [Sample Json](#sample-json)
 
 ### Custom Bot webhook Related Object Json Format
 
@@ -418,3 +418,4 @@ Response is represented as simple flat json objects with the following keys:
         }
     ]
 }
+```
