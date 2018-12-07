@@ -232,6 +232,7 @@ Response is represented as simple flat json objects with the following keys:
   | `department` | int | no | yes | department of the visitor |
   | `company` | string | no | yes | the company of the visitor |
   | `city` | string | no | yes | the city of the visitor |
+  | `state` | string | no | yes | state of the visitor |
   | `country` | string | no | yes | the country of the visitor |
   | `browser` | string | no | yes | visitor use browser type |
   | `page_views` | integer | no | yes | count of the visited |
@@ -249,9 +250,8 @@ Response is represented as simple flat json objects with the following keys:
   | `first_visit_time` | string | no | yes | the time of first visit |
   | `visit_time` | string | no | yes | time of the visitor |
   | `visits` | integer | no | yes | count of the visited |
-  | `state` | string | no | yes | state of the visitor |
   | `status` | string | no | yes | status of the visitor |
-  | `custom_fields` | [CustomFields](#customfields) | no | yes | an array of custom fields |
+  | `custom_fields` | [CustomFields](#customfields) | no | yes | an array of custom fields collected from visitor|
   | `custom_variables` | [CustomVariables](#customvariables) | no | yes | an array of custom variables |
 
 #### CustomFields
@@ -276,7 +276,7 @@ Response is represented as simple flat json objects with the following keys:
   #### Sample Json
   ```json
   {
-    "type": "highConfidenceAnswer",
+    "type": "highConfidenceAnswer",// highConfidenceAnswer, possibleAnswer or noAnswer
     "answer": [
         {
             "id": "1",
@@ -291,11 +291,11 @@ Response is represented as simple flat json objects with the following keys:
             "content": {
                 "message": "this is a web link message",
                 "linkInfo": {
-                    "type": "weblink",
+                    "type": "weblink",// weblink or goToIntent.
                     "startPos": 10,
                     "endPos": 17,
                     "url": "www.test.com",
-                    "openIn": "currentWindow"
+                    "openIn": "currentWindow"// currentWindow, sideWindow or newWindow.
                 }
             }
         },
@@ -305,12 +305,11 @@ Response is represented as simple flat json objects with the following keys:
             "content": {
                 "message": "this is a go to intent message",
                 "linkInfo": {
-                    "type": "weblink",
+                    "type": "goToIntent",
                     "startPos": 10,
                     "endPos": 17,
                     "intentId": "test-intent-id",
-                    "intentName": "test-intent-name",
-                    "openIn": "currentWindow"
+                    "intentName": "test-intent-name"
                 }
             }
         },
@@ -336,7 +335,7 @@ Response is represented as simple flat json objects with the following keys:
                 "message": "this is a quick reply response",
                 "quickReplyItems": [
                     {
-                        "type": "goToIntent",
+                        "type": "goToIntent",// goToIntent, contactAgent or text.
                         "name": "click to trigger test-intent-name",
                         "intentId": "test-intent-id",
                         "intentName": "test-intent-name"
@@ -359,7 +358,7 @@ Response is represented as simple flat json objects with the following keys:
                 "message": "this is a button response",
                 "buttonItems": [
                     {
-                        "type": "goToIntent",
+                        "type": "goToIntent",// goToIntent, weblink or webview.
                         "text": "click to trigger test-intent-name",
                         "intentId": "test-intent-id",
                         "intentName": "test-intent-name"
@@ -394,17 +393,17 @@ Response is represented as simple flat json objects with the following keys:
                 "fields": [
                     {
                         "Id": 1,
+                        "type": "text",//text, textArea, radio, checkBox, dropDownList or checkBoxList.
                         "name": "field-1",
                         "value": "",
-                        "type": "text",
                         "isRequired": true,
                         "isMasked": true
                     },
                     {
                         "Id": 2,
+                        "type": "dropDownList",
                         "name": "field-2",
                         "value": "",
-                        "type": "dropDownList",
                         "isRequired": true,
                         "isMasked": true,
                         "option": [
