@@ -393,7 +393,7 @@ Response is represented as simple flat json objects with the following keys:
                 "fields": [
                     {
                         "Id": 1,
-                        "type": "text",//text, textArea, radio, checkBox, dropDownList or checkBoxList.
+                        "type": "text",/*..text, textArea, radio, checkBox, dropDownList or checkBoxList*/..
                         "name": "field-1",
                         "value": "",
                         "isRequired": true,
