@@ -25,6 +25,25 @@ namespace DialogflowTest
     {
         static void Main(string[] args)
         {
+            string test = "this is a test [] : ";
+
+            byte[] bytes = System.Text.Encoding.Unicode.GetBytes(test);
+
+            int count = bytes.Length / 2;
+
+            List<char> result = new List<char>(); 
+
+            for(int i= 0;i < bytes.Length; i+=0)
+            {
+                byte[] newBytes = new byte[2];
+                for (int j = 0; j < 2; j++)
+                {
+                    newBytes[j] = bytes[i + j];
+                }
+                i += 2;
+                var chars = System.Text.Encoding.Unicode.GetChars(newBytes);
+                result.AddRange(chars);
+            }
 
             string aaa = utils.CreateMD5Hash("123456789@#$%");
             string bbb = utils.CreateMD5Hash("123456789@#$%");
@@ -39,9 +58,6 @@ namespace DialogflowTest
             string iii = utils.CreateMD5Hash("&*()^%&^%$&^$&^%#$%");
 
             Mapper.Initialize(ini => ini.AddProfiles(new[] { "DialogflowTest" }));
-
-            a test = new a();
-            test.a_name = "aaa";
 
             string json = JsonConvert.SerializeObject(test);
 

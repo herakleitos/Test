@@ -1,14 +1,14 @@
 .header{
     display: flex;
-    width: 450px;
+    width: 400px;
 }
 .lineContainer{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
-    width: 450px;
+    width: 400px;
 }
 .imageContainer{
-    width: 450px;
+    width: 400px;
     height: 120px;
 }
 .input{
@@ -16,28 +16,26 @@
 }
 .title{
     font-size: 11pt;
-    margin-right: 10px;
     width: 150px!important;
 }
 .narrowTitle{
     font-size: 11pt;
-    margin-right: 10px;
     width: 100px!important;
 }
 .description{
     font-size: 11pt;
-    margin-right: 10px;
-    width: 450px;
+    width: 400px;
 }
 .mainTitle{
     font-size: 18pt;
     color: rgb(1, 144, 200);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .button{
-    margin-right: 10px;
     color: white!important;
     background-color: rgb(135, 177, 7)!important;
+    margin-top:5px;
+    margin-right: 10px;
 }
 .datePicker{
     width: 240px!important;
@@ -50,5 +48,5 @@
     float: right;
 }
 .mainContent{
-    width: 450px;
+    width: 400px;
 }

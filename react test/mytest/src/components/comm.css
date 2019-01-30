@@ -80,6 +80,9 @@
     background-color: green;
     display: flex;
 }
+.input{
+    width: 300px!important;
+}
 .cc{
     width: 400px;
     height: 100px;

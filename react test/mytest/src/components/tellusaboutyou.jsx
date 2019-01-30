@@ -108,15 +108,15 @@ class tellusaboutyou extends Component{
         return(
             <div>
                 <div className={Styles.imageContainer}>
-                    <div className={Styles.leftItem} ><img src='../img/calm100_logo.png' /></div>
-                    <div className={Styles.rightItem}><img src='../img/calm100_leaf.png' /></div>
+                    <div className={Styles.leftItem} ><img src={require('../img/calm100_logo.png')} /></div>
+                    <div className={Styles.rightItem}><img src={require('../img/calm100_leaf.png')}/></div>
                 </div>
                 {
                     (this.state.showFirstPage||this.state.showSecondPage)&&
                     <div>
                     <div className={Styles.mainTitle}>Tell us about you</div>
                     <div className={Styles.description}>Shopping for dental and vision insurance is easier than you might think. To get started, simply complete the following:</div>
-                    <br></br>
+                    <br />
                     </div>
                 }
                 {
@@ -139,7 +139,6 @@ class tellusaboutyou extends Component{
                         <span className={Styles.narrowTitle}>Birth date</span>
                         <DatePicker className={Styles.datePicker} format='YYYY-MM-DD' value={this.state.age?new moment(this.state.age):null} onChange={this.ageChange}></DatePicker>
                     </div>
-                    <br></br>
                     <div className={Styles.lineContainer}>
                         <Button className={Styles.button} key='button1' onClick={() => this.firstClick()}>Next Step: Select a plan</Button>
                     </div>
@@ -163,7 +162,6 @@ class tellusaboutyou extends Component{
                         <Checkbox value='Calm100 Complete' onChange={this.changePlan} 
                         checked={this.state.plans?this.state.plans.filter(item=>item.value==='Calm100 Complete')[0].checked:false} ></Checkbox>
                     </div>
-                    <br></br>
                     <div className={Styles.lineContainer}>
                         <Button className={Styles.button}  key='button2' onClick={() => this.secondClick()}>Next Step</Button>
                         <Button className={Styles.button} key='button3' onClick={() => this.goBack(1)}>Go Back</Button>
@@ -174,7 +172,6 @@ class tellusaboutyou extends Component{
                     !this.state.showFirstPage&&!this.state.showSecondPage&&
                     <div className={Styles.mainContent}>
                         <div className={Styles.description} >Thanks so much for your submission, one of our representitives will be in contact with you shortly to gather more information.</div>
-                        <br></br>
                    {/*      <Button className={Styles.button} key='button5' onClick={()=>this.submit()}>Console Log</Button> */}
                         <Button className={Styles.button} key='button4' onClick={()=>this.goBack(2)}>Go Back</Button>
                     </div>

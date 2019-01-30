@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React ,{Component} from 'react'
 import {BrowserRouter as Router,Route} from 'react-router-dom';
-import Tellusaboutyou from './components/tellusaboutyou';
-
+import DemoIndex from './components/demoIndex';
+import ClaimStatusReport from './components/claimStatusReport';
+import TellUsAboutYou from './components/tellusaboutyou'
 class App extends Component {
   constructor(props){
     super(props);
 } 
   render() {
     return (
-       <Router>
-          <Route path='/tell-us-about-you' component={Tellusaboutyou}></Route>
-      </Router>  
+      <TellUsAboutYou path='/tell-us-about-you' component={TellUsAboutYou}>
+      </TellUsAboutYou> 
     );
   }
 }
