@@ -9,7 +9,7 @@ import udc_inputs
 import tpu_config
 from models.dual_encoder import dual_encoder_model
 
-tf.flags.DEFINE_string("model_dir", "gs://comm100testadta/runs", "Directory to store model checkpoints (defaults to ./runs)")
+tf.flags.DEFINE_string("model_dir", "gs://comm100testdata/runs", "Directory to store model checkpoints (defaults to ./runs)")
 tf.flags.DEFINE_integer("loglevel", 20, "Tensorflow log level")
 tf.flags.DEFINE_integer("num_epochs", None, "Number of training Epochs. Defaults to indefinite.")
 tf.flags.DEFINE_integer("eval_every", 100, "Evaluate after this many train steps")
@@ -27,8 +27,8 @@ def main(unused_argv):
   use_tpu = tpu_config.use_tpu()
   hparams = udc_hparams.create_hparams()
   if use_tpu:
-    TRAIN_FILE = "gs://comm100testadta/data/train.tfrecords"
-    VALIDATION_FILE = "gs://comm100testadta/data/validation.tfrecords" 
+    TRAIN_FILE = "gs://comm100testdata/data/train.tfrecords"
+    VALIDATION_FILE = "gs://comm100testdata/data/validation.tfrecords" 
   else:
     FLAGS.model_dir = os.path.abspath(os.path.join("./runs", str(TIMESTAMP)))
     TRAIN_FILE = os.path.abspath(os.path.join(FLAGS.input_dir, "train.tfrecords"))

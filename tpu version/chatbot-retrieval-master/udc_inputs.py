@@ -1,6 +1,7 @@
 import tensorflow as tf
 from models import filehelper
 import numpy as np
+import os
 import tpu_config
 TEXT_FEATURE_SIZE = 320
 FLAGS = tf.flags.FLAGS
@@ -128,12 +129,12 @@ def create_example_predict(row, vocab):
   return example
 
 def create_input_fn_predict(vp, batch_size,hparams, num_epochs):
-  predict_file_path= os.path.abspath(os.path.join(FLAGS.input_dir, "pre.csv"))
-  canned_file_path= os.path.abspath(os.path.join(FLAGS.input_dir, "canned.csv"))
+  predict_file_path= os.path.abspath(os.path.join(FLAGS.result_dir, "pre.csv"))
+  canned_file_path= os.path.abspath(os.path.join(FLAGS.result_dir, "canned.csv"))
   if tpu_config.use_tpu()==True:
-    tf_file_path = "gs://comm100testadta/data/predict.tfrecords"
+    tf_file_path = "gs://comm100testdata/data/predict.tfrecords"
   else:
-    tf_file_path = os.path.abspath(os.path.join(FLAGS.input_dir, "predict.tfrecords"))
+    tf_file_path = os.path.abspath(os.path.join(FLAGS.result_dir, "predict.tfrecords"))
   INPUT_CONTEXTS,POTENTIAL_RESPONSES = filehelper.read_predict_file(predict_file_path)
   SET_RESPONSES = filehelper.read_csv_file(canned_file_path)
   writer = tf.python_io.TFRecordWriter(tf_file_path)

@@ -15,7 +15,7 @@ def get_files_path(root):
 def read_predict_file(path):
     questions=[]
     answers=[]
-    """ reload(sys)
+    """  reload(sys)
     sys.setdefaultencoding("utf8") """
     with io.open(path,'r',encoding='utf-8-sig') as csvfile:
         reader = csv.reader(csvfile)
@@ -26,7 +26,7 @@ def read_predict_file(path):
     return questions,answers
 def read_csv_file(path):
     questions=[]
-    """ reload(sys)
+    """  reload(sys)
     sys.setdefaultencoding("utf8") """
     with io.open(path,'r',encoding='utf-8-sig') as csvfile:
         reader = csv.reader(csvfile)
@@ -38,13 +38,13 @@ def write_lines(file_path, contents):
     sys.setdefaultencoding("utf8") """
     with io.open(file_path,'a',encoding='utf-8') as txtfile:
         for line in contents:
-            txtfile.write(line+'\n')
+            txtfile.write(u'{}\n'.format(line))
         txtfile.close()
 def write_line(file_path, content):
     """ reload(sys)
     sys.setdefaultencoding("utf8") """
     with io.open(file_path,'a',encoding='utf-8') as txtfile:
-        txtfile.write(content+'\n')
+        txtfile.write(u'{}\n'.format(content))
         txtfile.close()
 def explan_context(context):
     user ="A say:"

@@ -14,21 +14,21 @@ from models.helpers import load_vocab
 import tpu_config
 
 tf.flags.DEFINE_integer("num_epochs", None, "Number of training Epochs. Defaults to indefinite.")
-tf.flags.DEFINE_string("result_dir", "./data", "Directory containing input data files 'train.tfrecords' and 'validation.tfrecords'")
-tf.flags.DEFINE_string("model_dir", "gs://comm100testadta/runs", "Directory to load model checkpoints from")
+tf.flags.DEFINE_string("result_dir", "./pre_result", "Directory containing input data files 'train.tfrecords' and 'validation.tfrecords'")
+tf.flags.DEFINE_string("model_dir", "gs://comm100testdata/runs", "Directory to load model checkpoints from")
 tf.flags.DEFINE_string("vocab_processor_file", None, "Saved vocabulary processor file")
 FLAGS = tf.flags.FLAGS
+
+def tokenizer_fn(iterator):
+  return (x.split(" ") for x in iterator)
 
 if tpu_config.use_tpu() ==False:
   FLAGS.model_dir = os.path.abspath("./runs")
   FLAGS.vocab_processor_file = os.path.abspath(os.path.join("./data", 'vocab_processor.bin'))
 else:
-  FLAGS.vocab_processor_file = "gs://comm100testadta/data/vocab_processor_protocol2.bin"
+  FLAGS.vocab_processor_file = "gs://comm100testdata/data/vocab_processor_protocol2.bin"
 # Load vocabulary
 vp = tf.contrib.learn.preprocessing.VocabularyProcessor.restore(FLAGS.vocab_processor_file)
-
-def tokenizer_fn(iterator):
-  return (x.split(" ") for x in iterator)
 
 def get_sentence(array_data):
   sentence = ''
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     context = get_sentence(context_array)
     utterance = get_sentence(utterance_array)
     prob = pred_dict['probabilities']
-    temp_result ='{}->{}\n'.format(utterance.replace('__eou__',''),prob)
+    temp_result =[prob,utterance.replace('__eou__','')]
     if context in result_dic.keys():
       result_dic[context].append(temp_result)
     else:
@@ -105,10 +105,11 @@ if __name__ == "__main__":
       result_dic.update(item)
   result = []
   for ctx in result_dic.keys():
-    temp_dialog='{}\n'.format(filehelper.explan_context(context))
+    temp_dialog='{}\n'.format(filehelper.explan_context(ctx))
     i =0
-    for utt in result_dic[ctx]:
+    result_dic[ctx].sort(key=lambda x:x[0],reverse=True)
+    for item in result_dic[ctx]:
       i+=1
-      temp_dialog+="{}, {}\n".format(i, utt)
+      temp_dialog+="{}, {} -> {}\n".format(i, item[0],item[1])
     result.append(temp_dialog)
   filehelper.write_lines(result_file_path,result)
