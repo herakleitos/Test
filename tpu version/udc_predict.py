@@ -14,7 +14,7 @@ from models.helpers import load_vocab
 import tpu_config
 
 tf.flags.DEFINE_integer("num_epochs", None, "Number of training Epochs. Defaults to indefinite.")
-tf.flags.DEFINE_string("result_dir", "./pre_result", "Directory containing input data files 'train.tfrecords' and 'validation.tfrecords'")
+tf.flags.DEFINE_string("result_dir", "./preData", "Directory containing input data files 'train.tfrecords' and 'validation.tfrecords'")
 tf.flags.DEFINE_string("model_dir", "gs://comm100testdata/runs", "Directory to load model checkpoints from")
 tf.flags.DEFINE_string("vocab_processor_file", None, "Saved vocabulary processor file")
 FLAGS = tf.flags.FLAGS
