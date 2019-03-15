@@ -1,180 +1,35 @@
 body {
-  margin-left: 140px;
-  padding: 0;
-  font-family: sans-serif;
-}.comm_inputArea--18XBX{
-    width:598px;
-    height: 40px;
-    background-color:white;  
-    border: 1px solid black;
-    font-size: 20px;
-    position: relative;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-top:-1px;
-}
-.comm_inputAreaEdit--3TD9i{
-    width:598px;
-    height: 400px;   
-    background-color:white; 
-    border: 1px solid black;
-    font-size: 20px;
-    z-index: 999;
-    position:absolute;
-    overflow: auto;
-    white-space: normal;
-    text-overflow: unset;
-    margin-top:-1px;
-}
-.comm_draftBox--3xWkl{
-    width:598px;
-    min-height: 80px;
-    border: 1px solid black;
-    left:20px;
-}
-.comm_button--2EuC0{
-    width:100px;
-    height: 40px;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
 
-.comm_floatingBox--39ZIL{
-    width: 190px!important;
-    border-radius: 4px!important;
-    padding:5px 5px!important;
-    line-height:18px!important;
-    max-width:300px!important;
-    word-wrap: break-word!important;
-    opacity: .8!important;
-    filter:alpha(opacity=80)!important;
-    background-color: red!important;
-    text-shadow: 0 0 2px black!important;
-    font-size: 12px!important;
-    color:white!important;
-}
-.comm_body--1SNjW{
-    width:600px;
-}
-.comm_container--2bpmJ{
-    width:600px;
-    background: red;
-}
-.comm_head--3Q7tU{
-    width:600px;
-    height: 40px;
-    background-color:grey;
-}
-.comm_content--3NWwN{
-    width:600px;
-}
-.comm_bottom--DaDcu{
-    width:600px;
-    height: 40px;
-    background-color: grey;
+a {
+    display: inline-block !important;
 }
 
-.comm_aa--2fUv7{
-    width: 400px;
-    height: 600px;
-    background-color: grey;
+form {
+    margin: 5rem auto !important;
+    width: 20rem;
 }
-.comm_bb--3Ssgu{
-    width: 400px;
-    height: 100px;
-    background-color: green;
-    display: flex;
+
+.index_ant-layout-has-sider--3QVEj .index_trigger--jQ0os {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 16px;
+    cursor: pointer;
+    transition: color .3s;
 }
-.comm_input--3vyh7{
-    width: 300px!important;
+
+.index_ant-layout-has-sider--3QVEj .index_trigger--jQ0os:hover {
+    color: #108ee9;
 }
-.comm_cc--3gS1S{
-    width: 400px;
-    height: 100px;
-    background-color: blue;
-    position: relative;
-    display: block;
-}.claimStatusReport_mainTitle--358Uj{
-    font-size: 18pt;
-    color: rgb(84, 146, 207);
-    margin-bottom: 15px;
-}
-.claimStatusReport_description--37EAW{
-    font-size: 11pt;
-    margin-right: 10px;
-    width: 450px;
-}
-.claimStatusReport_imageContainer--29spg{
-    width: 700px;
-    height: 120px;
-}
-.claimStatusReport_leftItem--1s2eC{
-    float: left;
-    padding-top: 20px;
-    margin-top: 30px;
-}
-.claimStatusReport_rightItem--20kU4{
-    float: right;
-}
-.claimStatusReport_split--1q5gW{
-    height: 5px;
-    width: 700px;
-    background-color:rgb(61, 196, 255)
-}
-.claimStatusReport_table--3b0uZ{
-    border-collapse: collapse;
-    width:700px;
-}
-.claimStatusReport_table--3b0uZ td{
-    text-align: left;
-}
-.claimStatusReport_table--3b0uZ th{
-    width: 80px;
-    color: white;
-    background-color:rgb(96, 108, 120);
-    font-weight: 400;
-    border-right-style: solid;
-    border-right-color: white;
-    border-right-width: 2px;
-    text-align: center;
-}
-.claimStatusReport_table--3b0uZ tr{
-    height: 70px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: rgb(223,226,228);
-}
-.claimStatusReport_tableHeader--3UPyF {
-    height: 30px!important;
-}
-.claimStatusReport_status--2jLVr{
-    width: 150px!important;
-}
-.claimStatusReport_name--2tCuy{
-    font-weight: 600;
-}
-.claimStatusReport_id--2OPsU{
-    color: grey;
-}
-.claimStatusReport_div1--1iCst{
-    background-color: rgb(236,248,206);
-    height:50px;
-    text-align: center;
-    line-height: 50px;
-    width: 100%
-}
-.claimStatusReport_div2--2Vo9Y{
-    background-color: rgb(255,243,212);
-    height:50px;
-    text-align: center;
-    line-height: 50px;
-    width: 100%
-}
-.claimStatusReport_div3--1Q998{
-    background-color: rgb(247,211,214);
-    height:50px;
-    text-align: center;
-    line-height: 50px;
-    width: 100%
+
+.index_ant-layout-has-sider--3QVEj .index_logo--2FROI {
+    height: 32px;
+    background: #333;
+    border-radius: 6px;
+    margin: 16px;
 }/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable */
@@ -6311,55 +6166,137 @@ span.ant-radio + * {
     vertical-align: text-bottom;
   }
 }
-.tellme_header--17lxG{
+.tellme_header--tX7Jv{
     display: flex;
     width: 400px;
 }
-.tellme_lineContainer--1pfw6{
+.tellme_lineContainer--Y5EiC{
     margin-bottom: 15px;
     display: flex;
     width: 400px;
 }
-.tellme_imageContainer--170nT{
+.tellme_imageContainer--2UIvP{
     width: 400px;
     height: 120px;
 }
-.tellme_input--34oRC{
+.tellme_input--3gpmh{
     width: 300px!important;
 }
-.tellme_title--pVyfe{
+.tellme_title--bz42V{
     font-size: 11pt;
     width: 150px!important;
 }
-.tellme_narrowTitle--qJC_g{
+.tellme_narrowTitle--1EtPO{
     font-size: 11pt;
     width: 100px!important;
 }
-.tellme_description--2tsVN{
+.tellme_description--1N7fh{
     font-size: 11pt;
     width: 400px;
 }
-.tellme_mainTitle--3grEl{
+.tellme_mainTitle--3xN2u{
     font-size: 18pt;
     color: rgb(1, 144, 200);
     margin-bottom: 10px;
 }
-.tellme_button--ukq-U{
+.tellme_button--3H791{
     color: white!important;
     background-color: rgb(135, 177, 7)!important;
     margin-top:5px;
     margin-right: 10px;
 }
-.tellme_datePicker--3MOgW{
+.tellme_datePicker--3tMlF{
     width: 240px!important;
 }
-.tellme_leftItem--I8oT4{
+.tellme_leftItem--3xM1j{
     float: left;
     padding-top: 20px;
 }
-.tellme_rightItem---t93V{
+.tellme_rightItem--1wTkq{
     float: right;
 }
-.tellme_mainContent--3hjUw{
+.tellme_mainContent--2PVzw{
     width: 400px;
+}.claimStatusReport_mainTitle--3yeoA{
+    font-size: 18pt;
+    color: rgb(84, 146, 207);
+    margin-bottom: 15px;
+}
+.claimStatusReport_description--1jcUw{
+    font-size: 11pt;
+    margin-right: 10px;
+    width: 450px;
+}
+.claimStatusReport_imageContainer--GJOva{
+    width: 700px;
+    height: 120px;
+}
+.claimStatusReport_leftItem--1IKBW{
+    float: left;
+    padding-top: 20px;
+    margin-top: 30px;
+}
+.claimStatusReport_rightItem--3Is1D{
+    float: right;
+}
+.claimStatusReport_split--gElPR{
+    height: 5px;
+    width: 700px;
+    background-color:rgb(61, 196, 255)
+}
+.claimStatusReport_table--1IlkX{
+    border-collapse: collapse;
+    width:700px;
+}
+.claimStatusReport_table--1IlkX td{
+    text-align: left;
+}
+.claimStatusReport_table--1IlkX th{
+    width: 80px;
+    color: white;
+    background-color:rgb(96, 108, 120);
+    font-weight: 400;
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 2px;
+    text-align: center;
+}
+.claimStatusReport_table--1IlkX tr{
+    height: 70px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(223,226,228);
+}
+.claimStatusReport_tableHeader--3BNfk {
+    height: 30px!important;
+}
+.claimStatusReport_status--31opG{
+    width: 150px!important;
+}
+.claimStatusReport_name--1tZuI{
+    font-weight: 600;
+}
+.claimStatusReport_id--3PGe2{
+    color: grey;
+}
+.claimStatusReport_div1--1Rvgt{
+    background-color: rgb(236,248,206);
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%
+}
+.claimStatusReport_div2--9PpJ5{
+    background-color: rgb(255,243,212);
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%
+}
+.claimStatusReport_div3--DVPts{
+    background-color: rgb(247,211,214);
+    height:50px;
+    text-align: center;
+    line-height: 50px;
+    width: 100%
 }
