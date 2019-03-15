@@ -1,29 +1,25 @@
 import React, { Component } from 'react';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
-import Home from './components/home';
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
 import Tellusaboutyou from './components/tellusaboutyou';
-import Bundle from './Bundle';
+import ClaimStatusReport from './components/claimStatusReport';
+import Content from './components/content';
+import Home from './components/home';
 
-const Hello = (props) => (
-  <Bundle load={() => import('./components/hello')}>
-  { (Child) => <Child {...props}></Child>}
-  </Bundle>
-);
-const Post = (props) => (
-  <Bundle load={() => import('./components/post')}>
-  { (Child) => <Child {...props}></Child>}
-  </Bundle>
-);
-const StateTest = (props) => (
-  <Bundle load={() => import('./components/stateTest')}>
-  { (Child) => <Child {...props}></Child>}
-  </Bundle>
-);
-const DraftBox = (props) => (
-  <Bundle load={() => import('./components/draftBox')}>
-  { (Child) => <Child {...props}></Child>}
-  </Bundle>
-);
+const Menus = ({ match }) => (
+  <div>
+    {
+      match ?
+      <ul>
+        <li>aaaaaa</li>
+        <li>bbbbbb</li>
+        <li>cccccc</li>
+        <li>dddddd</li>
+      </ul> : null
+    }
+    <Route path={`${match.url}/test`} component={Home}/>
+  </div>
+) 
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -31,13 +27,24 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Home path='/home' component={Home}>
-          <Route path='/hello' component={Hello}></Route>
-          <Route path='/post' component={Post}></Route>
-          <Route path='/tell-us-about-you' component={Tellusaboutyou}></Route>
-          <Route path='/stateTest' component={StateTest}></Route>
-          <Route path='/draftBox' component={DraftBox}></Route>
-        </Home>
+           <ul>
+             <li>
+                <Link to="/home"  style={{ color: 'black' }}>home
+                </Link>
+              <Route exact path='/' component={Home}></Route>
+              <Route path='/home' component={Home}></Route>
+             </li>
+             <li>
+                <Link to="/menus1"  style={{ color: 'black' }}>menus
+                </Link>
+                <Route match='match' path='/menus1' component={Menus}></Route>
+             </li>
+             <li>
+                <Link to="/tellusaboutyou"  style={{ color: 'black' }}>tell us about you
+                </Link>
+                <Route path='/tellusaboutyou' component={Tellusaboutyou}></Route>
+             </li>
+           </ul>
       </Router> 
     );
   }

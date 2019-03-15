@@ -1,24 +1,18 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
-import Home from './components/home';
 import Tellusaboutyou from './components/tellusaboutyou';
-import Bundle from './Bundle';
+import ClaimStatusReport from './components/claimStatusReport';
+import Content from './components/content';
+import Home from './components/home';
+import claimStatusReport from './components/claimStatusReport';
 
-const Hello = (props) => (
-  <Bundle load={() => import('./components/hello')}>
-  { (Child) => <Child {...props}></Child>}
-  </Bundle>
-);
-const StateTest = (props) => (
-  <Bundle load={() => import('./components/stateTest')}>
-  { (Child) => <Child {...props}></Child>}
-  </Bundle>
-);
-const DraftBox = (props) => (
-  <Bundle load={() => import('./components/draftBox')}>
-  { (Child) => <Child {...props}></Child>}
-  </Bundle>
-);
+const ClaimStatusReportWithRouter = ({ match }) => (
+  <div>
+    <ClaimStatusReport></ClaimStatusReport>
+    <Route path={`${match.url}/test`} component={Home}/>
+  </div>
+) 
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -26,12 +20,12 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Home path='/home' component={Home}>
-          <Route path='/hello' component={Hello}></Route>
-          <Route path='/tell-us-about-you' component={Tellusaboutyou}></Route>
-          <Route path='/stateTest' component={StateTest}></Route>
-          <Route path='/draftBox' component={DraftBox}></Route>
-        </Home>
+            <Content>
+              <Route exact path='/' component={Home}></Route>
+              <Route path='/home' component={Home}></Route>
+              <Route match='match' path='/claimstatusreport' component={ClaimStatusReportWithRouter}></Route>
+              <Route path='/tellusaboutyou' component={Tellusaboutyou}></Route>
+            </Content>
       </Router> 
     );
   }

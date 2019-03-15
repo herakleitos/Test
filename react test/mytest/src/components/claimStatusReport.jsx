@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Styles from './claimStatusReport.css'
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom';
+import Home from './home';
 class claimStatusReport extends Component {
     constructor(props) {
         super(props);
