@@ -2,9 +2,15 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 class home extends Component {
     render() {
-        return (<div>
-                <div style={{ marginTop: '1.5em',marginLeft:'140px' }}>{this.props.children}</div>
-        </div>);
+        return (
+            <div>
+                <h1>App</h1>
+                <ul>
+                    <li><Link to="/menus0">menus0</Link></li>
+                    <li><Link to="/menus1">menus1</Link></li>
+                </ul>
+                {this.props.children}
+            </div>);
     }
 }
 export default home;
