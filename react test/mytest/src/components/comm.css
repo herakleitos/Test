@@ -93,3 +93,13 @@
 .home {
     font-size:24pt;
 }
+.menu {
+    position: fixed;
+    margin-top:100px;
+    width:200px;
+}
+.content {
+    margin-left:300px;
+    margin-top:100px;
+    position: fixed;
+}
