@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Link,Redirect } from 'react-router-dom';
+import { Route, Link, Redirect } from 'react-router-dom';
 import Tellusaboutyou from './tellusaboutyou';
 import Page1 from './page1';
 import Page2 from './page2';
@@ -32,21 +32,29 @@ const item1 = (({ match }) => {
 const item2 = (({ match }) => {
     debugger
     return (<div>
+        <Link to="/item2" style={{ color: 'black' }}>item2
+        </Link>
         {
             match ?
                 <ul>
-                    <li>
-                        <Link to={`${match.url}/tellusaboutyou`} style={{ color: 'black' }}>tellusaboutyou
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={`${match.url}/page3`} style={{ color: 'black' }}>page3
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to={`${match.url}/page4`} style={{ color: 'black' }}>page4
-                        </Link>
-                    </li>
+                    <Route path="/item2/tellusaboutyou" children={subMatch => (
+                        <li>
+                            <Link to={`${match.url}/tellusaboutyou`} style={{ color: 'black' }}>tellusaboutyou
+                            </Link>
+                        </li>
+                    )}></Route>
+                    <Route path="/item2/page3" children={subMatch => (
+                        <li>
+                            <Link to={`${match.url}/page3`} style={{ color: 'black' }}>page3
+                            </Link>
+                        </li>
+                    )}></Route>
+                    <Route path="/item2/page4" children={subMatch => (
+                         <li>
+                            <Link to={`${match.url}/page4`} style={{ color: 'black' }}>page4
+                            </Link>
+                        </li>
+                    )}></Route>
                 </ul> : null
         }
     </div>);
@@ -62,19 +70,17 @@ class home extends Component {
                         <Route path="/item1" component={item1}></Route>
                     </li>
                     <li>
-                        <Link to="/item2/tellusaboutyou" style={{ color: 'black' }}>item2
-                        </Link>
-                        <Route path="/item2" component={item2}></Route>
+                        <Route path="/item2" children={item2}></Route>
                     </li>
                 </ul>
             </div>
             <div className={Styles.content}>
+                <Route path="/item1/claimstatusreport" render={props => (<ClaimStatusReport {...props}></ClaimStatusReport>)}></Route>
                 <Route path="/item1/page1" render={props => (<Page1 {...props}></Page1>)}></Route>
                 <Route path="/item1/page2" render={props => (<Page2 {...props}></Page2>)}></Route>
                 <Route path="/item2/page3" render={props => (<Page3 {...props}></Page3>)}></Route>
                 <Route path="/item2/page4" render={props => (<Page4 {...props}></Page4>)}></Route>
                 <Route path="/item2/tellusaboutyou" render={props => (<Tellusaboutyou {...props}></Tellusaboutyou>)}></Route>
-                <Route path="/item1/claimstatusreport" render={props => (<ClaimStatusReport {...props}></ClaimStatusReport>)}></Route>
             </div>
         </div>);
     }
