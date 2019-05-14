@@ -1,0 +1,16 @@
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\ef_demo.exe.config
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\ef_demo.exe
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\ef_demo.pdb
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\EntityFramework.dll
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\EntityFramework.SqlServer.dll
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\EntityFramework.xml
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\EntityFramework.SqlServer.xml
+F:\Demo Code\efDemo\ef_demo\ef_demo\obj\Debug\ef_demo.csprojResolveAssemblyReference.cache
+F:\Demo Code\efDemo\ef_demo\ef_demo\obj\Debug\ef_demo.exe
+F:\Demo Code\efDemo\ef_demo\ef_demo\obj\Debug\ef_demo.pdb
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\Unity.Abstractions.dll
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\Unity.Container.dll
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\Unity.Abstractions.pdb
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\Unity.Container.pdb
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
