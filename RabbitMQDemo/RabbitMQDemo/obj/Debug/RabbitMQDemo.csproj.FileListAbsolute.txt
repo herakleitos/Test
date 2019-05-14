@@ -1,0 +1,14 @@
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\RabbitMQDemo.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\RabbitMQDemo.exe
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\RabbitMQDemo.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\Newtonsoft.Json.dll
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\RabbitMQ.Client.dll
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\RabbitMQ.Client.xml
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\obj\Debug\RabbitMQDemo.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\obj\Debug\RabbitMQDemo.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\obj\Debug\RabbitMQDemo.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\obj\Debug\RabbitMQDemo.exe
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\obj\Debug\RabbitMQDemo.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\obj\Debug\RabbitMQDemo.Main.resources
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\XXZX.BL.Core.Encrypt.dll
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\RabbitMQDemo\RabbitMQDemo\bin\Debug\XXZX.BL.Core.Encrypt.xml

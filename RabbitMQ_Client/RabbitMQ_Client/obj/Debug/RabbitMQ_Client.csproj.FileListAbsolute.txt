@@ -1,0 +1,8 @@
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ_Client.exe.config
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ_Client.exe
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ_Client.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ.Client.dll
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ.Client.xml
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.exe
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.csprojResolveAssemblyReference.cache
