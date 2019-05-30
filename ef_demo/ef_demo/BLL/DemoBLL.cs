@@ -7,7 +7,7 @@ using Unity;
 
 namespace ef_demo
 {
-    public class DemoBLL : BaseBLL<TbGTRemovePeoInfo>,IDemoBLL
+    public class DemoBLL : BaseBLL<T_DEMO>,IDemoBLL
     {
         protected IDemoDAL dal;
         public DemoBLL()

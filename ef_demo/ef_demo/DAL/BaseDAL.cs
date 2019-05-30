@@ -37,5 +37,9 @@ namespace ef_demo
         {
             return objectSet.Where(whereCondition).ToList<T>();
         }
+        public void BulkInsert(IEnumerable<T> datas)
+        {
+            baseContext.BulkInsert(datas);
+        }
     }
 }

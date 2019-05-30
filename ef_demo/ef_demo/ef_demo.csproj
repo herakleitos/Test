@@ -59,6 +59,13 @@
     <Reference Include="Unity.Container">
       <HintPath>..\packages\Unity.5.10.3\lib\net45\Unity.Container.dll</HintPath>
     </Reference>
+    <Reference Include="XXZX.BL.Core.EF.ZExtensionCrack">
+      <HintPath>E:\SVN\湖南省工程建设项目审批管理系统V2.0\任务与服务\RunAble\XXZX.BL.Core.EF.ZExtensionCrack.dll</HintPath>
+    </Reference>
+    <Reference Include="Z.EntityFramework.Extensions, Version=3.18.4.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Z.EntityFramework.Extensions.3.18.4\lib\net45\Z.EntityFramework.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BaseBLL.cs" />
@@ -74,7 +81,7 @@
     <Compile Include="EFContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TbGTRemovePeoInfo.cs" />
+    <Compile Include="T_DEMO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

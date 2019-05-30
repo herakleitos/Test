@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ef_demo
 {
-    public interface IDemoBLL : IBaseBLL<TbGTRemovePeoInfo>
+    public interface IDemoBLL : IBaseBLL<T_DEMO>
     {
     }
 }

@@ -14,5 +14,7 @@ namespace ef_demo
         IList<T> GetAll(Expression<Func<T, bool>> whereCondition);
 
         IList<T> GetAll();
+
+        void BulkInsert(IEnumerable<T> datas); 
     }
 }

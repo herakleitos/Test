@@ -13,6 +13,6 @@ namespace ef_demo
         {
 
         }
-        public virtual DbSet<TbGTRemovePeoInfo> PeoInfo { get; set; }
+        public virtual DbSet<T_DEMO> demo { get; set; }
     }
 }

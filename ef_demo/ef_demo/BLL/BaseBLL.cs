@@ -54,5 +54,9 @@ namespace ef_demo
         {
             return baseDAL.GetAll();
         }
+        public void BulkInsert(IEnumerable<T> datas)
+        {
+            baseDAL.BulkInsert(datas);
+        }
     }
 }

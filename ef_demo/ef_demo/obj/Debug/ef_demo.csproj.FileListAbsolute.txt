@@ -14,3 +14,26 @@ F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\Unity.Abstractions.pdb
 F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\Unity.Container.pdb
 F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 F:\Demo Code\efDemo\ef_demo\ef_demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\ef_demo.exe.config
+F:\GIT\Test\ef_demo\ef_demo\obj\Debug\ef_demo.exe
+F:\GIT\Test\ef_demo\ef_demo\obj\Debug\ef_demo.pdb
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\ef_demo.exe
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\ef_demo.pdb
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\EntityFramework.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\EntityFramework.SqlServer.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\Unity.Abstractions.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\Unity.Container.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\XXZX.BL.Core.EF.ZExtensionCrack.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\Z.EntityFramework.Extensions.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\XXZX.BL.Core.Data.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\EntityFramework.xml
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\EntityFramework.SqlServer.xml
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\Unity.Abstractions.pdb
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\Unity.Container.pdb
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\Z.EntityFramework.Extensions.xml
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\XXZX.BL.Core.Data.xml
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\GIT\Test\ef_demo\ef_demo\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+F:\GIT\Test\ef_demo\ef_demo\obj\Debug\ef_demo.csprojResolveAssemblyReference.cache

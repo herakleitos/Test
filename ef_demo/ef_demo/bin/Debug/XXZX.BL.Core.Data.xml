@@ -1,0 +1,1086 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XXZX.BL.Core.Data</name>
+    </assembly>
+    <members>
+        <member name="T:XXZX.BL.Core.Data.Exceptions.AuthRootException">
+            <summary>
+            Class AuthRootException.
+            授权的根部异常
+            </summary>
+            <seealso cref="T:XXZX.BL.Core.Data.Exceptions.DeclaredException" />
+            <seealso cref="T:XXZX.BL.Core.Data.Exceptions.IAuthException" />
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.AuthRootException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.AuthRootException"/> class.
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.AuthRootException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.AuthRootException"/> class.
+            </summary>
+            <param name="message">描述错误的消息。</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.AuthRootException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.AuthRootException"/> class.
+            </summary>
+            <param name="message">解释异常原因的错误消息。</param>
+            <param name="innerException">导致当前异常的异常；如果未指定内部异常，则是一个 null 引用（在 Visual Basic 中为 Nothing）。</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.AuthRootException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.AuthRootException"/> class.
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo" />，它存有有关所引发异常的序列化的对象数据。</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext" />，它包含有关源或目标的上下文信息。</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Exceptions.ConfigException">
+            <summary>
+            配置异常
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ConfigException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ConfigException"/> class.
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ConfigException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ConfigException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ConfigException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ConfigException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ConfigException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ConfigException"/> class.
+            </summary>
+            <param name="info">The information.</param>
+            <param name="context">The 上下文.</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Exceptions.DeclaredException">
+            <summary>
+            Class DeclaredException. 
+            用于给 客户端 提示的异常， 如用户输入错误，系统配置错误等
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Exceptions.DeclaredException.IsWriteLog">
+            <inheritdoc/>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DeclaredException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DeclaredException"/> class.
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DeclaredException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DeclaredException"/> class.
+            </summary>
+            <param name="message">描述错误的消息。</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DeclaredException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DeclaredException"/> class.
+            </summary>
+            <param name="message">解释异常原因的错误消息。</param>
+            <param name="innerException">导致当前异常的异常；如果未指定内部异常，则是一个 null 引用（在 Visual Basic 中为 Nothing）。</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DeclaredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DeclaredException"/> class.
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo" />，它存有有关所引发异常的序列化的对象数据。</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext" />，它包含有关源或目标的上下文信息。</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Exceptions.DevOrConfigException">
+            <summary>
+            开发者异常 或者 配置异常
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DevOrConfigException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DevOrConfigException"/> class.
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DevOrConfigException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DevOrConfigException" /> class.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DevOrConfigException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DevOrConfigException"/> class.
+            </summary>
+            <param name="message">The message.</param>
+            <param name="innerException">The inner exception.</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.DevOrConfigException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.DevOrConfigException"/> class.
+            </summary>
+            <param name="info">The information.</param>
+            <param name="context">The 上下文.</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Exceptions.ErrorException">
+            <summary>
+            Class ErrorException.
+            错误异常，用于提示 开发人员，这个错误会导致整体系统运行异常
+            </summary>
+            <seealso cref="T:System.Exception" />
+            <seealso cref="T:XXZX.BL.Core.Data.Exceptions.IXException" />
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Exceptions.ErrorException.IsWriteLog">
+            <summary>
+            是否这个异常会写日志.
+            </summary>
+            <value><c>true</c> if this instance is write log; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ErrorException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ErrorException"/> class.
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ErrorException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ErrorException"/> class.
+            </summary>
+            <param name="message">描述错误的消息。</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ErrorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ErrorException"/> class.
+            </summary>
+            <param name="message">解释异常原因的错误消息。</param>
+            <param name="innerException">导致当前异常的异常；如果未指定内部异常，则是一个 null 引用（在 Visual Basic 中为 Nothing）。</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Exceptions.ErrorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Exceptions.ErrorException"/> class.
+            </summary>
+            <param name="info"><see cref="T:System.Runtime.Serialization.SerializationInfo" />，它存有有关所引发异常的序列化的对象数据。</param>
+            <param name="context"><see cref="T:System.Runtime.Serialization.StreamingContext" />，它包含有关源或目标的上下文信息。</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Exceptions.IAuthException">
+            <summary>
+            Interface IAuthException
+            授权异常的接口声明
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Exceptions.IXException">
+            <summary>
+            Interface IException
+            异常的 根异常，仅仅用于定义一个接口
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Exceptions.IXException.IsWriteLog">
+            <summary>
+            是否这个异常会写日志.
+            </summary>
+            <value><c>true</c> if this instance is write log; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.DateTimeExtensions">
+            <summary>
+            日期扩展
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DateTimeExtensions.ToStringEx(System.DateTime,System.String)">
+            <summary>
+            尝试用 format 来格式化字符串, 如果格式化失败， 则使用 Consts.DateTimeFormat.Day 对应的字符串来格式时间格式
+            </summary>
+            <param name="dt">需要格式化的时间格式</param>
+            <param name="format">格式化字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DateTimeExtensions.ToStringEx(System.DateTime,System.String,System.String)">
+            <summary>
+            尝试用 format 来格式化字符串
+            </summary>
+            <param name="dt">需要格式化的时间格式</param>
+            <param name="format">格式化字符串</param>
+            <param name="defaultFormart">如果格式化失败，默认的格式化字符串</param>
+            <returns></returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.EnumExtensions">
+            <summary>
+            Class EnumExtensions.
+            枚举值的 扩展类
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.EnumExtensions.GetDescription(System.Enum)">
+            <summary>
+            获取一个枚举的 描述注解  Description Attribute
+            </summary>
+            <param name="enumValue">The enum value.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.ExceptionExtensions">
+            <summary>
+            Class ExceptionExtensions.
+            异常错误的扩展
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ExceptionExtensions.GetMessages(System.Exception)">
+            <summary>
+            获取 错误的所有异常信息. 如果 异常有内部的异常，
+            </summary>
+            <param name="ex">The 错误对象.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ExceptionExtensions.IsAuthException(System.Exception)">
+            <summary>
+            是否是授权的异常
+            </summary>
+            <param name="ex"></param>
+            <returns></returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.IntExtensions">
+            <summary>
+            int 类的 扩展函数
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.IntExtensions.IsIn(System.Int32,System.Int32[])">
+            <summary>
+            判断当前值，是否在后面的集合中
+            </summary>
+            <param name="intValue"></param>
+            <param name="contanins"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.IntExtensions.IsNotIn(System.Int32,System.Int32[])">
+            <summary>
+            判断当前值，是否 不在后面的集合中
+            </summary>
+            <param name="intValue"></param>
+            <param name="contanins"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.IntExtensions.IsNullOrIn(System.Nullable{System.Int32},System.Int32[])">
+            <summary>
+            是否为空 或者  被包含在后面的集合中
+            </summary>
+            <param name="intValue"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.ByteExtensions">
+            <summary>
+            Class ByteExtensions.
+            Byte 的扩展方法
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ByteExtensions.ToBase64(System.Byte[])">
+            <summary>
+            将 Base64 byte[] 字节转成 字符串
+            </summary>
+            <param name="bytes">The bytes.</param>
+            <returns>String.</returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.DataRowExtensions">
+            <summary>
+            Class DataRowExtensions. DataRow 类型的扩展
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DataRowExtensions.ToClass``1(System.Data.DataRow)">
+            <summary>
+            DataRow 转换为为一个 类
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="dr">DataRow</param>
+            <returns>返回一个实例 T.</returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.DataTableExtensions">
+            <summary>
+            Class DataTableExtensions. DataTable的扩展 
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DataTableExtensions.ToList``1(System.Data.DataTable)">
+            <summary>
+            DataTable 转换为List 集合
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="dt">DataTable</param>
+            <returns>List&lt;T&gt;.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DataTableExtensions.ToClass``1(System.Data.DataTable)">
+            <summary>
+            DataTable 的第一行数据转换为一个 实体类, 如果没有任何数据，则返回 null
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="dt">DataTable</param>
+            <returns>T.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DataTableExtensions.Join(System.Data.DataTable,System.Data.DataTable,System.String,System.String)">
+            <summary>
+            两个DataTable 进行连接
+            </summary>
+            <param name="firstDt">第一个 DataTable.</param>
+            <param name="secondDt">第二个 DataTable.</param>
+            <param name="firstDtJoinColumnName">需要连接的第一个 DataTable 的主键列名称.</param>
+            <param name="secondDtJoinColumnName">需要连接的第二个 DataTable 的主键列名称.</param>
+            <returns>DataTable.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DataTableExtensions.Join(System.Data.DataTable,System.Data.DataTable,System.Data.DataColumn,System.Data.DataColumn)">
+            <summary>
+            两个DataTable 进行连接
+            </summary>
+            <param name="firstDt">第一个 DataTable.</param>
+            <param name="secondDt">第二个 DataTable.</param>
+            <param name="firstDtJoinColumnName">需要连接的第一个 DataTable 的主键列.</param>
+            <param name="secondDtJoinColumnName">需要连接的第二个 DataTable 的主键列.</param>
+            <returns>DataTable.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.DataTableExtensions.Join(System.Data.DataTable,System.Data.DataTable,System.Data.DataColumn[],System.Data.DataColumn[])">
+            <summary>
+            两个DataTable 进行连接
+            </summary>
+            <param name="firstDt">第一个 DataTable.</param>
+            <param name="secondDt">第二个 DataTable.</param>
+            <param name="firstDtJoinColumnNames">需要连接的第一个 DataTable 的主键列.</param>
+            <param name="secondDtJoinColumnNames">需要连接的第二个 DataTable 的主键列.</param>
+            <returns>DataTable.</returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.ObjectExtensions">
+            <summary>
+            Class ObjectExtensions. Object 类扩展
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.ToString2(System.Object)">
+            <summary>
+            将 Object 的值转成 String
+            当obj == null 或者 DbNull.Value 返回string.Empty 否则为调用 ToString()
+            </summary>
+            <param name="obj">任意对象</param>
+            <returns>字符串</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.ToJson(System.Object)">
+            <summary>
+            将对象转化为json的字符串
+            使用 Consts.DateTimeFormat.Minute 来格式化日期格式
+            </summary>
+            <param name="obj">任意对象.</param>
+            <returns>Json.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.ToJson(System.Object,System.String)">
+            <summary>
+            将对象转化为json的字符串
+            </summary>
+            <param name="obj">任意对象.</param>
+            <param name="dateTimeFormat">日期格式化的标准字符串.</param>
+            <returns>Json.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.JsonToObj``1(System.String)">
+            <summary>
+            将字符串序列化为json对象
+            底层 调用 JsonToObj2
+            </summary>
+            <typeparam name="T">任意实体类</typeparam>
+            <param name="strValue">Json串.</param>
+            <returns>任意实体类 T.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.JsonToObj2``1(System.String)">
+            <summary>
+            将字符串序列化为json对象
+            </summary>
+            <typeparam name="T">任意实体类</typeparam>
+            <param name="strValue">Json串.</param>
+            <returns>任意实体类 T.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.JsonToObj2``1(System.String,System.String)">
+            <summary>
+            将字符串序列化为json对象
+            </summary>
+            <typeparam name="T">任意实体类</typeparam>
+            <param name="strValue">Json串.</param>
+            <param name="fieldPath">需要序列号Json 中的哪个字段</param>
+            <returns>任意实体类 T.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.JsonToObj(System.String,System.Type)">
+            <summary>
+            将字符串序列化为json对象
+            </summary>
+            <param name="strValue">需要处理 Json字符串.</param>
+            <param name="type"> Type类.</param>
+            <returns>任意实体类 T.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions._InnerJsonToObj``1(System.String)">
+            <summary>
+            给 MVC 用的 私有的 方法，其他的地方不要使用， 实际调用的  Newtownsoft.json 的方法为
+            <code>
+            <![CDATA[
+            JsonConvert.DeserializeObject<T>(strValue, new ExpandoObjectConverter());
+            ]]>
+            </code>
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="strValue">The string value.</param>
+            <returns>T.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.ToInt32(System.Object)">
+            <summary>
+            转成 Int32
+            </summary>
+            <param name="obj">任意对象.</param>
+            <returns>System.Int32.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.ToDouble(System.Object)">
+            <summary>
+            转成 double
+            </summary>
+            <param name="obj">任意对象</param>
+            <returns>System.Double.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.ToBoolean(System.Object)">
+            <summary>
+            转成 Int32
+            </summary>
+            <param name="obj">任意对象.</param>
+            <returns><c>true</c> if XXXX, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.DbConvert``1(System.Object)">
+            <summary>
+            对数据库的 DBNull 进行处理, 如果实体类为空，则返回 该类型的默认值
+            </summary>
+            <typeparam name="T">任意实体类</typeparam>
+            <param name="obj">The object.</param>
+            <returns>任意实体类 T.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.ChangeType(System.Object,System.Type)">
+            <summary>
+            Convert.ChangeType 的加强版
+            </summary>
+            <param name="value"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.IsDbNullOrNull(System.Object)">
+            <summary>
+            判断一个对象是否为空， 或者DbNull
+            </summary>
+            <param name="obj">The object.</param>
+            <returns><c>true</c> if [is database null or null] [the specified object]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.ObjectExtensions.IsDbNullOrNullOrEmpty(System.Object)">
+            <summary>
+            判断一个对象是否为空， 或者DbNull 或者 为空串
+            </summary>
+            <param name="obj">The object.</param>
+            <returns><c>true</c> if [is database null or null or empty] [the specified object]; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Extensions.StringExtensions">
+            <summary>
+            Class StringExtensions. 字符串 扩展类
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.StringExtensions.ToString2(System.String)">
+            <summary>
+            扩展ToString() 方法, 为obj Null 时 ，返回 string.Empty
+            </summary>
+            <param name="obj">The object.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.StringExtensions.IsDate(System.String)">
+            <summary>
+            判断一个字符，是否符合日期格式
+            </summary>
+            <param name="strDate">目标字符串.</param>
+            <returns><c>true</c> if 那个字符串符合日期格式; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Extensions.StringExtensions.ToBase64(System.String)">
+            <summary>
+            将 字符串转换成 base64 编码的 字节数组.
+            </summary>
+            <param name="str">The string.</param>
+            <returns>Byte[].</returns>
+            <exception cref="T:System.Exception">Illegal base64url string!</exception>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Interfaces.IOnXAppStart">
+            <summary>
+            系统启动后，需要广播的接口
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Interfaces.IOnXAppStart.OnAppStart(System.String[])">
+            <summary>
+            执行的额方法
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.NamespaceDoc">
+            <summary>
+             基础数据或操作扩展类库
+            1.通过 XData.IsDebugModel模式来控制程序是否处在调试模式，默认在 Gloab.cs 文件中初始化， 可以和 Web.config 中的 compilation 属性相结合
+            2.提供一些日期格式的字符串, XXZX.BL.Core.Data.DateTimeFormat
+            3.提供一些 Char[] 类型的常量, 参见 XXZX.BL.Core.Data.Chars
+            4.提供几个扩展类库， 包括 Json和object 转换的，DataTable DataRow 转换成 json的, 具体的 见 XXZX.BL.Core.Data.Extensions 命名空间
+            5.提供按照 Guid 分库的操作，参见 XXZX.BL.Core.Data.Utility.GuidUtility
+            6.动态类的属性操作的工具类，参见 XXZX.BL.Core.Data.Utility.ObjectUtility
+            7.Sql 版本的数据连接，存储在XXZX.BL.Core.Data.PubConn 中.
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.NamespaceGroupDoc">
+            <summary>
+             基础数据或操作扩展类库\r\n
+            1.通过 XData.IsDebugModel模式来控制程序是否处在调试模式，默认在 Global.cs 文件中初始化， 可以和 Web.config 中的 compilation 属性相结合,(最新版的Demo默认就是这么实现)\r\n
+            2.提供一些日期格式的字符串, XXZX.BL.Core.Data.DateTimeFormat\r\n
+            3.提供一些 Char[] 类型的常量, 参见 XXZX.BL.Core.Data.Chars\r\n
+            4.提供几个扩展类库， 包括 Json和object 转换的，DataTable DataRow 转换成 json的, 具体的 见 XXZX.BL.Core.Data.Extensions 命名空间\r\n
+            5.提供按照 Guid 分库的操作，参见 XXZX.BL.Core.Data.Utility.GuidUtility\r\n
+            6.动态类的属性操作的工具类，参见 XXZX.BL.Core.Data.Utility.ObjectUtility\r\n
+            7.Sql 版本的数据连接，存储在XXZX.BL.Core.Data.PubConn 中.\r\n
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Classes.DbConnConfigClass">
+            <summary>
+            Class DbConnConfigClass. Sql Server 的数据库链接字符串生成工具类
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Classes.DbConnConfigClass._isNeedReConn">
+            <summary>
+            是否需要重生生成链接字符串
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Classes.DbConnConfigClass._iP">
+            <summary>
+            数据库链接的IP 地址
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Classes.DbConnConfigClass._dbName">
+            <summary>
+            数据库链接的 库名
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Classes.DbConnConfigClass._userName">
+            <summary>
+            链接数据库的 用户名
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Classes.DbConnConfigClass._password">
+            <summary>
+            链接数据库的 密码
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Classes.DbConnConfigClass._connectionString">
+            <summary>
+            生成的链接字符串
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.DbConnConfigClass.Provider">
+            <summary>
+            数据库 的类型.
+            </summary>
+            <value>The provider.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.DbConnConfigClass.IsNeedReConn">
+            <summary>
+            是否需要 重新生成链接字符串， 当 IP 、DBName、 UserName、 Password 任意一个属性被赋值时， 该项为 false
+            </summary>
+            <value><c>true</c> 链接字符串不需要重新计算; 否则, <c>false</c>.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.DbConnConfigClass.IP">
+            <summary>
+            Gets or sets the 数据库链接的IP 地址.
+            </summary>
+            <value>数据库链接的IP 地址.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.DbConnConfigClass.DBName">
+            <summary>
+            Gets or sets 数据库链接的 数据库实例.
+            </summary>
+            <value>数据库链接的 数据库实例.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.DbConnConfigClass.UserName">
+            <summary>
+            Gets or sets 链接数据库的 用户名.
+            </summary>
+            <value>链接数据库的 用户名.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.DbConnConfigClass.Password">
+            <summary>
+            Gets or sets 链接数据库的 密码.
+            </summary>
+            <value>链接数据库的 密码</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.DbConnConfigClass.ConnectionString">
+            <summary>
+            Gets 链接字符串.
+            </summary>
+            <value>链接字符串.</value>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Classes.DbConnConfigClass.ToString">
+            <summary>
+            返回表示当前 <see cref="T:System.Object"/> 的 <see cref="T:System.String"/>。
+            </summary>
+            <returns>
+            <see cref="T:System.String"/>，表示当前的 <see cref="T:System.Object"/>。
+            </returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Classes.ObjectItem">
+            <summary>
+            Key - Value 对象集合， 没有覆盖 Equals 方法
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.ObjectItem.ItemKey">
+            <summary>
+            Gets or sets Key （键）
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.ObjectItem.Caption">
+            <summary>
+            Gets or sets Caption （值）
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Classes.ObjectItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Classes.ObjectItem"/> class.
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Classes.ObjectItem.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Classes.ObjectItem"/> class.
+            </summary>
+            <param name="itemKey">键.</param>
+            <param name="caption">值.</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Classes.WebConfigClass">
+            <summary>
+            WebConfigClass, 该类在 Sql 版本中使用个， 这里不做注释了
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.WebConfigClass.NodeName">
+            <summary>
+            Gets the node 名字.
+            </summary>
+            <value>The node 名字.</value>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Classes.WebConfigClass.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Classes.WebConfigClass"/> class.
+            </summary>
+            <param name="nodeName">The node 名字.</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Classes.WebConfigClass.#ctor(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:XXZX.BL.Core.Data.Classes.WebConfigClass"/> class.
+            </summary>
+            <param name="nodeName">The node 名字.</param>
+            <param name="keys">The keys.</param>
+            <exception cref="T:XXZX.BL.Core.Data.Exceptions.ConfigException">
+            Web.Config中， 没有找到 " + this.NodeName + " 的配置
+            or
+            Web.Config 的 " + this.NodeName + " 节点下, 没有找到" + key + "的配置信息
+            </exception>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Classes.WebConfigClass.Item(System.String)">
+            <summary>
+            通过指定 Key ，获取对应的 Value
+            </summary>
+            <param name="key">The key.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Consts">
+            <summary>
+            Consts 全局常量
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.DateFormatShortString">
+            <summary>
+            时间格式化 到 yyyy-MM-dd 格式， 已经过期
+            建议使用 XXZX.BL.Core.Data.DateTimeFormat.Day
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.DateFormatShortString2">
+            <summary>
+            时间格式化 到 yyyyMMdd 格式
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.DateFormatLongString">
+            <summary>
+            时间格式化 到 yyyy-MM-dd HH:mm:dd 格式
+            建议使用 XXZX.BL.Core.Data.DateTimeFormat.Second
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Consts.Log">
+            <summary>
+            系统的日志配置项目.
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Log.LogStartUp">
+            <summary>
+            启动时 日志选项
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Log.LogRuntime">
+            <summary>
+            启动时 运行时 日志选项
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Consts.DateTimeFormat">
+            <summary>
+            框架的时间格式.
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.Month">
+            <summary>
+            时间格式化 字符串, 月 格式如，默认为 yyyy-MM.
+            </summary>
+            <value>The day.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.Day">
+            <summary>
+            时间格式化 字符串, 日期 格式如，默认为 yyyy-MM-dd.
+            </summary>
+            <value>The day.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.Hour">
+            <summary>
+            时间格式化 字符串, 日期-小时 格式如，默认为 yyyy-MM-dd HH.
+            </summary>
+            <value>The day.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.Minute">
+            <summary>
+            时间格式化 字符串, 日期-小时-分钟 格式如，默认为 yyyy-MM-dd HH:mm.
+            </summary>
+            <value>The day.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.Second">
+            <summary>
+            时间格式化 字符串, 日期-小时-分钟-秒 格式如，默认为 yyyy-MM-dd HH:mm:ss.
+            </summary>
+            <value>The day.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.Time">
+            <summary>
+            时间格式化 字符串, 小时-分钟-秒 格式如，默认为 HH:mm:ss.
+            </summary>
+            <value>The day.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.Time_Second">
+            <summary>
+            时间格式化 字符串, 小时-分钟-秒 格式如，默认为 HH:mm.
+            </summary>
+            <value>The day.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.Consts.DateTimeFormat.CultureInfo">
+            <summary>
+            设置程序区域语言设置中日期格式 "zh-CHS"
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Consts.Chars">
+            <summary>
+            Class Chars. 
+            符号的合集
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.ShuXian">
+            <summary>
+            竖线  " | "
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.HengXian">
+            <summary>
+            横线 " - "
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.DouHao">
+            <summary>
+            逗号 英文逗号 , 和 中文逗号 ，
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.Dollar">
+            <summary>
+            美元符号 $
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.FenHao">
+            <summary>
+            分号 英文分号 ; 和 中文分号 ；
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.JingHao">
+            <summary>
+            # 号
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.FileSpilt">
+            <summary>
+            文件路径分割符 \ 和 /
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.Dot">
+            <summary>
+            点 . 
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.XingHao">
+            <summary>
+            星 * 
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.ZhongKuoHao">
+            <summary>
+            中括号
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.ZhongKuoHaoLeft">
+            <summary>
+            左中括号
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.ZhongKuoHaoRight">
+            <summary>
+            右中括号
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.Chars.MaoHao">
+            <summary>
+            冒号 英文(:) 和 中文(：)
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Consts.CacheKeyPrefix">
+            <summary>
+            缓存的Key的 前缀的常量
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.CacheKeyPrefix.SysConfigPrefix">
+            <summary>
+            系统配置的缓存
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.Consts.CacheKeyPrefix.SysDataPrefix">
+            <summary>
+            系统数据的缓存
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.PubConn">
+            <summary>
+            PubConn
+            </summary>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.PubConn.ConnString">
+            <summary>
+            主数据库的 链接字符串， 在 Sql 版本中使用.
+            </summary>
+            <value>The connection string.</value>
+        </member>
+        <member name="P:XXZX.BL.Core.Data.PubConn.LogConnString">
+            <summary>
+            日志数据库的 链接字符串， 在 Sql 版本中使用.
+            </summary>
+            <value>The log connection string.</value>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.PubConn.InitConnString(System.String)">
+            <summary>
+            初始化 主数据库的链接字符串
+            </summary>
+            <param name="connString">The connection string.</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.PubConn.InitLogConnString(System.String)">
+            <summary>
+            初始化 日志库的链接字符串
+            </summary>
+            <param name="logConnString">The log connection string.</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.PubConn.Init(System.String,System.String)">
+            <summary>
+            初始化 主数据库的链接字符串 和  日志库的链接字符串
+            </summary>
+            <param name="connString">The connection string.</param>
+            <param name="logConnString">The log connection string.</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Utility.GuidUtility">
+            <summary>
+            Class GuidUtility.
+            Guid 及 Guid 的衍生 方法
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Utility.GuidUtility.New">
+            <summary>
+            得到一个新的 Guid， Guid 中 - 用 空格替换了.
+            </summary>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Utility.GuidUtility.ComputerNew(System.Int32,System.Int32@)">
+            <summary>
+            得到一个新的 Guid， Guid 中 - 用 空格替换了.
+            并用 新的 guid 计算 guid 说对应的位置
+            </summary>
+            <param name="maxCapacity">The maximum capacity.</param>
+            <param name="index">The index.</param>
+            <returns>System.String.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Utility.GuidUtility.GetIndex(System.String,System.Int32)">
+            <summary>
+             将 guid  字符串平均分配到 maxCapacity 张表中 ， 如 maxCapacity = 10， 则平均分配到 1-9 张表中.
+            </summary>
+            <param name="guid">The unique identifier.</param>
+            <param name="maxCapacity">平均分配的最大容量.</param>
+            <returns>System.Int32.</returns>
+            <exception cref="T:System.Exception">计算容量时， + nameof(maxCapacity) + 必须是一个 1 - 999 的数字</exception>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.Utility.ObjectUtility">
+            <summary>
+            Class ObjectUtility.
+            dynamic 对象的属性的操作方法
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Utility.ObjectUtility.GetPropertyValue(System.Object,System.String,System.Boolean)">
+            <summary>
+            获取一个对象属性的值.
+            </summary>
+            <param name="src">The source.</param>
+            <param name="propName">字段的名称.</param>
+            <param name="isFixedName">if set to <c>true</c> [propName 和 属性的名字必须一模一样， 否则, 不会区分大小写].</param>
+            <returns>System.Object.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Utility.ObjectUtility.SetPropertyValue(System.Object,System.String,System.Object,System.Boolean)">
+            <summary>
+            设置一个对象属性的值
+            </summary>
+            <param name="src">The source.</param>
+            <param name="propName">Name of the property.</param>
+            <param name="value">The value.</param>
+            <param name="isFixedName">if set to <c>true</c> [propName 和 属性的名字必须一模一样， 否则, 不会区分大小写].</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Utility.ObjectUtility.GetPropertyType(System.Object,System.String)">
+            <summary>
+            得到属性的 值类型.
+            </summary>
+            <param name="src">The source.</param>
+            <param name="propName">Name of the property.</param>
+            <returns>Type.</returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.Utility.ObjectUtility.GetListType(System.Object)">
+             <summary>
+            得到一个泛型集合的 泛型类型.
+             </summary>
+             <param name="list">The list.</param>
+             <returns>Type.</returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.XData">
+            <summary>
+            Class XData.
+            </summary>
+        </member>
+        <member name="F:XXZX.BL.Core.Data.XData.IsDebugModel">
+            <summary>
+            是否是调试模式
+            </summary>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.XDev">
+            <summary>
+            Class XDev.
+            在调试的控制台打印
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev.Log(System.String)">
+            <summary>
+            在控制台 打印日志
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev.Log(System.String,System.Object[])">
+            <summary>
+            在控制台 打印日志
+            </summary>
+            <param name="format">消息的格式化字符串</param>
+            <param name="args">消息的参数</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev.Log(System.Object)">
+            <summary>
+            在控制台 打印日志
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev.Log(System.Action,System.String,System.Object[])">
+            <summary>
+            如果 action 执行出错， 打印到控制台
+            </summary>
+            <param name="action"></param>
+            <param name="format">消息的格式化字符串</param>
+            <param name="args">消息的参数</param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev.LogOnError``1(System.Func{``0})">
+            <summary>
+            在执行出错后，记录异常
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev.IsWinForm">
+            <summary>
+            当前的运行环境，是不是 winform 的环境， 如果是 ， 则返回 true， 否则 返回 false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.XDev4RunTime">
+            <summary>
+            Class XDev4RunTime.
+            在调试的控制台打印代码的运行时间
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev4RunTime.LogRunTime(System.String,System.Action)">
+            <summary>
+            得到运行时间的 毫秒数
+            </summary>
+            <param name="msg">需要 Log 的消息</param>
+            <param name="action">需要计时的 操作</param>
+            <returns></returns>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XDev4RunTime.LogRunTime``1(System.String,System.Func{``0})">
+            <summary>
+            得到运行时间的 毫秒数
+            </summary>
+            <param name="msg">需要 Log 的消息</param>
+            <param name="func">需要计时的 操作</param>
+            <returns></returns>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.XEvent">
+            <summary>
+            事件触发器
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XEvent.BroadCastOnAppStart(System.Collections.Generic.Dictionary{System.String,System.String[]})">
+            <summary>
+            广播系统启动时，需要执行的事件.
+            </summary>
+            <param name="dicArgs">The dic 参数列表.</param>
+        </member>
+        <member name="T:XXZX.BL.Core.Data.XStopwatch">
+            <summary>
+            时间监控工具
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XStopwatch.#ctor(System.String)">
+            <summary>
+            开启一个监控器
+            </summary>
+            <param name="msg"></param>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XStopwatch.Start">
+            <summary>
+            开启监控
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XStopwatch.Restart">
+            <summary>
+            重新开始监控
+            </summary>
+        </member>
+        <member name="M:XXZX.BL.Core.Data.XStopwatch.Stop(System.String)">
+            <summary>
+            停止监控
+            </summary>
+            <param name="msg"></param>
+        </member>
+    </members>
+</doc>

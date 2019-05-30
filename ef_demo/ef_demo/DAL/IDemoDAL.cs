@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ef_demo
 {
-    public interface IDemoDAL:IBaseDAL<TbGTRemovePeoInfo>
+    public interface IDemoDAL:IBaseDAL<T_DEMO>
     {
     }
 }
