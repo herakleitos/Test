@@ -104,7 +104,7 @@ const webpackConfigDev = {
     devServer: {
         hot: true,
         inline: true,
-        port: 9000,
+        port: 1004,
         open:true,
         contentBase: path.join(__dirname,"./dist"),
         historyApiFallback: true,

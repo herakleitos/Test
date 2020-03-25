@@ -1,11 +1,15 @@
 .header{
     display: flex;
-    width: 400px;
+    width: 700px;
 }
 .lineContainer{
     margin-bottom: 15px;
     display: flex;
     width: 400px;
+}
+.buttonContainer{
+    width: 100%;
+    text-align: right;
 }
 .imageContainer{
     width: 400px;
@@ -15,8 +19,10 @@
     width: 300px!important;
 }
 .title{
-    font-size: 11pt;
-    width: 150px!important;
+    font-size: 16pt;
+    width: 455px!important;
+    font-weight:bold!important;
+    margin-bottom: 30px;
 }
 .narrowTitle{
     font-size: 11pt;
@@ -49,4 +55,11 @@
 }
 .mainContent{
     width: 400px;
+}
+.table{
+    width: 600px;
+}
+
+.deleteButton{
+    padding-left: 5px;
 }

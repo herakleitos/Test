@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {HashRouter as Router,Switch} from 'react-router-dom';
 import Home from './components/home';
-
+import Page from './components/home'
 class App extends Component {
   constructor(props){
     super(props);
@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
       <Router>
-          <Home path='/home' component={Home}>
-          </Home>
+          <Page path='/home' component={Page}>
+          </Page>
       </Router> 
     );
   }
