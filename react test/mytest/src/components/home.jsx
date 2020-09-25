@@ -9,10 +9,12 @@ import Styles from './comm.css';
 //两种不同的路由写法
 const item1 = (({ match }) => {
     return (<div>
+        <Link to="/item1" style={{ color: 'black' }}>用户登录
+        </Link>
         {
             match ?
                 <ul>
-                    <Route path="/item1/page1" children={subMatch => (
+                    <Route path="/item1" children={subMatch => (
                         <li>
                             <Link to={`${match.url}/page1`} style={{ color: 'black' }}>用户登录
                             </Link>
@@ -51,12 +53,10 @@ class home extends Component {
             <div className={Styles.menu}>
                 <ul>
                     <li>
-                        <Link to="/item1/page1" style={{ color: 'black' }}>用户登录
-                        </Link>
                         <Route path="/item1" component={item1}></Route>
                     </li>
                     <li>
-                        <Link  to="/item2/page3"  style={{ color: 'black' }}>用户维护
+                        <Link to="/item2/page3" style={{ color: 'black' }}>用户维护
                         </Link>
                         <Route path="/item2" children={item2}></Route>
                     </li>

@@ -22,6 +22,14 @@ namespace RabbitMQ_Client
             //string MQExchange = "Demo";
             //mqService.InitMQService(MQHostName, MQPort, MQUserName, MQPassword, MQExchange);
             //new Thread(new ThreadStart(MessageWorker)).Start();
+
+            DateTime dt = DateTime.Now;
+
+            string now = dt.ToString("yyyy-MM-dd HH:mm:ss.fff");
+
+            string PlaceCode = "430100";
+            string preCode = PlaceCode.Substring(0, 4);
+
             Console.Read();
 
         }

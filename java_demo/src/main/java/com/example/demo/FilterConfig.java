@@ -6,7 +6,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import javax.servlet.Filter;
-
+/**
+ * 过滤器
+ */
 @Configuration
 public class FilterConfig {
     @Bean

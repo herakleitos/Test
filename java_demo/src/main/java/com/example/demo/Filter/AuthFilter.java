@@ -28,13 +28,15 @@ public class AuthFilter implements Filter {
         rep.setHeader("Access-Control-Allow-Headers","token,Origin, X-Requested-With, Content-Type, Accept");
         response.setCharacterEncoding("UTF-8");
         response.setContentType("application/json; charset=utf-8");
-        String token = req.getHeader("token");//header方式
+        String token = req.getHeader("authorization");//header方式
         try
         {
             filterChain.doFilter(request,response);
         }
         catch (Exception ex)
-        {}
+        {
+
+        }
     }
 
     @Override

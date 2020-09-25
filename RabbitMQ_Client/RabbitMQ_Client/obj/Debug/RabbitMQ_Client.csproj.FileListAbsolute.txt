@@ -6,3 +6,12 @@ c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\Rab
 c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.exe
 c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.pdb
 c:\users\administrator\documents\visual studio 2015\Projects\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.csprojResolveAssemblyReference.cache
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ_Client.exe.config
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.exe
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.pdb
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ_Client.exe
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ_Client.pdb
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ.Client.dll
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\bin\Debug\RabbitMQ.Client.xml
+F:\GIT\Test\RabbitMQ_Client\RabbitMQ_Client\obj\Debug\RabbitMQ_Client.csprojResolveAssemblyReference.cache

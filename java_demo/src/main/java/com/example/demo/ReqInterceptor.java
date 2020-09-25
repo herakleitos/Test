@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 拦截器示例
+ * 拦截器示例，这里相当于asp.net中的 Action, (OnActionExecuted,OnActionExecuting,OnResultExecuted,OnResultExecuting)
  */
 public class ReqInterceptor extends HandlerInterceptorAdapter {
     @Override

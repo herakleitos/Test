@@ -39,6 +39,7 @@
             this.rb_11 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // tb_1
@@ -140,11 +141,21 @@
             this.tb_2.Size = new System.Drawing.Size(316, 21);
             this.tb_2.TabIndex = 10;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(67, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 12);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "label5";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(422, 279);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_2);
             this.Controls.Add(this.rb_11);
@@ -176,6 +187,7 @@
         private System.Windows.Forms.RadioButton rb_11;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tb_2;
+        private System.Windows.Forms.Label label5;
     }
 }
 

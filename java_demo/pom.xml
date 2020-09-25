@@ -61,6 +61,11 @@
             <artifactId>mybatis</artifactId>
             <version>3.3.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.11_preview_9</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

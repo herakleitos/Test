@@ -11,7 +11,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.web.bind.annotation.*;
-
+import com.example.demo.Mapper.UserMapper;
 import java.io.InputStream;
 import java.sql.ResultSet;
 import java.util.ArrayList;
@@ -35,7 +35,11 @@ public class UserInfoController {
             SqlSession sqlSession = sqlSessionFactory.openSession();
             // 操作CRUD，第一个参数：指定statement，规则：命名空间+“.”+statementId
             // 第二个参数：指定传入sql的参数：这里是用户id
-            User user = sqlSession.selectOne("com.example.demo.Base.User.selectUser", userId);
+             //User user1 = sqlSession.selectOne("com.example.demo.Base.User.selectUser", userId);
+
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            User user =  userMapper.selectUser(userId);
+
             result.setSuccess(true);
             result.setMessage("读取成功！");
             result.setData(user);
@@ -63,7 +67,12 @@ public class UserInfoController {
             SqlSession sqlSession = sqlSessionFactory.openSession();
             // 操作CRUD，第一个参数：指定statement，规则：命名空间+“.”+statementId
             // 第二个参数：指定传入sql的参数：这里是用户id
-            int temp = sqlSession.delete("com.example.demo.Base.User.deleteUser", userId);
+
+           // int temp = sqlSession.delete("com.example.demo.Base.User.deleteUser", userId);
+
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            Integer temp = userMapper.deleteUser(userId);
+
             sqlSession.commit();
             result.setSuccess(true);
             result.setMessage("删除成功！");
@@ -99,7 +108,10 @@ public class UserInfoController {
 //                sb.append(userName);
 //                sb.append("%");
 //            }
-            List<User> users = sqlSession.selectList("com.example.demo.Base.User.selectUsers");
+           // List<User> users = sqlSession.selectList("com.example.demo.Base.User.selectUsers");
+
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            List<User> users = userMapper.selectUsers(userName);
             result.setSuccess(true);
             result.setMessage("读取成功！");
             result.setData(users);

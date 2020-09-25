@@ -5,25 +5,27 @@ public class User {
     private String UserName;
     private String Phone;
 
-    public int getUserId()
-    {
+    public int getUserId() {
         return UserId;
     }
-    public void setUserId(int _UserId)
-    {
-        UserId = _UserId;
+
+    public void setUserId(int userId) {
+        UserId = userId;
     }
-    public String getPhone() { return Phone; }
-    public void setPhone(String _Phone)
-    {
-        Phone = _Phone;
-    }
-    public String getUserName()
-    {
+
+    public String getUserName() {
         return UserName;
     }
-    public void setUserName(String _UserName)
-    {
-        UserName = _UserName;
+
+    public void setUserName(String userName) {
+        UserName = userName;
+    }
+
+    public String getPhone() {
+        return Phone;
+    }
+
+    public void setPhone(String phone) {
+        Phone = phone;
     }
 }
